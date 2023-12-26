@@ -1,0 +1,147 @@
+.works {
+  margin: 61px auto 0;
+
+  @media (min-width: 768px) and (orientation: portrait) {
+    margin-top: 76px;
+  }
+
+  @media (min-width: 1024px) {
+    margin-top: 76px;
+  }
+
+  &__filter {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    row-gap: 15px;
+    column-gap: 10px;
+
+    @media (min-width: 768px) {
+      justify-content: center;
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &__btn {
+    padding: 11px 26px;
+    background-color: $bg;
+    color: $dark-second;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 1;
+    transition: background-color 0.4s,
+      box-shadow 0.4s, outline 0.4s;
+
+    &:hover,
+    &.mixitup-control-active {
+      background-color: $accent;
+      color: $light;
+      box-shadow: 1px 3px 1px rgba($primary, 0.1);
+    }
+
+    &:focus {
+      outline: solid 1px $accent;
+      outline-offset: 2px;
+    }
+
+    &:active {
+      background-color: $accent;
+      box-shadow: inset 3px 3px 8px rgba($primary, 0.4);
+      color: $light;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  &__content-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $light;
+    max-width: 450px;
+    width: 100%;
+
+
+    &:hover {
+      .works__description {
+        transform: translateY(0);
+      }
+    }
+
+    &:focus {
+      .works__description {
+        transform: translateY(0);
+      }
+    }
+
+    @media (min-width: 768px) {
+      width: calc((100% - 1 * 30px) / 2);
+    }
+
+    @media (min-width: 1200px) {
+      width: calc((100% - 2 * 30px) / 3);
+    }
+  }
+
+  &__top {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__img {
+    object-fit: cover;
+    height: auto;
+  }
+
+  &__description {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba($accent, 0.8);
+    color: $light;
+    padding: 24px 24px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    line-height: 1.5;
+    transform: translateY(101%);
+    transition: transform 0.8s;
+
+    @media (min-width: 480px) {
+      font-size: 18px;
+    }
+  }
+
+  &__info {
+    flex-grow: 1;
+    padding: 20px 24px;
+    border-left: 1px solid $secondary;
+    border-bottom: 1px solid $secondary;
+    border-right: 1px solid $secondary;
+  }
+
+  &__title {
+    margin-bottom: 4px;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.08em;
+    color: $grey-dark;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 1.9;
+  }
+}
