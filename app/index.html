@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Стоматологічна клініка "Family Dental"</title>
+  <title>Стоматологічна клиніка Сімейна стоматологія</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,8 +15,6 @@
   <link rel="icon" href="favicon/favicon.ico" sizes="any">
   <link rel="icon" href="favicon/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicon/afavicon/pple-touch-icon.png/">
-
-
 
   <link rel="stylesheet" href="css/index.min.css">
 </head>
@@ -28,7 +26,7 @@
   <div class="container">
     <div class="header__inner">
       <a class="logo header__logo" href="index.html">
-        <img class="logo__img" src="images/logo.svg" width="149" height="36" alt="Logo DolGuldur">
+        <img class="logo__img" src="images/logo.svg" width="220" height="70" alt="Logo DolGuldur">
       </a>
 
       <button class="header__burger modal-button" type="button">
@@ -47,12 +45,7 @@
               </a>
             </li>
             <li class="header__item">
-              <a class="header__link" href="index.html">
-                O клинике
-              </a>
-            </li>
-            <li class="header__item">
-              <a class="header__link @@works" href="about.html">
+              <a class="header__link @@works" href="works.html">
                 Послуги
               </a>
             </li>
@@ -66,63 +59,43 @@
                 Контакти
               </a>
             </li>
-
           </ul>
         </nav>
         <button class="button" type="button">
           Записатись
         </button>
-
       </div>
     </div>
   </div>
   <div class="mobile-menu">
     <nav class="mobile-menu__menu">
       <ul class="mobile-menu__list">
-        <li class="mobile-menu__item">
-          <a class="mobile-menu__link current" href="index.html">
-            O клинике
-          </a>
-        </li>
-        <li class="mobile-menu__item">
-          <a class="mobile-menu__link @@works" href="about.html">
-            Послуги
-          </a>
-        </li>
-        <li class="mobile-menu__item">
-          <a class="mobile-menu__link @@contacts" href="#">
-            Прайс
-          </a>
-        </li>
-        <li class="mobile-menu__item">
-          <a class="mobile-menu__link @@contacts" href="#">
-            Контакти
-          </a>
-        </li>
-
+         <li class="header__item">
+           <a class="header__link current" href="index.html">
+             Головна
+           </a>
+         </li>
+         <li class="header__item">
+           <a class="header__link @@works" href="works.html">
+             Послуги
+           </a>
+         </li>
+         <li class="header__item">
+           <a class="header__link @@contacts" href="#">
+             Прайс
+           </a>
+         </li>
+         <li class="header__item">
+           <a class="header__link @@contacts" href="#">
+             Контакти
+           </a>
+         </li>
       </ul>
     </nav>
     <div class="mobile-menu__bottom">
-     <button class="button" type="button">
-       Записатись
-     </button>
-      <ul class="mobile-menu__social">
-        <li class="mobile-menu__social-item">
-          <a class="mobile-menu__social-link" href="#">
-            Instagram
-          </a>
-        </li>
-        <li class="mobile-menu__social-item">
-          <a class="mobile-menu__social-link" href="#">
-            Facebook
-          </a>
-        </li>
-        <li class="mobile-menu__social-item">
-          <a class="mobile-menu__social-link" href="#">
-            LinkedIn
-          </a>
-        </li>
-      </ul>
+      <button class="button" type="button">
+        Записатись
+      </button>
     </div>
 
     <button class="mobile-menu__button modal-button" type="button">
@@ -135,11 +108,157 @@
 </header>
 
   <main>
+    <section class="hero">
 
+
+      <div class="hero__swiper swiper">
+
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide hero__swiper-slide hero__swiper-slide--1">
+            <div class="container hero__container">
+              <div class="hero__content">
+                <h1 class="hero__title">
+                  Дбаємо про посмішку вашої дитини
+                </h1>
+                <button class="button" type="button">
+                  Дізнатися більше
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide hero__swiper-slide hero__swiper-slide--2">
+            <div class="container hero__container">
+              <div class="hero__content">
+                <h1 class="hero__title">
+                  Дбаємо про посмішку вашої дитини
+                </h1>
+                <button class="button" type="button">
+                  Дізнатися більше
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide hero__swiper-slide hero__swiper-slide--3">
+            <div class="container hero__container">
+              <div class="hero__content">
+                <h1 class="hero__title">
+                  Дбаємо про посмішку вашої дитини
+                </h1>
+                <button class="button" type="button">
+                  Дізнатися більше
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+
+      </div>
+    </section>
+
+    <section class="services section section--bg">
+      <div class="container">
+        <h2 class="title services__title">
+          Наші послуги
+        </h2>
+        <p class="subtitle services__subtitle">
+          Стоматологічні послуги, які об'єднують якість, комфорт та індивідуальний підхід
+        </p>
+        <!-- <ul class="services__list">
+          <li class="services__item">
+            <a class="services__link services__link--kid" href="#">
+              Дитяча стоматологія
+            </a>
+          </li>
+          <li class="services__item">
+            <a class="services__link services__link--kid" href="#">
+              Терапевтична стоматологія
+            </a>
+          </li>
+          <li class="services__item">
+            <a class="services__link services__link--kid" href="#">
+              Протезування
+            </a>
+          </li>
+          <li class="services__item">
+            <a class="services__link services__link--kid" href="#">
+              Хірургічне лікування та імплантація
+            </a>
+          </li>
+          <li class="services__item">
+            <a class="services__link services__link--kid" href="#">
+              Ортодонтія (виправлення прикуса)
+            </a>
+          </li>
+          <li class="services__item">
+            <a class="services__link services__link--kid" href="#">
+              Паронтологія
+            </a>
+          </li>
+        </ul> -->
+
+        <div class="swiper slider-2">
+          <div class="swiper-wrapper grid">
+            <div class="swiper-slide">
+              <div class="services-card">
+                <a class="services-card__link services-card__link--kid" href="#">
+                  Дитяча стоматологія
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="services-card">
+                <a class="services-card__link services-card__link--kid" href="#">
+                  Дитяча стоматологія
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="services-card">
+                <a class="services-card__link services-card__link--kid" href="#">
+                  Дитяча стоматологія
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="services-card">
+                <a class="services-card__link services-card__link--kid" href="#">
+                  Дитяча стоматологія
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="services-card">
+                <a class="services-card__link services-card__link--kid" href="#">
+                  Дитяча стоматологія
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="services-card">
+                <a class="services-card__link services-card__link--kid" href="#">
+                  Дитяча стоматологія
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
- 
+  <div class="container">
+   
+  </div>
 </footer>
 
 
