@@ -1,49 +1,37 @@
 <header class="header">
   <div class="container">
-    <div class="header__inner">
+    <nav class="nav">
       <a class="logo header__logo" href="index.html">
-        <img class="logo__img" src="images/logo.svg" width="220" height="70" alt="Logo DolGuldur">
+        <img class="logo__img" src="images/logo.svg" width="220" height="70" alt="Логотип Сімейной стоматології">
       </a>
-
-      <button class="header__burger modal-button" type="button">
-        <span class=" sr-only">Відкрити меню</span>
-        <svg class="modal-button-icon" width="44" height="44">
-          <use href="./images/symbol-defs.svg#icon-open-menu"></use>
-        </svg>
+      <ul class="menu">
+        <li class="menu__item">
+          <a class="menu__link @@home" href="index.html">
+            Головна
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link @@works" href="works.html">
+            Послуги
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link @@contacts" href="#">
+            Прайс
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link @@contacts" href="#">
+            Контакти
+          </a>
+        </li>
+      </ul>
+      <button class="button nav__button" type="button">
+        Записатись
       </button>
-
-      <div class="header__content">
-        <nav class="header__menu">
-          <ul class="header__list">
-            <li class="header__item">
-              <a class="header__link @@home" href="index.html">
-                Головна
-              </a>
-            </li>
-            <li class="header__item">
-              <a class="header__link @@works" href="works.html">
-                Послуги
-              </a>
-            </li>
-            <li class="header__item">
-              <a class="header__link @@contacts" href="#">
-                Прайс
-              </a>
-            </li>
-            <li class="header__item">
-              <a class="header__link @@contacts" href="#">
-                Контакти
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <button class="button" type="button">
-          Записатись
-        </button>
-      </div>
-    </div>
+    </nav>
   </div>
-  <div class="mobile-menu">
+  <!-- <div class="mobile-menu">
     <nav class="mobile-menu__menu">
       <ul class="mobile-menu__list">
          <li class="header__item">
@@ -80,5 +68,5 @@
         <use href="./images/symbol-defs.svg#icon-close-menu"></use>
       </svg>
     </button>
-  </div>
+  </div> -->
 </header>

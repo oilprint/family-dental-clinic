@@ -20,54 +20,42 @@
 </head>
 
 <body>
+  <div class="wrapper">
 
-
-  <header class="header">
+    <header class="header">
   <div class="container">
-    <div class="header__inner">
+    <nav class="nav">
       <a class="logo header__logo" href="index.html">
-        <img class="logo__img" src="images/logo.svg" width="220" height="70" alt="Logo DolGuldur">
+        <img class="logo__img" src="images/logo.svg" width="220" height="70" alt="Логотип Сімейной стоматології">
       </a>
-
-      <button class="header__burger modal-button" type="button">
-        <span class=" sr-only">Відкрити меню</span>
-        <svg class="modal-button-icon" width="44" height="44">
-          <use href="./images/symbol-defs.svg#icon-open-menu"></use>
-        </svg>
+      <ul class="menu">
+        <li class="menu__item">
+          <a class="menu__link current" href="index.html">
+            Головна
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link @@works" href="works.html">
+            Послуги
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link @@contacts" href="#">
+            Прайс
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link @@contacts" href="#">
+            Контакти
+          </a>
+        </li>
+      </ul>
+      <button class="button nav__button" type="button">
+        Записатись
       </button>
-
-      <div class="header__content">
-        <nav class="header__menu">
-          <ul class="header__list">
-            <li class="header__item">
-              <a class="header__link current" href="index.html">
-                Головна
-              </a>
-            </li>
-            <li class="header__item">
-              <a class="header__link @@works" href="works.html">
-                Послуги
-              </a>
-            </li>
-            <li class="header__item">
-              <a class="header__link @@contacts" href="#">
-                Прайс
-              </a>
-            </li>
-            <li class="header__item">
-              <a class="header__link @@contacts" href="#">
-                Контакти
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <button class="button" type="button">
-          Записатись
-        </button>
-      </div>
-    </div>
+    </nav>
   </div>
-  <div class="mobile-menu">
+  <!-- <div class="mobile-menu">
     <nav class="mobile-menu__menu">
       <ul class="mobile-menu__list">
          <li class="header__item">
@@ -104,60 +92,406 @@
         <use href="./images/symbol-defs.svg#icon-close-menu"></use>
       </svg>
     </button>
-  </div>
+  </div> -->
 </header>
 
-  <main>
-    <section class="hero">
+    <main>
+      <section class="hero">
+        <div class="hero__swiper swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide hero__swiper-slide hero__swiper-slide--1">
+              <div class="container hero__container">
+                <div class="hero__content">
+                  <h1 class="hero__title">
+                    Дбаємо про посмішку вашої дитини
+                  </h1>
+                  <button class="button" type="button">
+                    Дізнатися більше
+                  </button>
+                </div>
+              </div>
+            </div>
 
+            <div class="swiper-slide hero__swiper-slide hero__swiper-slide--2">
+              <div class="container hero__container">
+                <div class="hero__content">
+                  <h1 class="hero__title">
+                    Дбаємо про посмішку вашої дитини
+                  </h1>
+                  <button class="button" type="button">
+                    Дізнатися більше
+                  </button>
+                </div>
+              </div>
+            </div>
 
-      <div class="hero__swiper swiper">
-
-        <div class="swiper-wrapper">
-
-          <div class="swiper-slide hero__swiper-slide hero__swiper-slide--1">
-            <div class="container hero__container">
-              <div class="hero__content">
-                <h1 class="hero__title">
-                  Дбаємо про посмішку вашої дитини
-                </h1>
-                <button class="button" type="button">
-                  Дізнатися більше
-                </button>
+            <div class="swiper-slide hero__swiper-slide hero__swiper-slide--3">
+              <div class="container hero__container">
+                <div class="hero__content">
+                  <h1 class="hero__title">
+                    Дбаємо про посмішку вашої дитини
+                  </h1>
+                  <button class="button" type="button">
+                    Дізнатися більше
+                  </button>
+                </div>
               </div>
             </div>
           </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
 
-          <div class="swiper-slide hero__swiper-slide hero__swiper-slide--2">
-            <div class="container hero__container">
-              <div class="hero__content">
-                <h1 class="hero__title">
-                  Дбаємо про посмішку вашої дитини
-                </h1>
-                <button class="button" type="button">
-                  Дізнатися більше
-                </button>
-              </div>
-            </div>
+      <section class="category section">
+        <div class="container">
+          <h2 class="title category__title">
+            Наші послуги
+          </h2>
+          <div class="category__descriptions">
+            <p>Стоматологічні послуги, які об'єднують якість, комфорт та індивідуальний підхід
+            </p>
           </div>
-
-          <div class="swiper-slide hero__swiper-slide hero__swiper-slide--3">
-            <div class="container hero__container">
-              <div class="hero__content">
-                <h1 class="hero__title">
-                  Дбаємо про посмішку вашої дитини
-                </h1>
-                <button class="button" type="button">
-                  Дізнатися більше
-                </button>
-              </div>
-            </div>
-          </div>
+          <ul class="category__list">
+            <li class="category__item">
+              <a class="category__link" href="">
+                <img class="category__img" src="" alt="Дитяча стоматологія">
+                <h3 class="category__title">
+                  Дитяча стоматологія
+                </h3>
+              </a>
+            </li>
+            <li class="category__item">
+              <a class="category__link" href="">
+                <img class="category__img" src="" alt="Терапевтична стоматологія">
+                <h3 class="category__title">
+                  Терапевтична стоматологія
+                </h3>
+              </a>
+            </li>
+            <li class="category__item">
+              <a class="category__link" href="">
+                <img class="category__img" src="" alt="Протезування">
+                <h3 class="category__title">
+                  Протезування
+                </h3>
+              </a>
+            </li>
+            <li class="category__item">
+              <a class="category__link" href="">
+                <img class="category__img" src="" alt="Хірургічне лікування та імплантація">
+                <h3 class="category__title">
+                  Хірургічне лікування та імплантація
+                </h3>
+              </a>
+            </li>
+            <li class="category__item">
+              <a class="category__link" href="">
+                <img class="category__img" src="" alt="Ортодонтія (виправлення прикуса)">
+                <h3 class="category__title">
+                  Ортодонтія (виправлення прикуса)
+                </h3>
+              </a>
+            </li>
+            <li class="category__item">
+              <a class="category__link" href="">
+                <img class="category__img" src="" alt="Паронтологія">
+                <h3 class="category__title">
+                  Паронтологія
+                </h3>
+              </a>
+            </li>
+          </ul>
 
         </div>
-        <div class="swiper-pagination"></div>
 
-      </div>
+      </section>
+
+      <section class="section about">
+        <div class="container about__container">
+          <div class="about__inner">
+            <div class="about__content">
+              <h2 class="title">
+                О нас
+              </h2>
+              <div class="about__text">
+                <p>«Family Dental» — стоматологічна клініка для всієї родини, що пропонує Вам повний комплекс послуг у
+                  галузі стоматології: лікування карієсу, пульпіту, періодонтиту, видалення зубів, протезування та
+                  імплантацію зубів, професійне чищення, і пародонтологічне лікування, відбілювання зубів, косметичну
+                  реставрацію зубів, та виправлення прикусу.</p>
+              </div>
+              <div class="about__info">
+                <h3 class="about__headline">
+                  Ми забезпечуємо:
+                </h3>
+                <ul class="about__list">
+                  <li class="about__item">
+                    індивідуальний підхід до пацієнта;
+                  </li>
+                  <li class="about__item">
+                    професіоналізм персоналу;
+                  </li>
+                  <li class="about__item">
+                    передові технології та матеріали;
+                  </li>
+                  <li class="about__item">
+                    обладнання від європейських фірм Kavo, Melag, Hu-Friedy;
+                  </li>
+                  <li class="about__item">
+                    ефективні методи знеболювання;
+                  </li>
+                  <li class="about__item">
+                    надійні засоби дезінфекції та стерилізації.
+                  </li>
+                </ul>
+              </div>
+              <a class="button button--secondary" href="">
+                Більше про клініку
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section team">
+        <div class="container">
+          <h2 class="title">
+            Наші лікарі
+          </h2>
+          <div class="team__description">
+            <p>Стоматологічні послуги, які об'єднують якість, комфорт та індивідуальний підхід</p>
+          </div>
+          <div class="team__filters">
+            <button class="filter-btn" type="button" data-filter="all">Усі лікарі</button>
+            <button class="filter-btn" type="button" data-filter="kids">Дітячий Стоматолог</button>
+            <button class="filter-btn" type="button" data-filter="therapist">Терапевт</button>
+            <button class="filter-btn" type="button" data-filter="surgeon">Хірург</button>
+            <button class="filter-btn" type="button" data-filter="orthodontist">Ортодонт</button>
+          </div>
+          <ul class="team__list">
+            <li class="team__item">
+              <article class="team-card">
+                <div class="team-card__content">
+                  <img class="team-card__image" src="" alt="Сиротин Михаил Юрьевич">
+                  <h3 class="team-card__lastname">
+                    Сиротин
+                  </h3>
+                  <div class="team-card__name">
+                    <p>Михаил Юрьевич</p>
+                  </div>
+                  <div class="team-card__description">
+                    <p>Главный врач. Врач-стоматолог</p>
+                  </div>
+                  <button class="team-card__button">
+                    Більше про лікаря
+                  </button>
+                </div>
+              </article>
+            </li>
+            <li class="team__item">
+              <article class="team-card">
+                <div class="team-card__content">
+                  <img class="team-card__image" src="" alt="Сиротин Михаил Юрьевич">
+                  <h3 class="team-card__lastname">
+                    Сиротин
+                  </h3>
+                  <div class="team-card__name">
+                    <p>Михаил Юрьевич</p>
+                  </div>
+                  <div class="team-card__description">
+                    <p>Главный врач. Врач-стоматолог</p>
+                  </div>
+                  <button class="team-card__button">
+                    Більше про лікаря
+                  </button>
+                </div>
+              </article>
+            </li>
+            <li class="team__item">
+              <article class="team-card">
+                <div class="team-card__content">
+                  <img class="team-card__image" src="" alt="Сиротин Михаил Юрьевич">
+                  <h3 class="team-card__lastname">
+                    Сиротин
+                  </h3>
+                  <div class="team-card__name">
+                    <p>Михаил Юрьевич</p>
+                  </div>
+                  <div class="team-card__description">
+                    <p>Главный врач. Врач-стоматолог</p>
+                  </div>
+                  <button class="team-card__button">
+                    Більше про лікаря
+                  </button>
+                </div>
+              </article>
+            </li>
+            <li class="team__item">
+              <article class="team-card">
+                <div class="team-card__content">
+                  <img class="team-card__image" src="" alt="Сиротин Михаил Юрьевич">
+                  <h3 class="team-card__lastname">
+                    Сиротин
+                  </h3>
+                  <div class="team-card__name">
+                    <p>Михаил Юрьевич</p>
+                  </div>
+                  <div class="team-card__description">
+                    <p>Главный врач. Врач-стоматолог</p>
+                  </div>
+                  <button class="team-card__button">
+                    Більше про лікаря
+                  </button>
+                </div>
+              </article>
+            </li>
+            <li class="team__item">
+              <article class="team-card">
+                <div class="team-card__content">
+                  <img class="team-card__image" src="" alt="Сиротин Михаил Юрьевич">
+                  <h3 class="team-card__lastname">
+                    Сиротин
+                  </h3>
+                  <div class="team-card__name">
+                    <p>Михаил Юрьевич</p>
+                  </div>
+                  <div class="team-card__description">
+                    <p>Главный врач. Врач-стоматолог</p>
+                  </div>
+                  <button class="team-card__button">
+                    Більше про лікаря
+                  </button>
+                </div>
+              </article>
+            </li>
+            <li class="team__item">
+              <article class="team-card">
+                <div class="team-card__content">
+                  <img class="team-card__image" src="" alt="Сиротин Михаил Юрьевич">
+                  <h3 class="team-card__lastname">
+                    Сиротин
+                  </h3>
+                  <div class="team-card__name">
+                    <p>Михаил Юрьевич</p>
+                  </div>
+                  <div class="team-card__description">
+                    <p>Главный врач. Врач-стоматолог</p>
+                  </div>
+                  <button class="team-card__button">
+                    Більше про лікаря
+                  </button>
+                </div>
+              </article>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <section class="section booking">
+        <div class="container">
+          <div class="booking__inner">
+            <div class="booking__content">
+              <h2 class="title">
+                Запишіться онлайн
+              </h2>
+              <div class="booking__text">
+                <p>Запишіться на консультацію. Ми проведемо огляд вашого зубного здоров'я та розробимо план лікування.
+                </p>
+              </div>
+              <button class="buttton" type="button">
+                Записатись на прийом
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section review">
+        <div class="container">
+          <div class="reviews__head">
+            <h2 class="title">
+              Відгуки наших пацієнтів
+            </h2>
+            <a class="button button--secondary" href="">
+              Залишити відгук
+            </a>
+          </div>
+          <div class="reviews-slider">
+            <ul class="reviews-slider__list">
+              <li class="reviews-slider__item">
+                <figure class="review-card">
+                  <blockquote class="review-card__text">
+                    <p>Можно было бы поставить 10 звезд поставила бы 10! Большое человеческое спасибо Валерию Щербине,
+                      мой сложный зуб мудрости удалил безболезненно и быстро. Пришлось повозиться, зуб судя по 3D
+                      прямо-таки лежал на нерве, но врач Настоящий Профессионал.</p>
+                  </blockquote>
+                  <figcaption class="review-card__info">
+                    <div class="review-card__author">
+                      Надежда Мовчан
+                    </div>
+                    <div class="review-card__stars"></div>
+                  </figcaption>
+
+                </figure>
+              </li>
+              <li class="reviews-slider__item">
+                <figure class="review-card">
+                  <blockquote class="review-card__text">
+                    <p>Можно было бы поставить 10 звезд поставила бы 10! Большое человеческое спасибо Валерию Щербине,
+                      мой сложный зуб мудрости удалил безболезненно и быстро. Пришлось повозиться, зуб судя по 3D
+                      прямо-таки лежал на нерве, но врач Настоящий Профессионал. Я очень рада что в этой стоматологии
+                      мне помогли обнаружить и решить проблему, которая должна была быть ликвидирована много лет назад.
+                      Отдельное спасибо Анастасии администратору! Рекомендую оба филиала, т к имела возможность посетить
+                      их оба (Высоцкого 6 и Заболотного 2) с положительным результатом.</p>
+                  </blockquote>
+                  <figcaption class="review-card__info">
+                    <div class="review-card__author">
+                      Надежда Мовчан
+                    </div>
+                    <div class="review-card__stars"></div>
+                  </figcaption>
+
+                </figure>
+              </li>
+            </ul>
+          </div>
+          <div class="reviews__nav">
+            <button class="reviews__arrow" type="button"></button>
+            <div class="reviews__pagination"></div>
+            <button class="reviews__arrow" type="button"></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section gallery">
+        <div class="container">
+          <h2 class="title">
+            Наші клініки оснащені сучасним лікувальним обладнанням
+          </h2>
+          <div class="gallery__description">
+            <p>Клініки оснащені сучасним лікувальним обладнанням, матеріалами та інструментами найкращих виробників, що
+              дозволяють
+              застосовувати на практиці сучасні методики лікування стоматологічних захворювань.</p>
+          </div>
+          <a class="button" href="">
+            Bсі фото
+          </a>
+          <div class="gallery__inner">
+            <img class="gallery__img" src="" alt="">
+            <img class="gallery__img" src="" alt="">
+            <img class="gallery__img" src="" alt="">
+            <img class="gallery__img" src="" alt="">
+            <img class="gallery__img" src="" alt="">
+            <img class="gallery__img" src="" alt="">
+          </div>
+        </div>
+      </section>
+
+      <!-- <section class="hero">
+
+
+      
     </section>
 
     <section class="services section section--bg">
@@ -201,7 +535,7 @@
           </li>
         </ul> -->
 
-        <div class="swiper slider-2">
+      <!-- <div class="swiper slider-2">
           <div class="swiper-wrapper grid">
             <div class="swiper-slide">
               <div class="services-card">
@@ -252,14 +586,15 @@
       </div>
 
       </div>
-    </section>
-  </main>
+    </section> -->
+    </main>
 
-  <footer class="footer">
+    <footer class="footer">
   <div class="container">
    
   </div>
 </footer>
+  </div>
 
 
   <script src="js/main.min.js"></script>
