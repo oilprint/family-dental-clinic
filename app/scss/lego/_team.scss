@@ -1,0 +1,79 @@
+.team {
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  &__subtitle {
+    margin-bottom: 40px;
+  }
+
+  &__filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  &__item {
+    width: calc((100% - 2 * 30px) / 3);
+  }
+
+}
+
+.team-card {
+  &__content {
+    background-color: $light;
+    border-radius: 20px;
+    padding: 10px 10px 40px;
+  }
+
+  &__image {
+    border-radius: 12px;
+    object-fit: contain;
+    margin-bottom: 20px;
+  }
+
+  &__info {
+    text-align: left;
+    padding: 0 10px;
+    margin-bottom: 30px;
+  }
+
+  &__lastname {
+    text-align: left;
+    font-size: 36px;
+    font-weight: 500;
+    color: $secondary;
+  }
+
+  &__name {
+    text-align: left;
+    font-size: 24px;
+    color: $secondary;
+    margin-bottom: 12px;
+
+  }
+
+  &__description {
+    text-align: left;
+    margin-bottom: 30px;
+  }
+
+  &__button {
+    display: inline-block;
+    text-align: left;
+    color: $grey;
+    width: 100%;
+
+  }
+
+
+
+}

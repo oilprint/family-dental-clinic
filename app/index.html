@@ -25,8 +25,8 @@
     <header class="header">
   <div class="container">
     <nav class="nav">
-      <a class="logo header__logo" href="index.html">
-        <img class="logo__img" src="images/logo.svg" width="220" height="70" alt="Логотип Сімейной стоматології">
+      <a class="logo nav__logo" href="index.html">
+        <img class="logo__img" src="./images/logo.svg" width="220" height="70" alt="Логотип Сімейной стоматології">
       </a>
       <ul class="menu">
         <li class="menu__item">
@@ -96,6 +96,7 @@
 </header>
 
     <main>
+
       <section class="hero">
         <div class="hero__swiper swiper">
           <div class="swiper-wrapper">
@@ -142,122 +143,137 @@
         </div>
       </section>
 
-      <section class="category section">
+      <section class="category section section--bg">
         <div class="container">
           <h2 class="title category__title">
             Наші послуги
           </h2>
-          <div class="category__descriptions">
+          <div class="category__subtitle subtitle">
             <p>Стоматологічні послуги, які об'єднують якість, комфорт та індивідуальний підхід
             </p>
           </div>
           <ul class="category__list">
             <li class="category__item">
-              <a class="category__link" href="">
-                <img class="category__img" src="" alt="Дитяча стоматологія">
-                <h3 class="category__title">
-                  Дитяча стоматологія
-                </h3>
-              </a>
+              <article class="category-card">
+                <a class="category-card__content" href="">
+                  <h3 class="category-card__headline">
+                    Дитяча стоматологія
+                  </h3>
+                  <img class="category-card__img" src="./images/decor/services/kid.webp" alt="Дитяча стоматологія"
+                    width="290" height="180" loading="lazy">
+                </a>
+              </article>
             </li>
             <li class="category__item">
-              <a class="category__link" href="">
-                <img class="category__img" src="" alt="Терапевтична стоматологія">
-                <h3 class="category__title">
-                  Терапевтична стоматологія
-                </h3>
-              </a>
+              <article class="category-card">
+                <a class="category-card__content" href="">
+                  <h3 class="category-card__headline">
+                    Терапевтична стоматологія
+                  </h3>
+                  <img class="category-card__img" src="./images/decor/services/therapeutic.webp"
+                    alt="Терапевтична стоматологія" width="290" height="180" loading="lazy">
+                </a>
+              </article>
             </li>
             <li class="category__item">
-              <a class="category__link" href="">
-                <img class="category__img" src="" alt="Протезування">
-                <h3 class="category__title">
-                  Протезування
-                </h3>
-              </a>
+              <article class="category-card">
+                <a class="category-card__content" href="">
+                  <h3 class="category-card__headline">
+                    Протезування
+                  </h3>
+                  <img class="category-card__img" src="./images/decor/services/prosthetics.webp" alt="Протезування"
+                    width="290" height="180" loading="lazy">
+                </a>
+              </article>
             </li>
             <li class="category__item">
-              <a class="category__link" href="">
-                <img class="category__img" src="" alt="Хірургічне лікування та імплантація">
-                <h3 class="category__title">
-                  Хірургічне лікування та імплантація
-                </h3>
-              </a>
+              <article class="category-card">
+                <a class="category-card__content" href="">
+                  <h3 class="category-card__headline">
+                    Хірургічне лікування та імплантація
+                  </h3>
+                  <img class="category-card__img" src="./images/decor/services/implantation.webp"
+                    alt="Хірургічне лікування та імплантація" width="290" height="180" loading="lazy">
+                </a>
+              </article>
             </li>
             <li class="category__item">
-              <a class="category__link" href="">
-                <img class="category__img" src="" alt="Ортодонтія (виправлення прикуса)">
-                <h3 class="category__title">
-                  Ортодонтія (виправлення прикуса)
-                </h3>
-              </a>
+              <article class="category-card">
+                <a class="category-card__content" href="">
+                  <h3 class="category-card__headline">
+                    Ортодонтія (виправлення прикуса)
+                  </h3>
+                  <img class="category-card__img" src="./images/decor/services/orthodontics.webp" alt="Ортодонтія"
+                    width="290" height="180" loading="lazy">
+                </a>
+              </article>
             </li>
             <li class="category__item">
-              <a class="category__link" href="">
-                <img class="category__img" src="" alt="Паронтологія">
-                <h3 class="category__title">
-                  Паронтологія
-                </h3>
-              </a>
+              <article class="category-card">
+                <a class="category-card__content" href="">
+                  <h3 class="category-card__headline">
+                    Паронтологія
+                  </h3>
+                  <img class="category-card__img" src="./images/decor/services/parontology.webp" alt="Паронтологія"
+                    width="290" height="180" loading="lazy">
+                </a>
+              </article>
             </li>
           </ul>
-
         </div>
-
       </section>
 
       <section class="section about">
         <div class="container about__container">
-          <div class="about__inner">
-            <div class="about__content">
-              <h2 class="title">
-                О нас
-              </h2>
-              <div class="about__text">
-                <p>«Family Dental» — стоматологічна клініка для всієї родини, що пропонує Вам повний комплекс послуг у
-                  галузі стоматології: лікування карієсу, пульпіту, періодонтиту, видалення зубів, протезування та
-                  імплантацію зубів, професійне чищення, і пародонтологічне лікування, відбілювання зубів, косметичну
-                  реставрацію зубів, та виправлення прикусу.</p>
-              </div>
-              <div class="about__info">
-                <h3 class="about__headline">
-                  Ми забезпечуємо:
-                </h3>
-                <ul class="about__list">
-                  <li class="about__item">
-                    індивідуальний підхід до пацієнта;
-                  </li>
-                  <li class="about__item">
-                    професіоналізм персоналу;
-                  </li>
-                  <li class="about__item">
-                    передові технології та матеріали;
-                  </li>
-                  <li class="about__item">
-                    обладнання від європейських фірм Kavo, Melag, Hu-Friedy;
-                  </li>
-                  <li class="about__item">
-                    ефективні методи знеболювання;
-                  </li>
-                  <li class="about__item">
-                    надійні засоби дезінфекції та стерилізації.
-                  </li>
-                </ul>
-              </div>
-              <a class="button button--secondary" href="">
-                Більше про клініку
-              </a>
+          <div class="about__images" style="background-image: url('images/decor/about__image.webp')"></div>
+          <div class="about__content">
+            <h2 class="title about__title">
+              О нас
+            </h2>
+            <p class="about__text">
+              «Family Dental» — стоматологічна клініка для всієї родини, що пропонує Вам повний комплекс послуг у
+              галузі стоматології: лікування карієсу, пульпіту, періодонтиту, видалення зубів, протезування та
+              імплантацію зубів, професійне чищення, і пародонтологічне лікування, відбілювання зубів, косметичну
+              реставрацію зубів, та виправлення прикусу.
+            </p>
+            <div class="about__info">
+              <h3 class="about__subtitle subtitle">
+                Ми забезпечуємо:
+              </h3>
+              <ul class="about__list">
+                <li class="about__item">
+                  індивідуальний підхід до пацієнта;
+                </li>
+                <li class="about__item">
+                  професіоналізм персоналу;
+                </li>
+                <li class="about__item">
+                  передові технології та матеріали;
+                </li>
+                <li class="about__item">
+                  обладнання від європейських фірм Kavo, Melag, Hu-Friedy;
+                </li>
+                <li class="about__item">
+                  ефективні методи знеболювання;
+                </li>
+                <li class="about__item">
+                  надійні засоби дезінфекції та стерилізації.
+                </li>
+              </ul>
             </div>
+            <a class="button button--secondary" href="">
+              Більше про клініку
+            </a>
           </div>
         </div>
       </section>
 
-      <section class="section team">
+      <section class="section team section--bg">
         <div class="container">
-          <h2 class="title">
+          <h2 class="title team__title">
             Наші лікарі
           </h2>
-          <div class="team__description">
+          <div class="subtitle team__subtitle">
             <p>Стоматологічні послуги, які об'єднують якість, комфорт та індивідуальний підхід</p>
           </div>
           <div class="team__filters">
@@ -268,18 +284,21 @@
             <button class="filter-btn" type="button" data-filter="orthodontist">Ортодонт</button>
           </div>
           <ul class="team__list">
-            <li class="team__item">
+            <li class="team__item therapist">
               <article class="team-card">
                 <div class="team-card__content">
-                  <img class="team-card__image" src="" alt="Сиротин Михаил Юрьевич">
-                  <h3 class="team-card__lastname">
-                    Сиротин
-                  </h3>
-                  <div class="team-card__name">
-                    <p>Михаил Юрьевич</p>
-                  </div>
-                  <div class="team-card__description">
-                    <p>Главный врач. Врач-стоматолог</p>
+                  <img class="team-card__image" src="./images/team/team-01.webp" alt="Сиротин Михаил Юрьевич"
+                    width="350" height="420" loading="lazy">
+                  <div class="team__info">
+                    <p class="team-card__lastname">
+                      Сиротин
+                    </p>
+                    <p class="team-card__name">
+                      Михаил Юрьевич
+                    </p>
+                    <p class="team-card__description">
+                      Главный врач. Врач-стоматолог
+                    </p>
                   </div>
                   <button class="team-card__button">
                     Більше про лікаря
@@ -287,18 +306,21 @@
                 </div>
               </article>
             </li>
-            <li class="team__item">
+            <li class="team__item surgeon orthodontist">
               <article class="team-card">
                 <div class="team-card__content">
-                  <img class="team-card__image" src="" alt="Сиротин Михаил Юрьевич">
-                  <h3 class="team-card__lastname">
-                    Сиротин
-                  </h3>
-                  <div class="team-card__name">
-                    <p>Михаил Юрьевич</p>
-                  </div>
-                  <div class="team-card__description">
-                    <p>Главный врач. Врач-стоматолог</p>
+                  <img class="team-card__image" src="./images/team/team-02.webp" alt="Сиротин Михаил Юрьевич"
+                    width="350" height="420" loading="lazy">
+                  <div class="team__info">
+                    <p class="team-card__lastname">
+                      Сиротин
+                    </p>
+                    <p class="team-card__name">
+                      Михаил Юрьевич
+                    </p>
+                    <p class="team-card__description">
+                      Главный врач. Врач-стоматолог
+                    </p>
                   </div>
                   <button class="team-card__button">
                     Більше про лікаря
@@ -306,18 +328,21 @@
                 </div>
               </article>
             </li>
-            <li class="team__item">
+            <li class="team__item therapist">
               <article class="team-card">
                 <div class="team-card__content">
-                  <img class="team-card__image" src="" alt="Сиротин Михаил Юрьевич">
-                  <h3 class="team-card__lastname">
-                    Сиротин
-                  </h3>
-                  <div class="team-card__name">
-                    <p>Михаил Юрьевич</p>
-                  </div>
-                  <div class="team-card__description">
-                    <p>Главный врач. Врач-стоматолог</p>
+                  <img class="team-card__image" src="./images/team/team-03.webp" alt="Сиротин Михаил Юрьевич"
+                    width="350" height="420" loading="lazy">
+                  <div class="team__info">
+                    <p class="team-card__lastname">
+                      Сиротин
+                    </p>
+                    <p class="team-card__name">
+                      Михаил Юрьевич
+                    </p>
+                    <p class="team-card__description">
+                      Главный врач. Врач-стоматолог
+                    </p>
                   </div>
                   <button class="team-card__button">
                     Більше про лікаря
@@ -325,18 +350,21 @@
                 </div>
               </article>
             </li>
-            <li class="team__item">
+            <li class="team__item therapist">
               <article class="team-card">
                 <div class="team-card__content">
-                  <img class="team-card__image" src="" alt="Сиротин Михаил Юрьевич">
-                  <h3 class="team-card__lastname">
-                    Сиротин
-                  </h3>
-                  <div class="team-card__name">
-                    <p>Михаил Юрьевич</p>
-                  </div>
-                  <div class="team-card__description">
-                    <p>Главный врач. Врач-стоматолог</p>
+                  <img class="team-card__image" src="./images/team/team-04.webp" alt="Сиротин Михаил Юрьевич"
+                    width="350" height="420" loading="lazy">
+                  <div class="team__info">
+                    <p class="team-card__lastname">
+                      Сиротин
+                    </p>
+                    <p class="team-card__name">
+                      Михаил Юрьевич
+                    </p>
+                    <p class="team-card__description">
+                      Главный врач. Врач-стоматолог
+                    </p>
                   </div>
                   <button class="team-card__button">
                     Більше про лікаря
@@ -344,18 +372,21 @@
                 </div>
               </article>
             </li>
-            <li class="team__item">
+            <li class="team__item kids">
               <article class="team-card">
                 <div class="team-card__content">
-                  <img class="team-card__image" src="" alt="Сиротин Михаил Юрьевич">
-                  <h3 class="team-card__lastname">
-                    Сиротин
-                  </h3>
-                  <div class="team-card__name">
-                    <p>Михаил Юрьевич</p>
-                  </div>
-                  <div class="team-card__description">
-                    <p>Главный врач. Врач-стоматолог</p>
+                  <img class="team-card__image" src="./images/team/team-05.webp" alt="Сиротин Михаил Юрьевич"
+                    width="350" height="420" loading="lazy">
+                  <div class="team__info">
+                    <p class="team-card__lastname">
+                      Сиротин
+                    </p>
+                    <p class="team-card__name">
+                      Михаил Юрьевич
+                    </p>
+                    <p class="team-card__description">
+                      Главный врач. Врач-стоматолог
+                    </p>
                   </div>
                   <button class="team-card__button">
                     Більше про лікаря
@@ -363,18 +394,43 @@
                 </div>
               </article>
             </li>
-            <li class="team__item">
+            <li class="team__item kids">
               <article class="team-card">
                 <div class="team-card__content">
-                  <img class="team-card__image" src="" alt="Сиротин Михаил Юрьевич">
-                  <h3 class="team-card__lastname">
-                    Сиротин
-                  </h3>
-                  <div class="team-card__name">
-                    <p>Михаил Юрьевич</p>
+                  <img class="team-card__image" src="./images/team/team-06.webp" alt="Сиротин Михаил Юрьевич"
+                    width="350" height="420" loading="lazy">
+                  <div class="team__info">
+                    <p class="team-card__lastname">
+                      Сиротин
+                    </p>
+                    <p class="team-card__name">
+                      Михаил Юрьевич
+                    </p>
+                    <p class="team-card__description">
+                      Главный врач. Врач-стоматолог
+                    </p>
                   </div>
-                  <div class="team-card__description">
-                    <p>Главный врач. Врач-стоматолог</p>
+                  <button class="team-card__button">
+                    Більше про лікаря
+                  </button>
+                </div>
+              </article>
+            </li>
+            <li class="team__item kids">
+              <article class="team-card">
+                <div class="team-card__content">
+                  <img class="team-card__image" src="./images/team/team-06.webp" alt="Сиротин Михаил Юрьевич"
+                    width="350" height="420" loading="lazy">
+                  <div class="team__info">
+                    <p class="team-card__lastname">
+                      Сиротин
+                    </p>
+                    <p class="team-card__name">
+                      Михаил Юрьевич
+                    </p>
+                    <p class="team-card__description">
+                      Главный врач. Врач-стоматолог
+                    </p>
                   </div>
                   <button class="team-card__button">
                     Більше про лікаря
@@ -389,21 +445,21 @@
       </section>
 
       <section class="section booking">
-        <div class="container">
-          <div class="booking__inner">
-            <div class="booking__content">
-              <h2 class="title">
-                Запишіться онлайн
-              </h2>
-              <div class="booking__text">
-                <p>Запишіться на консультацію. Ми проведемо огляд вашого зубного здоров'я та розробимо план лікування.
-                </p>
-              </div>
-              <button class="buttton" type="button">
-                Записатись на прийом
-              </button>
+        <div class="container booking__container">
+          <div class="booking__content">
+            <h2 class="title booking__title">
+              Запишіться онлайн
+            </h2>
+            <div class="booking__text">
+              <p>Запишіться на консультацію. Ми проведемо огляд вашого зубного здоров'я та розробимо план лікування.
+              </p>
             </div>
+            <button class="button" type="button">
+              Записатись на прийом
+            </button>
+
           </div>
+          <div class="booking__image" style="background-image: url('images/decor/booking-bg.webp')"></div>
         </div>
       </section>
 
@@ -591,7 +647,91 @@
 
     <footer class="footer">
   <div class="container">
-   
+    <div class="footer__head">
+      <div class="footer__links">
+        <a class="logo footer__logo" href="index.html">
+          <img class="logo__img" src="images/logo.svg" width="220" height="70" alt="Логотип Сімейной стоматології">
+        </a>
+        <ul class="social">
+          <li class="social__item">
+            <a class="social__link" href="" title="Перейти на Інстаграм сторінку"></a>
+          </li>
+        </ul>
+      </div>
+      <ul class="footer__contacts">
+        <li class="footer__contact">
+          <a class="footer__contact-link footer__contact-link--address" href="#">
+            <svg class="footer__contact-icon" width="24" height="24" viewBox="0 0 24 24">
+              <use href="./images/symbol-defs.svg#location"></use>
+            </svg>
+            Одеса, Володимира Висоцького, 6
+          </a>
+          <a class="footer__contact-link footer__contact-link--phone" href="tel:+380977213406">
+            <svg class="footer__contact-icon" width="24" height="24" viewBox="0 0 24 24">
+              <use href="./images/symbol-defs.svg#calling"></use>
+            </svg>
+            +38 097 721 34 06
+          </a>
+          <time class="footer__contact-link" datetime="<11:00-22:00>">
+            <svg class="footer__contact-icon" width="24" height="24" viewBox="0 0 24 24">
+              <use href="./images/symbol-defs.svg#calling"></use>
+            </svg>
+            Пн-пт 9:00 - 20:00 / Сб до 14:30
+          </time>
+        </li>
+        <li class="footer__contact">
+          <a class="footer__contact-link footer__contact-link--address" href="#">
+            <svg class="footer__contact-icon" width="24" height="24" viewBox="0 0 24 24">
+              <use href="./images/symbol-defs.svg#location"></use>
+            </svg>
+            Одеса, Академіка Заболотного, 2
+          </a>
+          <a class="footer__contact-link footer__contact-link--phone" href="tel:+380687653164">
+            <svg class="footer__contact-icon" width="24" height="24" viewBox="0 0 24 24">
+              <use href="./images/symbol-defs.svg#calling"></use>
+            </svg>
+            +38 068 765 31 64
+          </a>
+          <time class="footer__contact-link" datetime="<11:00-22:00>">
+            <svg class="footer__contact-icon" width="24" height="24" viewBox="0 0 24 24">
+              <use href="./images/symbol-defs.svg#calling"></use>
+            </svg>
+            Пн-пт 9:00 - 20:00 / Сб до 14:30
+          </time>
+        </li>
+      </ul>
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a class="footer__link" href="">
+            Гарантія на послуги
+          </a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="">
+            Ціни
+          </a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="">
+            Обробка персональних даних
+          </a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="">
+            Політика файлів cookie
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__bottom-text">
+        © 2023. All rights reserved
+      </p>
+      <a class="footer__bottom-link" href="">
+        created by iryna kozlova
+      </a>
+    </div>
+
   </div>
 </footer>
   </div>

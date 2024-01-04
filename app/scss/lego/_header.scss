@@ -1,72 +1,27 @@
 .header {
-  padding: 8px 0;
   background-color: $light;
   border-bottom: 1px solid $grey-light;
   position: fixed;
   left: 0;
   right: 0;
   z-index: 100;
+}
 
-  @media (min-width: 768px) and (orientation: portrait) {
-    padding: 0;
-  }
-
-  @media (min-width: 1024px) {
-    padding: 0;
-  }
-
-  &__inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   &__logo {
-    margin-right: 70px;
+    margin-right: 20px;
   }
 
-  &__burger {
-    border-radius: 6px;
+  &__button {}
+}
 
-    .modal-button-icon {
-      fill: $dark;
-    }
-
-    @media (min-width: 768px) and (orientation: portrait){
-      display: none;
-    }
-
-    @media (min-width: 1024px) {
-      display: none;
-    }
-  }
-
-  &__content {
-    display: none;
-    justify-content: space-between;
-    align-items: center;
-    flex-grow: 1;
-    background-color: $light;
-    
-    @media (min-width: 768px) and (orientation: portrait) {
-      display: flex;
-    }
-
-    @media (min-width: 1024px) {
-      display: flex;
-    }
-  }
-
-  &__list {
-    display: flex;
-    padding-top: 8px;
-  }
-
-  &__item {
-    &:not(:last-child) {
-      margin-right: 40px;
-    }
-  }
+.menu {
+  display: flex;
+  gap: 40px;
 
   &__link {
     position: relative;
@@ -122,53 +77,8 @@
       }
     }
   }
-
-  &__info {
-    display: flex;
-    flex-direction: column;
-
-    @media (min-width: 1200px) {
-      flex-direction: row;
-    }
-  }
-
-  &__info-link {
-    display: flex;
-    align-items: center;
-    padding: 5px 0;
-    font-size: 12px;
-    line-height: 1.2;
-    letter-spacing: 0.64px;
-    color: $secondary;
-    transition: outline 0.4s, color 0.4s;
-
-    &:not(:last-child) {
-      @media (min-width: 1200px) {
-        margin-right: 45px;
-      }
-    }
-
-    &:hover {
-      color: $accent;
-    }
-
-    &:active {
-      color: rgba($accent, 0.7);
-    }
-
-    &:focus {
-      outline: solid 1px $accent;
-      outline-offset: 4px;
-      border-radius: 4px;
-    }
-  }
-
-  &__info-icon {
-    fill: currentColor;
-    margin-right: 10px;
-    transition: fill 0.4s;
-  }
 }
+
 
 .mobile-menu {
   position: absolute;
@@ -302,10 +212,10 @@
     }
   }
 
- &__button {
-   position: absolute;
-   top: 11px;
-   right: 15px;
+  &__button {
+    position: absolute;
+    top: 11px;
+    right: 15px;
 
     .modal-button__icon {
       fill: $secondary;

@@ -1,0 +1,33 @@
+.booking {
+  &__container {
+    display: flex;
+    align-items: stretch;
+    gap: 30px;
+  }
+
+  &__image {
+    width: 465px;
+    height: 515px;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__content {
+    text-align: left;
+    padding: 40px 30px;
+    border-radius: 20px;
+    max-width: 670px;
+    width: 100%;
+    background-color: $bg;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__text {
+    margin-bottom: 80px;
+  }
+}
