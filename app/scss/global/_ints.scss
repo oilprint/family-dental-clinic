@@ -3,7 +3,7 @@
   }
 
 .button {
-  display: block;
+  display: inline-block;
   font-size: 14px;
   line-height: 1;
   letter-spacing: 0.06rem;
@@ -27,7 +27,7 @@
   &:active {
     box-shadow: inset 3px 3px 8px rgba($dark, 0.4);
   }
-  
+
   &--secondary {
     width: fit-content;
     background-color: transparent;
