@@ -21,79 +21,44 @@
 
 <body>
   <div class="wrapper">
-
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="logo nav__logo" href="index.html">
-        <img class="logo__img" src="./images/logo.svg" width="220" height="70" alt="Логотип Сімейной стоматології">
-      </a>
-      <ul class="menu">
-        <li class="menu__item">
-          <a class="menu__link current" href="index.html">
-            Головна
+      <div class="container">
+        <div class="header__inner">
+          <a class="logo header__logo" href="index.html">
+            <img class="logo__img" src="./images/logo.svg" width="220" height="70" alt="Логотип Сімейной стоматології">
           </a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link @@works" href="works.html">
-            Послуги
-          </a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link @@contacts" href="#">
-            Прайс
-          </a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link @@contacts" href="#">
-            Контакти
-          </a>
-        </li>
-      </ul>
-      <button class="button nav__button" type="button">
-        Записатись
-      </button>
-    </nav>
-  </div>
-  <!-- <div class="mobile-menu">
-    <nav class="mobile-menu__menu">
-      <ul class="mobile-menu__list">
-         <li class="header__item">
-           <a class="header__link current" href="index.html">
-             Головна
-           </a>
-         </li>
-         <li class="header__item">
-           <a class="header__link @@works" href="works.html">
-             Послуги
-           </a>
-         </li>
-         <li class="header__item">
-           <a class="header__link @@contacts" href="#">
-             Прайс
-           </a>
-         </li>
-         <li class="header__item">
-           <a class="header__link @@contacts" href="#">
-             Контакти
-           </a>
-         </li>
-      </ul>
-    </nav>
-    <div class="mobile-menu__bottom">
-      <button class="button" type="button">
-        Записатись
-      </button>
-    </div>
-
-    <button class="mobile-menu__button modal-button" type="button">
-      <span class=" sr-only">Close menu</span>
-      <svg class="modal-button__icon" width="22" height="22">
-        <use href="./images/symbol-defs.svg#icon-close-menu"></use>
-      </svg>
-    </button>
-  </div> -->
-</header>
+          <div class="burger">
+            <span class="burger__line"></span>
+          </div>
+          <nav class="nav">
+            <ul class="menu">
+              <li class="menu__item">
+                <a class="menu__link current" href="index.html">
+                  Головна
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link @@works" href="works.html">
+                  Послуги
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link @@contacts" href="#">
+                  Прайс
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link @@contacts" href="#">
+                  Контакти
+                </a>
+              </li>
+            </ul>
+            <button class="button nav__button" type="button">
+              Записатись
+            </button>
+          </nav>
+        </div>
+    </header>
 
     <main>
 
@@ -221,7 +186,7 @@
             </li>
           </ul> -->
 
-          <div class="swiper swiper-3" data-mobile = "false">
+          <div class="swiper swiper-3" data-mobile="false">
             <ul class="category__list swiper-wrapper">
               <li class="category__item swiper-slide">
                 <article class="category-card">
@@ -829,107 +794,107 @@
     </main>
 
     <footer class="footer">
-  <div class="container footer__container">
-    <div class="footer__head">
-      <div class="footer__links">
-        <a class="logo footer__logo" href="index.html">
-          <img class="logo__img" src="images/logo-white.svg" width="242" height="70" alt="Логотип Сімейной стоматології">
-        </a>
-        <ul class="social">
-          <li class="social__item">
-            <a class="social__link" href="" title="Перейти на Інстаграм сторінку">
-              <svg class="social__icon"
-                width="24" height="24" viewBox="0 0 24 24">
-                <use href="images/icons/symbol-defs.svg#icon-insta"></use>
-              </svg>
+      <div class="container footer__container">
+        <div class="footer__head">
+          <div class="footer__links">
+            <a class="logo footer__logo" href="index.html">
+              <img class="logo__img" src="images/logo-white.svg" width="242" height="70"
+                alt="Логотип Сімейной стоматології">
             </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#" title="Перейти на Інстаграм сторінку">
-              <svg class="social__icon" width="24" height="24" viewBox="0 0 24 24">
-                <use href="images/icons/symbol-defs.svg#icon-fb"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="" title="Перейти на Інстаграм сторінку">
-              <svg class="social__icon" width="24" height="24" viewBox="0 0 24 24">
-                <use href="images/icons/symbol-defs.svg#icon-mail"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <ul class="footer__contacts">
-        <li class="footer__contact">
-          <a class="footer__contact-link footer__contact-link--address" href="#">
-            <svg class="footer__contact-icon" width="24" height="24" viewBox="0 0 24 24">
-              <use href="images/icons/symbol-defs.svg#icon-geo"></use>
-            </svg>
-            Одеса, Володимира Висоцького, 6
+            <ul class="social">
+              <li class="social__item">
+                <a class="social__link" href="" title="Перейти на Інстаграм сторінку">
+                  <svg class="social__icon" width="24" height="24" viewBox="0 0 24 24">
+                    <use href="images/icons/symbol-defs.svg#icon-insta"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#" title="Перейти на Інстаграм сторінку">
+                  <svg class="social__icon" width="24" height="24" viewBox="0 0 24 24">
+                    <use href="images/icons/symbol-defs.svg#icon-fb"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="" title="Перейти на Інстаграм сторінку">
+                  <svg class="social__icon" width="24" height="24" viewBox="0 0 24 24">
+                    <use href="images/icons/symbol-defs.svg#icon-mail"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <ul class="footer__contacts">
+            <li class="footer__contact">
+              <a class="footer__contact-link footer__contact-link--address" href="#">
+                <svg class="footer__contact-icon" width="24" height="24" viewBox="0 0 24 24">
+                  <use href="images/icons/symbol-defs.svg#icon-geo"></use>
+                </svg>
+                Одеса, Володимира Висоцького, 6
+              </a>
+              <a class="footer__contact-link footer__contact-link--phone" href="tel:+380977213406">
+                +38 097 721 34 06
+              </a>
+              <time class="footer__contact-link" datetime="<11:00-22:00>">
+                <svg class="footer__contact-icon" width="24" height="24" viewBox="0 0 24 24">
+                  <use href="images/icons/symbol-defs.svg#icon-time"></use>
+                </svg>
+                Пн-пт 9:00 - 20:00 / Сб до 14:30
+              </time>
+            </li>
+            <li class="footer__contact">
+              <a class="footer__contact-link footer__contact-link--address" href="#">
+                <svg class="footer__contact-icon" width="24" height="24" viewBox="0 0 24 24">
+                  <use href="images/icons/symbol-defs.svg#icon-geo"></use>
+                </svg>
+                Одеса, Академіка Заболотного, 2
+              </a>
+              <a class="footer__contact-link footer__contact-link--phone" href="tel:+380687653164">
+                +38 068 765 31 64
+              </a>
+              <time class="footer__contact-link" datetime="<11:00-22:00>">
+                <svg class="footer__contact-icon" width="24" height="24" viewBox="0 0 24 24">
+                  <use href="images/icons/symbol-defs.svg#icon-time"></use>
+                </svg>
+                Пн-пт 9:00 - 20:00 / Сб до 14:30
+              </time>
+            </li>
+          </ul>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="">
+                Гарантія на послуги
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="">
+                Ціни
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="">
+                Обробка персональних даних
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="">
+                Політика файлів cookie
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__bottom-text">
+            © 2023. All rights reserved
+          </p>
+          <a class="footer__bottom-link" href="">
+            created by iryna kozlova
           </a>
-          <a class="footer__contact-link footer__contact-link--phone" href="tel:+380977213406">
-            +38 097 721 34 06
-          </a>
-          <time class="footer__contact-link" datetime="<11:00-22:00>">
-            <svg class="footer__contact-icon" width="24" height="24" viewBox="0 0 24 24">
-              <use href="images/icons/symbol-defs.svg#icon-time"></use>
-            </svg>
-            Пн-пт 9:00 - 20:00 / Сб до 14:30
-          </time>
-        </li>
-        <li class="footer__contact">
-          <a class="footer__contact-link footer__contact-link--address" href="#">
-            <svg class="footer__contact-icon" width="24" height="24" viewBox="0 0 24 24">
-              <use href="images/icons/symbol-defs.svg#icon-geo"></use>
-            </svg>
-            Одеса, Академіка Заболотного, 2
-          </a>
-          <a class="footer__contact-link footer__contact-link--phone" href="tel:+380687653164">
-            +38 068 765 31 64
-          </a>
-          <time class="footer__contact-link" datetime="<11:00-22:00>">
-            <svg class="footer__contact-icon" width="24" height="24" viewBox="0 0 24 24">
-              <use href="images/icons/symbol-defs.svg#icon-time"></use>
-            </svg>
-            Пн-пт 9:00 - 20:00 / Сб до 14:30
-          </time>
-        </li>
-      </ul>
-      <ul class="footer__list">
-        <li class="footer__item">
-          <a class="footer__link" href="">
-            Гарантія на послуги
-          </a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="">
-            Ціни
-          </a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="">
-            Обробка персональних даних
-          </a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="">
-            Політика файлів cookie
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="footer__bottom">
-      <p class="footer__bottom-text">
-        © 2023. All rights reserved
-      </p>
-      <a class="footer__bottom-link" href="">
-        created by iryna kozlova
-      </a>
-    </div>
+        </div>
 
-  </div>
-</footer>
+      </div>
+    </footer>
   </div>
 
 

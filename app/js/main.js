@@ -1,9 +1,17 @@
 
 document.addEventListener('DOMContentLoaded', () => {
+  // burger
+  const burger = document.querySelector('.burger');
+  const menu = document.querySelector('.nav');
+  const wrapper = document.querySelector('.wrapper');
 
-      //swiper
-  
+  burger.addEventListener('click', () => {
+    burger.classList.toggle('is-active');
+    menu.classList.toggle('open');
+    wrapper.classList.toggle('lock');
+  });
 
+  //swiper
   const swiper1 = new Swiper('.swiper-1', {
     slidesPerView: 1,
     spaceBetween: 10,
@@ -16,12 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
       type: 'bullets',
       clickable: true
     },
-
-    // Navigation arrows
-    // navigation: {
-    //   nextEl: '.swiper-button-next-2',
-    //   prevEl: '.swiper-button-prev-2',
-    // },
   });
 
   const swiper = new Swiper('.swiper-2', {
