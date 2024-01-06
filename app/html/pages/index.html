@@ -27,7 +27,6 @@
     })
 
     <main>
-
       <section class="hero">
         <div class="hero__swiper swiper swiper-1">
           <div class="swiper-wrapper">
@@ -221,6 +220,7 @@
                 </article>
               </li>
             </ul>
+            <div class="swiper-pagination pag-3"></div>
           </div>
         </div>
       </section>
@@ -263,7 +263,7 @@
                 </li>
               </ul>
             </div>
-            <a class="button button--secondary" href="">
+            <a class="button button--secondary about__button " href="">
               Більше про клініку
             </a>
           </div>
@@ -281,12 +281,12 @@
           <div class="team__filters">
             <button class="filter-btn" type="button" data-filter="all">Усі лікарі</button>
             <button class="filter-btn" type="button" data-filter="kids">Дітячий Стоматолог</button>
-            <button class="filter-btn" type="button" data-filter="therapist">Терапевт</button>
+            <button class="filter-btn  is-active" type="button" data-filter="therapist">Терапевт</button>
             <button class="filter-btn" type="button" data-filter="surgeon">Хірург</button>
             <button class="filter-btn" type="button" data-filter="orthodontist">Ортодонт</button>
           </div>
           <ul class="team__list">
-            <li class="team__item therapist">
+            <li class="team__item all therapist show">
               <article class="team-card">
                 <div class="team-card__content">
                   <img class="team-card__image" src="./images/team/team-01.webp" alt="Сиротин Михаил Юрьевич"
@@ -308,7 +308,7 @@
                 </div>
               </article>
             </li>
-            <li class="team__item surgeon orthodontist">
+            <li class="team__item all surgeon orthodontist hide">
               <article class="team-card">
                 <div class="team-card__content">
                   <img class="team-card__image" src="./images/team/team-02.webp" alt="Сиротин Михаил Юрьевич"
@@ -330,7 +330,7 @@
                 </div>
               </article>
             </li>
-            <li class="team__item therapist">
+            <li class="team__item all therapist show">
               <article class="team-card">
                 <div class="team-card__content">
                   <img class="team-card__image" src="./images/team/team-03.webp" alt="Сиротин Михаил Юрьевич"
@@ -352,7 +352,7 @@
                 </div>
               </article>
             </li>
-            <li class="team__item therapist">
+            <li class="team__item all therapist show">
               <article class="team-card">
                 <div class="team-card__content">
                   <img class="team-card__image" src="./images/team/team-04.webp" alt="Сиротин Михаил Юрьевич"
@@ -374,7 +374,7 @@
                 </div>
               </article>
             </li>
-            <li class="team__item kids">
+            <li class="team__item all kids hide">
               <article class="team-card">
                 <div class="team-card__content">
                   <img class="team-card__image" src="./images/team/team-05.webp" alt="Сиротин Михаил Юрьевич"
@@ -396,7 +396,7 @@
                 </div>
               </article>
             </li>
-            <li class="team__item kids">
+            <li class="team__item all kids hide">
               <article class="team-card">
                 <div class="team-card__content">
                   <img class="team-card__image" src="./images/team/team-06.webp" alt="Сиротин Михаил Юрьевич"
@@ -418,7 +418,7 @@
                 </div>
               </article>
             </li>
-            <li class="team__item kids">
+            <li class="team__item all kids hide">
               <article class="team-card">
                 <div class="team-card__content">
                   <img class="team-card__image" src="./images/team/team-06.webp" alt="Сиротин Михаил Юрьевич"
@@ -440,7 +440,6 @@
                 </div>
               </article>
             </li>
-
           </ul>
 
         </div>

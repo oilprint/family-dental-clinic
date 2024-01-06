@@ -1,6 +1,6 @@
 .header {
   background-color: $light;
-  border-bottom: 1px solid $grey-light;
+  // border-bottom: 1px solid $grey-light;
   position: fixed;
   left: 0;
   right: 0;
@@ -8,7 +8,7 @@
 
   &__logo {
     z-index: 100;
-    margin-right: 20px;
+    margin-right: 60px;
   }
 
   &__inner {
@@ -26,7 +26,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+  max-width: 830px;
+  width: 100%;
 
   &.open {
     visibility: visible;
@@ -49,6 +50,11 @@
     opacity: 0;
     transform: translateX(200%);
     transition: all 0.3s ease-in-out;
+  }
+
+  @media (max-width: 576px) {
+    max-width: 576px;
+    width: 100%;
   }
 }
 

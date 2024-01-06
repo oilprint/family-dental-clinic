@@ -1,32 +1,37 @@
 .hero {
   max-width: 1440px;
   width: 100%;
-  margin: 55px auto 0;
+  margin: 86px auto 0;
+  padding: 0 15px 30px;
 
   &__container {
     position: absolute;
     bottom: 40px;
     left: 0;
     width: 100%;
-    height: calc(50vh + 94px);
+    height: calc(50vh + 86px);
     display: flex;
-    // justify-content: center;
     align-items: flex-end;
     left: 50%;
     transform: translate(-50%);
-    z-index: 10;
- 
+    z-index: 2;
+
+    @media (max-width: 576px) {
+      bottom: 20px;
+    }   
   }
 
   &__content {
+    text-align: left;
     max-width: 500px;
     width: 100%;
+    padding: 40px;
     background-color: rgba($light, 0.6);
-    border-radius: 24px;
+    border-radius: 24px;  
 
-    @media (min-width: 1200px) {
-      max-width: 500px;
-      padding: 40px;
+    @media (max-width: 576px) {
+      margin: 0 16px 0;
+      padding: 16px;
     }
   }
 
@@ -36,16 +41,18 @@
     line-height: 1.2;
     letter-spacing: 0.06em;
     color: $secondary;
-    margin-bottom: 38px;
+    margin-bottom: 30px;
 
-    @media (min-width: 1200px) {
-      margin-bottom: 20px;
+    @media (max-width: 576px) {
+      font-size: 32px;
+      margin-bottom: 16px;
     }
+
   }
 
   &__swiper-slide {
     margin: 0 auto;
-    height: calc(50vh + 94px);
+    height: calc(50vh + 86px);
     width: 100%;
     border-radius: 24px;
     position: relative;
@@ -64,12 +71,20 @@
     &--3 {
       background-image: url('../images/decor/slider/slider-1-desktop.webp');
     }
+
+    @media (max-width: 1200px){
+      height: calc(40vh + 78px);
+    }
+  }
+
+  @media (max-width: 576px) {
+    padding-bottom: 16px;
   }
 }
 
-
-.swiper {
+.swiper-1 {
   width: 100%;
+  padding-bottom: 50px;
 }
 
 .grid {

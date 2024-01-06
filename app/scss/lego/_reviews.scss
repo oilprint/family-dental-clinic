@@ -16,8 +16,6 @@
     gap: 30px;
     
   }
-
-
 }
 
 .reviews-slider {
@@ -38,6 +36,12 @@
   background-color: $grey;
   opacity: 1;
   --swiper-pagination-bullet-horizontal-gap: 8px;
+
+  @media (max-width: 576px) {
+    width: 12px;
+    height: 12px;
+    --swiper-pagination-bullet-horizontal-gap: 4px;
+  }
 }
 
 .swiper-pagination-bullet-active {
@@ -62,16 +66,12 @@
   transform: scale(-1, 1);
 }
 
-
-
-
 .swiper-button-next::after,
 .swiper-button-prev::after {
   display: none;
 }
 
-.review-card {  
- 
+.review-card {   
   padding: 30px 20px;
   border-radius: 20px;
   background-color: $light;

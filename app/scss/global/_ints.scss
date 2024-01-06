@@ -1,7 +1,7 @@
 .logo {
   display: block;
   flex-shrink: 0;
-  }
+}
 
 .button {
   display: inline-block;
@@ -51,6 +51,31 @@
   color: $secondary;
   border: 1px solid $secondary;
   border-radius: 70px;
+
+  &:focus {
+    outline: solid 1px $secondary;
+    outline-offset: 4px;
+  }
+
+  &:hover {
+    background-color: $accent;
+    color: $light;
+    border-color: $accent;
+  }
+
+  &:active {
+    background-color: $secondary;
+    color: $light;
+  }
+
+
+  &.is-active {
+    background-color: $accent;
+    color: $light;
+    border-color: $accent;
+  }
+
+
 }
 
 

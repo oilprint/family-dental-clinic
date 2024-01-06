@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
     breakpoints: {
       
       // when window width is >= 480px
-      786: {
+      768: {
         slidesPerView: 2,
         spaceBetween: 16
       },
@@ -65,18 +65,23 @@ document.addEventListener('DOMContentLoaded', () => {
   let mySwiper;
 
   function mobileSlider() {
-    if (window.innerWidth <= 600 && slider3.dataset.mobile == 'false') {
+    if (window.innerWidth <= 576 && slider3.dataset.mobile == 'false') {
       const swiper3 = new Swiper(slider3, {
       slidesPerView: 1,
-      spaceBetween: 10,
+      spaceBetween: 16,
       loop: true,
-      slideClass: 'category__item'
-      });
+      slideClass: 'category__item',
+      pagination: {
+        el: '.pag-3',
+        type: 'bullets',
+        clickable: true
+      }
+    });
 
       slider3.dataset.mobile = 'true'
     };
 
-    if (window.innerWidth > 600) {
+    if (window.innerWidth > 576) {
       slider3.dataset.mobile = 'false';
 
       if (slider3.classList.contains('swiper-initialized')) {
@@ -88,6 +93,35 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.addEventListener('resize', () => {
     mobileSlider();
+  });
+
+
+  // filters
+  const filterBtns = document.querySelectorAll(".filter-btn");
+  const teamList = document.querySelector(".team__list");
+
+  filterBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      filterBtns.forEach((filterBtn) => {
+        filterBtn.classList.remove("is-active");
+      });
+      btn.classList.add("is-active");
+
+      const filterValue = btn.getAttribute("data-filter");
+
+      for (const item of teamList.children) {
+        if (filterValue === "all") {
+          item.classList.remove('hide');
+          item.classList.add('show');
+        } else if (item.classList.contains(filterValue)) {
+          item.classList.remove('hide')
+          item.classList.add('show')
+        } else {
+          item.classList.remove('show')
+          item.classList.add('hide')
+        }
+      }
+    });
   });
 
 

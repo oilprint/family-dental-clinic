@@ -14,6 +14,10 @@ body {
   text-align: center;
   color: $dark;
   background-color: $light;
+  
+  @media (max-width: 576px) {
+    font-size: 18px;
+  }
 }
 
 
@@ -43,9 +47,9 @@ main {
     background-color: $bg;
   }
 
-  // @media (max-width: 768px) {
-  //   padding: 40px 0;
-  // }
+  @media (max-width: 1200px) {
+    padding: calc(15px + 3vw) 0;
+  }
 }
 
 .sr-only {
@@ -63,6 +67,10 @@ main {
   font-size: 48px;
   font-weight: 500;
   color: $secondary;
+
+  @media (max-width: 1200px) {
+    font-size: calc(36px + (48 - 36) * ((100vw - 360px) / (1200 - 360)));
+  }
 }
 
 .subtitle {
@@ -70,6 +78,9 @@ main {
   font-weight: 500;
   color: $primary;
   margin: 0 auto;
+  @media (max-width: 1200px) {
+    font-size: calc(18px + (24 - 18) * ((100vw - 360px) / (1200 - 360)));
+  }
 }
 
 
