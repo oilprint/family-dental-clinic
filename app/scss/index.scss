@@ -1,16 +1,19 @@
 @import 'global/reset';
 
 @import '../../node_modules/swiper/swiper.scss';
+@import '../../node_modules/swiper/modules/navigation/navigation.scss';
+@import '../../node_modules/swiper/modules/pagination/pagination.scss';
 
 @import 'global/vars';
 @import 'global/global';
 @import 'global/ints';
 
 @import 'lego/header';
-@import 'lego/index';
+@import 'lego/hero';
 @import 'lego/category';
 @import 'lego/about';
 @import 'lego/team';
+@import 'lego/reviews';
 @import 'lego/booking';
 @import 'lego/gallery';
 @import 'lego/footer';

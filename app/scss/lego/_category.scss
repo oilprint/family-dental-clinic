@@ -15,10 +15,16 @@
     column-gap: 30px;
     row-gap: 50px;
     align-items: stretch;
+
+    @media (max-width: 600px) {
+      flex-wrap: nowrap;
+      column-gap:0;
+      padding-top: 20px;
+    }
   }
 
   &__item {
-    width: calc((100% - 2 * 30px) / 3);
+    width: 30%;
   }
 }
 
@@ -45,4 +51,9 @@
     margin: 0 auto;
     border-radius: 14px;
   }
+}
+
+.swiper-3 {
+  overflow: hidden;
+  width: 100%;
 }
