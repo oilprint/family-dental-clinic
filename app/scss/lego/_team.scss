@@ -160,13 +160,16 @@
 
   &__text {
     position: absolute;
-    bottom: 0;
-    left: 15px;
+    bottom: 8px;
+    left: 10px;
     right: 0;
     display: inline-block;
     color: $secondary;
     font-weight: 500;
     opacity: 0;
     transition: opacity 0.4s ease-in-out;
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 }

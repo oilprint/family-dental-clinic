@@ -12,6 +12,10 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 
   &__content {
@@ -21,13 +25,34 @@
     max-width: 670px;
     width: 100%;
     background-color: $bg;
+
+    @media (max-width: 768px) {
+      max-width: 768px;
+    }
+
+    @media (max-width: 576px) {
+      padding: 30px 16px;
+    }
   }
 
   &__title {
     margin-bottom: 40px;
+
+    @media (max-width: 768px) {
+      margin-bottom: 10px;
+    }
+    
+    @media (max-width: 576px) {
+      font-size: calc(28px + (36 - 28) * ((100vw - 360px) / (576 - 360)));
+    }
+
   }
 
   &__text {
     margin-bottom: 80px;
+
+    @media (max-width: 1200px) {
+      margin-bottom: calc(15px + 3vw);
+    }
   }
 }

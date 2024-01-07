@@ -4,14 +4,29 @@
   background-color: $grey-dark;
 
   &__container {
-    padding: 50px 0 0;
+    padding-top: 50px;
+
+    @media (max-width: 768px) {
+      padding-top: 30px;
+    }
   }
 
   &__head {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 30px;
     margin-bottom: 40px;
+
+    @media (max-width: 768px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__links {
+    @media (max-width: 1024px) {
+      width: 100%;
+    }
   }
 
   &__logo {
@@ -40,6 +55,10 @@
 
     &--phone {
       font-size: 36px;
+
+      @media (max-width: 768px) {
+        font-size: 28px;
+      }
     }
   }
 
@@ -56,6 +75,12 @@
   &__item {
     &:not(:last-child) {
       margin-bottom: 20px;
+    }
+
+    @media (max-width: 768px) {
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
     }
   }
 
@@ -79,6 +104,14 @@
       left: 50%;
       background-color: rgba($grey, 0.3);
       transform: translateX(-50%);
+    }
+
+
+  }
+
+  &__bottom-link {
+    @media (max-width: 768px) {
+      text-align: right;
     }
   }
 }
