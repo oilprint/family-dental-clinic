@@ -32,6 +32,11 @@ document.addEventListener('DOMContentLoaded', () => {
       loop: true,
       // slideToClickedSlide: true,
 
+      navigation: {
+        nextEl: '.swiper-button-next-2',
+        prevEl: '.swiper-button-prev-2',
+      },
+
     // If we need pagination
     pagination: {
       el: '.pag-2',
@@ -45,10 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
         slidesPerView: 2,
         spaceBetween: 16,
         // Navigation arrows
-        navigation: {
-          nextEl: '.swiper-button-next-2',
-          prevEl: '.swiper-button-prev-2',
-        },
+       
       },
      
       1200: {

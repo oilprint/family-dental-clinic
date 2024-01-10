@@ -1,32 +1,44 @@
-//   document.addEventListener('DOMContentLoaded', () => {
+  document.addEventListener('DOMContentLoaded', () => {
+    // // Находим в документе нужные элементы: кнопка открытия, модальное окно и кнопка закрытия
+
+const modalButtons = document.querySelectorAll('[data-modal-button]');
+const modalClosebuttons = document.querySelectorAll('[data-modal-close]');
+const allModals = document.querySelectorAll ('[data-modal]');
+
+// Кнопки открытия модалки
+modalButtons.forEach(function (item) {
+  item.addEventListener('click', function () {
     
-//       const button = document.querySelector('[data-modal-button]');
-//       const modal = document.querySelector('[data-modal]');
-//       const buttonClose = document.querySelector('[data-modal-close]');
-//       const bodyLock = document.querySelector('body'); 
-     
-//       button.addEventListener('click', function () {
-//         modal.classList.remove('hidden');
-//          bodyLock.classList.add('lock')
-//       });
-
-//       buttonClose.addEventListener('click', function () {
-//         modal.classList.add('hidden');
-//          bodyLock.classList.remove('lock');
-//       });
-
-//       modal.addEventListener('click', function ( ) {
-//         modal.classList.add('hidden');
-//         bodyLock.classList.remove('lock')
-//       });
-
-
-//       modal.querySelector('.modal').addEventListener('click', function (e) {
-//         e.stopPropagation();
-//       });
+    const modalId = this.dataset.modalButton;
+    const modal = document.querySelector('#' + modalId);
     
+    modal.classList.remove('hidden');
+
+    // Делаем так, чтобы внутри модалки коик не передавался выше родителю: находим внутри открываемой модалки блок modal__window и запрещаем ему передавать клики наверх (его родителю)
+
+    modal.querySelector('.modal__window').addEventListener('click', function (e) {
+      e.stopPropagation();
+    });
+  });
+})
+
+// Кнопки закрітия модалки
+modalClosebuttons.forEach(function (item) {
+  item.addEventListener('click', function () {
     
-// });
+    const modal = this.closest('[data-modal]');
+  
+    modal.classList.add('hidden');
+  })
+})
+
+// Закрытие по клику по всему экрану
+allModals.forEach(function (item) {
+  item.addEventListener('click', function () {
+    this.classList.add('hidden');
+  })
+})
+});
 
 
   

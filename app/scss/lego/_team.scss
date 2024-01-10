@@ -27,10 +27,11 @@
 
   &__list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 30px;
 
     @media (max-width: 1024px) {
+      grid-template-columns: repeat(3, 1fr);
       gap: 15px;
     }
 
@@ -63,6 +64,7 @@
   }
 
   &__button {
+    height: 100%;
     transition: outline 0.3s ease;
 
     &:focus {
@@ -72,6 +74,10 @@
     }
 
     &:hover {
+      .team-card {
+        box-shadow: 0px 4px 10px 0px rgba(210, 220, 235, 1);
+      }
+
       .team-card__lastname {
         color: $accent;
       }
@@ -111,6 +117,7 @@
   justify-content: space-between;
   box-shadow: 0px 4px 10px 0px rgba(210, 220, 235, 0.44);
 
+
   &__box {
     overflow: hidden;
     border-radius: 12px;
@@ -128,7 +135,6 @@
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     text-align: left;
 
     @media (max-width: 480px) {
@@ -139,7 +145,7 @@
 
   &__lastname {
     text-align: left;
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 500;
     color: $secondary;
     transition: color 0.4 ease-in-out;
@@ -147,7 +153,7 @@
 
   &__name {
     text-align: left;
-    font-size: 24px;
+    font-size: 20px;
     color: $secondary;
     margin-bottom: 12px;
     transition: color 0.4 ease-in-out;
@@ -155,6 +161,7 @@
   }
 
   &__description {
+    font-style: 14px;
     text-align: left;
   }
 
@@ -164,10 +171,13 @@
     left: 10px;
     right: 0;
     display: inline-block;
-    color: $secondary;
+    color: $grey;
+    font-size: 14px;
     font-weight: 500;
+    text-transform: uppercase;
     opacity: 0;
     transition: opacity 0.4s ease-in-out;
+
     @media (max-width: 768px) {
       display: none;
     }
