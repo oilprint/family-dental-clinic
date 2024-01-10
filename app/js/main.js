@@ -16,6 +16,9 @@ document.addEventListener('DOMContentLoaded', () => {
     slidesPerView: 1,
     spaceBetween: 10,
     loop: true,
+     autoplay: {
+      delay: 3000,
+    },
     // slideToClickedSlide: true,
 
     // If we need pagination

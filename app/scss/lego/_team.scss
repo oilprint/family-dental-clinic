@@ -131,7 +131,7 @@
 
   &__content {
     position: relative;
-    padding: 20px 10px 40px;
+    padding: 20px 4px 30px;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -142,33 +142,32 @@
     }
   }
 
-
   &__lastname {
     text-align: left;
     font-size: 24px;
     font-weight: 500;
     color: $secondary;
+    margin-bottom: 4px;
     transition: color 0.4 ease-in-out;
   }
 
   &__name {
     text-align: left;
-    font-size: 20px;
+    font-size: 18px;
     color: $secondary;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
     transition: color 0.4 ease-in-out;
-
   }
 
   &__description {
-    font-style: 14px;
+    font-size: 18px;
     text-align: left;
   }
 
   &__text {
     position: absolute;
-    bottom: 8px;
-    left: 10px;
+    bottom: 4px;
+    left: 4px;
     right: 0;
     display: inline-block;
     color: $grey;

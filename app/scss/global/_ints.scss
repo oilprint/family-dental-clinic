@@ -64,8 +64,7 @@
   }
 
   &:active {
-    background-color: $secondary;
-    color: $light;
+     box-shadow: inset 3px 3px 8px rgba($dark, 0.4);
   }
 
 

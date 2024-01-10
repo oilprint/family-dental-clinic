@@ -1,0 +1,24 @@
+.price {
+  color: $light;
+  padding-top: 0;
+
+  &__inner {
+    border-radius: 20px;
+    padding: 70px;
+    background-color: $secondary;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    color: $light;
+    
+  }
+
+  &__description {
+    margin: 0 auto;
+    max-width: 860px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+}
