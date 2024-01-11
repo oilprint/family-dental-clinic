@@ -23,6 +23,10 @@
       gap: 16px 8px;
       margin-bottom: 20px;
     }
+
+    @media (max-width: 768px) {
+      gap: 8px 4px;
+    }
   }
 
   &__list {
@@ -44,6 +48,7 @@
       display: flex;
       overflow-y: scroll;
       padding-bottom: 10px;
+      -webkit-padding-bottom: 10px;
     }
   }
 
@@ -183,6 +188,7 @@
     right: 0;
     display: inline-block;
     color: $grey;
+    -webkit-color: $grey;
     font-size: 14px;
     font-weight: 500;
     text-transform: uppercase;
