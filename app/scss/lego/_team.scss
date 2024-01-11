@@ -43,11 +43,11 @@
     @media (max-width: 480px) {
       display: flex;
       overflow-y: scroll;
+      padding-bottom: 10px;
     }
   }
 
   &__item {
-
     &.hide {
       opacity: 0;
       pointer-events: none;
@@ -125,7 +125,7 @@
   }
 
   @media (max-width: 480px) {
-    width: 320px;
+    width: 270px;
   }
 
 
