@@ -53,6 +53,7 @@
   }
 
   &__item {
+
     &.hide {
       opacity: 0;
       pointer-events: none;
@@ -66,6 +67,10 @@
     &.show {
       opacity: 1;
       transition: opacity 0.5s ease-in-out;
+    }
+
+    @media (max-width: 480px) {
+      padding-bottom: 10px;
     }
 
   }
@@ -179,6 +184,7 @@
   &__description {
     font-size: 18px;
     text-align: left;
+    color: $dark;
   }
 
   &__text {
@@ -188,7 +194,6 @@
     right: 0;
     display: inline-block;
     color: $grey;
-    -webkit-color: $grey;
     font-size: 14px;
     font-weight: 500;
     text-transform: uppercase;
