@@ -25,6 +25,10 @@
       z-index: -1;
     }
 
+    @media (max-width: 1200px) {
+      padding: calc(15px + 3vw) 15px;
+    }
+
   }
 
   &__title {

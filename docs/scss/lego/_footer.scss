@@ -143,6 +143,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 4px;
     padding: 20px 0;
     font-size: 16px;
     font-weight: 400;
@@ -158,6 +159,13 @@
       left: 50%;
       background-color: rgba($grey, 0.3);
       transform: translateX(-50%);
+    }
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      font-size: 14px;
+      
+
     }
   }
 
