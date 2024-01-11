@@ -24,6 +24,8 @@
   }
 
   &__links {
+    transition: color 0.3s, outline 0.3s;
+
     @media (max-width: 1024px) {
       width: 100%;
     }
@@ -32,6 +34,24 @@
   &__logo {
     width: 242px;
     margin-bottom: 20px;
+
+    &:focus {
+      outline: solid 1px $grey;
+      outline-offset: 4px;
+      border-radius: 4px;
+    }
+
+    &:hover {
+      outline: solid 1px $accent;
+      outline-offset: 4px;
+      border-radius: 4px;
+    }
+
+    &:active {
+      outline: solid 1px $primary;
+      outline-offset: 4px;
+      border-radius: 4px;
+    }
   }
 
   &__contacts {
@@ -48,6 +68,8 @@
   &__contact-link {
     display: flex;
     align-items: center;
+    transition: outline 0.3s,
+    color 0.3s;
 
     &:not(:last-child) {
       margin-bottom: 4px;
@@ -59,6 +81,20 @@
       @media (max-width: 768px) {
         font-size: 28px;
       }
+    }
+
+    &:focus {
+      outline: solid 1px $grey;
+      outline-offset: 4px;
+      border-radius: 4px;
+    }
+
+    &:hover {
+      color: $accent;
+    }
+
+    &:active {
+      color: $primary;
     }
   }
 
@@ -84,6 +120,24 @@
     }
   }
 
+  &__link {
+    transition: outline 0.3s, color 0.3s;
+
+    &:focus {
+      outline: solid 1px $grey;
+      outline-offset: 4px;
+      border-radius: 4px;
+    }
+
+    &:hover {
+      color: $accent;
+    }
+
+    &:active {
+      color: $primary;
+    }
+  }
+
   &__bottom {
     position: relative;
     display: flex;
@@ -105,13 +159,27 @@
       background-color: rgba($grey, 0.3);
       transform: translateX(-50%);
     }
-
-
   }
 
   &__bottom-link {
+    transition: outline 0.3s,
+    color 0.3s;
     @media (max-width: 768px) {
       text-align: right;
+    }
+
+    &:focus {
+      outline: solid 1px $grey;
+      outline-offset: 4px;
+      border-radius: 4px;
+    }
+
+    &:hover {
+      color: $accent;
+    }
+
+    &:active {
+      color: $primary;
     }
   }
 }
@@ -119,10 +187,39 @@
 .social {
   display: flex;
   align-items: center;
-  gap: 20px;
-  padding-left: 80px;
+  gap: 10px;
+  // padding-left: 80px;
+  
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    transition: outline 0.4s;
+
+    &:focus {
+      outline: solid 1px $grey;
+      outline-offset: 4px;
+      border-radius: 4px;
+    }
+
+    &:hover {
+      .social__icon {
+        fill: $accent;
+      }
+    }
+
+    &:active {
+      .social__icon {
+        fill: $primary;
+      }
+    }
+  }
 
   &__icon {
     fill: $light;
+    transition: fill 0.3s;
   }
 }
