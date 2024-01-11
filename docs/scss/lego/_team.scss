@@ -46,6 +46,7 @@
 
     @media (max-width: 480px) {
       display: flex;
+      display: -webkit-flex;
       overflow-y: scroll;
       padding-bottom: 10px;
       -webkit-padding-bottom: 10px;
