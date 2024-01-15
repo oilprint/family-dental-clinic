@@ -15,24 +15,187 @@
   <link rel="icon" href="favicon/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicon/afavicon/pple-touch-icon.png/">
 
-  <link rel="stylesheet" href="css/works.min.css">
+  <link rel="stylesheet" href="css/about.min.css">
 </head>
 
 <body>
+  <div class="wrapper">
+
+    @@include('../components/header.html', {
+    "about": "current"
+    })
+
+    <main>
+      <section class="about-hero section section--bg">
+        <div class="container about-hero__container">
+          <div class="about-hero__content">
+            <h1 class="about-hero__title title">
+              «Family Dental»
+            </h1>
+            <div class="about-hero__description">
+              Якісна стоматологія у житловому масиві Котовського в Одесі
+            </div>
+          </div>
+          <div class="about-hero__image" style="background-image: url('images/decor/about-hero.jpg')"></div>
+        </div>
+      </section>
+
+      <section class="description section">
+        <div class="container description__container">
+          <div class="description__image" style="background-image: url('images/decor/about-hero.jpg')"></div>
+          <div class="description__content">
+            <h2 class="description__title title">
+              О клинике
+            </h2>
+            <div class="description__text">
+              <p>
+                История клиники «Стоматологическая помощь» началась в 2006 году. Более 14 лет успешной работы не прошли
+                бесследно, нам
+                удалось достичь высоких результатов, завоевать репутацию и в целом поднять уровень стоматологии на более
+                высокий
+                уровень. Однако и на этом мы не останавливаемся, находясь в постоянном развитии.
+              </p>
+              <p>
+                История клиники «Стоматологическая помощь» началась в 2006 году. Более 14 лет успешной работы не прошли
+                бесследно, нам
+                удалось достичь высоких результатов, завоевать репутацию и в целом поднять уровень стоматологии на более
+                высокий
+                уровень. Однако и на этом мы не останавливаемся, находясь в постоянном развитии.
+              </p>
+              <p>
+                Семейная стоматология «Family Dental» — предлагает Вам полный комплекс услуг в области стоматологии:
+                лечение
+                кариеса, пульпита, периодонтита, удаление зубов, протезирование и имплантацию зубов, профессиональную
+                чистку,
+                и пародонтологическое лечение, отбеливание зубов, косметическую реставрацию зубов, и исправление
+                прикуса.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section philosophy">
+        <div class="container philosophy__container">
+          <div class="philosophy__content">
+            <h2 class="philosophy__title title">
+              Философия нашей клиники:
+            </h2>
+            <ul class="philosophy__text">
+              <li class="philosophy__item">
+                індивідуальний підхід до пацієнта;
+              </li>
+              <li class="philosophy__item">
+                професіоналізм персоналу;
+              </li>
+              <li class="philosophy__item">
+                передові технології та матеріали;
+              </li>
+              <li class="philosophy__item">
+                обладнання від європейських фірм Kavo, Melag, Hu-Friedy.
+              </li>
+              <li class="philosophy__item">
+                ефективні методи знеболювання;
+              </li>
+              <li class="philosophy__item">
+                надійні засоби дезінфекції та стерилізації.
+              </li>
+            </ul>
+          </div>
+          <div class="philosophy__image" style="background-image: url('images/decor/philosophy-image.jpg')"></div>
+        </div>
+      </section>
+
+      <section class="description section">
+        <div class="container description__container">
+          <div class="description__image" style="background-image: url('images/decor/about-2.jpg')"></div>
+          <div class="description__content">
+            <h2 class="description__title title">
+              Оборудование
+            </h2>
+            <div class="description__text">
+              <p>
+                История клиники «Стоматологическая помощь» началась в 2006 году. Более 14 лет успешной работы не прошли
+                бесследно, нам
+                удалось достичь высоких результатов, завоевать репутацию и в целом поднять уровень стоматологии на более
+                высокий
+                уровень. Однако и на этом мы не останавливаемся, находясь в постоянном развитии.
+              </p>
+              <p>
+                История клиники «Стоматологическая помощь» началась в 2006 году. Более 14 лет успешной работы не прошли
+                бесследно, нам
+                удалось достичь высоких результатов, завоевать репутацию и в целом поднять уровень стоматологии на более
+                высокий
+                уровень. Однако и на этом мы не останавливаемся, находясь в постоянном развитии.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="tabs">
+        <div class="container">
+          <ul class="tabs__nav">
+            <li class="tabs__nav-item active" data-id="tab1">
+              вул. Висоцького, 6
+            </li>
+            <li class="tabs__nav-item" data-id="tab2">
+              вул. Ак. Заболотного, 2
+            </li>
+          </ul>
+          <ul class="tabs__content">
+            <li class="tabs__content-item active" data-content="tab1">
+              <div class="tabs__box">
+                <img src="images/gallery/gallery-1/small/01-01.jpg" alt="Клініка">
+              </div>
+              <div class="tabs__box">
+                <img src="images/gallery/gallery-1/small/01-01.jpg" alt="Клініка">
+              </div>
+              <div class="tabs__box">
+                <img src="images/gallery/gallery-1/small/01-01.jpg" alt="Клініка">
+              </div>
+              <div class="tabs__box">
+                <img src="images/gallery/gallery-1/small/01-01.jpg" alt="Клініка">
+              </div>
+              <div class="tabs__box">
+                <img src="images/gallery/gallery-1/small/01-01.jpg" alt="Клініка">
+              </div>
+              <div class="tabs__box">
+                <img src="images/gallery/gallery-1/small/01-01.jpg" alt="Клініка">
+              </div>
+            </li>
+            <li class="tabs__content-item" data-content="tab2">
+              <div class="tabs__box">
+                <img src="images/gallery/gallery-1/small/01-02.jpg" alt="Клініка">
+              </div>
+              <div class="tabs__box">
+                <img src="images/gallery/gallery-1/small/01-02.jpg" alt="Клініка">
+              </div>
+              <div class="tabs__box">
+                <img src="images/gallery/gallery-1/small/01-02.jpg" alt="Клініка">
+              </div>
+              <div class="tabs__box">
+                <img src="images/gallery/gallery-1/small/01-02.jpg" alt="Клініка">
+              </div>
+              <div class="tabs__box">
+                <img src="images/gallery/gallery-1/small/01-02.jpg" alt="Клініка">
+              </div>
+              <div class="tabs__box">
+                <img src="images/gallery/gallery-1/small/01-02.jpg" alt="Клініка">
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
 
 
-  @@include('../components/header.html', {
-  "works": "current"
-  })
 
-  <main>
-   
-  </main>
+    </main>
 
-  @@include('../components/footer.html')
+    @@include('../components/footer.html')
 
-
-  <script src="js/main.min.js"></script>
+  </div>
+  <script src="js/about.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,54 @@
+.philosophy {
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    padding: 40px 30px;
+    border-radius: 20px;
+    margin-right: 30px;
+    background-color: $bg;
+    text-align: left;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__item {
+    position: relative;
+    padding-left: 22px;
+    &:not(:last-child) {
+      margin-bottom: 4px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: $secondary;
+      left: 0;
+      top: 8px;
+    }
+  }
+
+  &__image {
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    border-radius: 20px;
+    max-width: 470px;
+    width: 100%;
+    height: 515px;
+  }
+
+
+
+
+
+}
