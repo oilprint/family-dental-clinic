@@ -5,6 +5,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
   }
 
   &__content {
@@ -12,6 +16,10 @@
     width: 100%;
     margin-right: 30px;
     text-align: left;
+
+    @media (max-width: 992px) {
+      margin-right: 15px;
+    }
   }
 
   &__title {
@@ -26,6 +34,11 @@
     max-width: 570px;
     width: 100%;
     height: 330px;
+
+    @media (max-width: 768px) {
+      order: -1;
+      margin-bottom: 15px;
+      height: 200px;
+    }
   }
 }
-
