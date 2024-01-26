@@ -12,7 +12,11 @@ text-align: left;
     gap: 30px;
 
     &:not(:last-child) {
-      margin-bottom: 30px;
+      margin-bottom: 40px;
+    }
+
+    @media (max-width: 992px) {
+      flex-direction: column;
     }
 
   }
@@ -29,7 +33,15 @@ text-align: left;
     height: auto;
     object-fit: cover;
     border-radius: 20px;
+
+    &--1 {
+      @media (max-width: 992px) {
+        order: -1;
+      }
+    }
   }
+
+
 
 
 
