@@ -9,7 +9,11 @@ document.addEventListener('DOMContentLoaded', () => {
     burger.classList.toggle('is-active');
     menu.classList.toggle('open');
     wrapper.classList.toggle('lock');
+
+    
   });
+
+  
 
 
   // dropdown
@@ -22,7 +26,13 @@ document.addEventListener('DOMContentLoaded', () => {
     let dropdown = e.target.closest('.menu__item').querySelector('.dropdown');
     console.log(dropdown);
     dropdown.classList.toggle('dropdown--active');
-  })
+
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.menu__item')) {
+        dropdown.classList.remove('dropdown--active');
+      }
+    });
+  });
 
 
     

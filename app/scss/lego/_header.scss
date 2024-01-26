@@ -152,6 +152,7 @@
   transition: transform 0.3s ease-in-out,
   visibility 0.3s ease-in-out;
   
+
   &--active {
     transform: rotateX(0deg);
     visibility: visible;
@@ -165,8 +166,6 @@
     
     margin: 2px 0;
     background-color: $light;
-
-
   }
 
   &__link {
@@ -177,7 +176,15 @@
     &:not(:last-child) {
       border-bottom: 1px solid $grey;
     }
+
+    @media (max-width: 1024px) {
+      padding: 20px;
+    }
     
 
+  }
+
+  @media (max-width: 1024px) {
+    width: 100%;
   }
 }

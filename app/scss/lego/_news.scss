@@ -1,0 +1,36 @@
+.news {
+text-align: left;
+ 
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+  }
+
+  &__text {
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__image {
+    max-width: 470px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
+
+
+}

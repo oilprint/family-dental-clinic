@@ -3,6 +3,7 @@
   &__wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     &--add-margin {
       margin-bottom: 40px;
@@ -38,6 +39,10 @@
 
   &__title {
     margin-bottom: 20px;
+
+    &--small{
+      font-size: 40px;
+    }
   }
 
   &__text {
@@ -47,6 +52,56 @@
       }
     }
   }
+
+  &__item {
+    margin-bottom: 10px;
+  }
+
+  &__headline {
+    position: relative;
+    font-size: 24px;
+    font-weight: 600;
+    color: $secondary;
+    padding-left: 22px;
+    margin-bottom: 8px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: $secondary;
+      left: 0;
+      top: 10px;
+    }
+  }
+
+  &__inner {
+    padding-left: 40px;
+  }
+
+  &__inner-item {
+    position: relative;
+    padding-left: 16px;
+    margin-bottom: 4px;
+
+
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: $primary;
+      left: 0;
+      top: 8px;
+    }
+
+  }
+
 
 
 
