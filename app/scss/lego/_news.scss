@@ -10,6 +10,7 @@ text-align: left;
     display: flex;
     justify-content: space-between;
     gap: 30px;
+     
 
     &:not(:last-child) {
       margin-bottom: 40px;
@@ -17,6 +18,7 @@ text-align: left;
 
     @media (max-width: 992px) {
       flex-direction: column;
+      align-items: center;
     }
 
   }
@@ -37,6 +39,7 @@ text-align: left;
     &--1 {
       @media (max-width: 992px) {
         order: -1;
+
       }
     }
   }
