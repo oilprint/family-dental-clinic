@@ -62,17 +62,26 @@
   &__contact {
     &:not(:last-child) {
       margin-bottom: 20px;
+
+      @media (max-width: 768px) {
+        margin-bottom: 30px;
+      }
     }
   }
 
   &__contact-link {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+
     transition: outline 0.3s,
       color 0.3s;
 
     &:not(:last-child) {
       margin-bottom: 4px;
+
+      @media (max-width: 768px) {
+        margin-bottom: 8px;
+      }
     }
 
     &--phone {
@@ -96,6 +105,8 @@
     &:active {
       color: $primary;
     }
+
+
   }
 
   &__contact-icon {
@@ -106,6 +117,10 @@
   &__list {
     max-width: 300px;
     width: 100%;
+
+    @media (max-width: 768px) {
+      max-width: 768px;
+    }
   }
 
   &__item {
@@ -115,12 +130,14 @@
 
     @media (max-width: 768px) {
       &:not(:last-child) {
-        margin-bottom: 10px;
+        margin-bottom: 0%;
       }
     }
   }
 
   &__link {
+    display: block;
+    font-size: 20ppx;
     transition: outline 0.3s, color 0.3s;
 
     &:focus {
@@ -135,6 +152,10 @@
 
     &:active {
       color: $primary;
+    }
+
+    @media (max-width: 768px) {
+      height: 44px;
     }
   }
 
@@ -199,13 +220,13 @@
   gap: 10px;
   // padding-left: 80px;
 
-
   &__link {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 44px;
     height: 44px;
+    padding: 8px;
     transition: outline 0.4s;
 
     &:focus {
@@ -228,6 +249,8 @@
   }
 
   &__icon {
+    width: 44px;
+    height: 44px;
     fill: $light;
     transition: fill 0.3s;
   }

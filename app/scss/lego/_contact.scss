@@ -1,9 +1,14 @@
 .contact {
   margin: 86px 0 0;
+  padding: 50px 0;
 
   &__title {
     text-align: left;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+
+    @media (max-width: 768px) {
+      margin-bottom: 20px;
+    }
   }
 
   &__inner {
@@ -15,6 +20,10 @@
 
     &:not(:last-child) {
       margin-bottom: 50px;
+    }
+
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
     }
   }
 
@@ -55,10 +64,100 @@
   &__map {
     max-width: 670px;
     width: 100%;
+    min-height: 250px;
+
+    &--bottom {
+      @media (max-width: 768px) {
+        order: 2;
+      }
+    }
   }
 
   &__map-frame {
     width: 100%;
     height: 100%;
+  }
+
+  &__attention {
+    position: relative;
+    padding: 24px 30px 24px 70px;
+    background-color: $bg;
+    border: 1px solid $grey;
+    border-radius: 20px;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+    color: $secondary;
+    margin-bottom: 70px;
+
+    &:before {
+      position: absolute;
+      content: "";
+      background-image: url('../images/icons/attention.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 0 0;
+      width: 17px;
+      height: 98px;
+      top: 10px;
+      left: 30px;
+    }
+
+    @media (max-width: 768px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__rules {
+    text-align: center;
+  }
+
+  &__rules-title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  &__rules-content {
+    column-count: 2;
+
+    @media (max-width: 768px) {
+      column-count: 1;
+    }
+  }
+
+  &__rules-list {
+    margin-bottom: 30px;
+  }
+
+  &__rules-item {
+    text-align: left;
+    position: relative;
+    padding-left: 22px;
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+
+    &:before {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: $secondary;
+      top: 6px;
+      left: 0;
+    }
+  }
+
+  &__rules-text {
+    font-style: italic;
+  }
+
+  @media (max-width: 1024px) {
+    margin-top: 70px;
+    padding: 30px 0;
   }
 }
