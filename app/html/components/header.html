@@ -69,9 +69,51 @@
             </a>
           </li>
         </ul>
-        <button class="button nav__button" type="button">
+        <button class="button nav__button" type="button" data-modal-button="header-appointment">
           Записатись
         </button>
+        <div id="header-appointment" class="backdrop hidden" data-modal>
+          <div class="modal modal--small">
+            <div class="appointment">
+              <div class="appointment__subtitle subtitle">
+                Записатися на прийом:
+              </div>
+              <ul class="appointment__messengers messengers">
+                <li class="messengers__item">
+                  <a class="messengers__link" href="viber://chat?number=%2B380668471146" target="blank"
+                    title="telegram">
+                    <svg class="messengers__icon" width="32" height="32">
+                      <use href="./images/symbol-defs.svg#icon-tel"></use>
+                    </svg>
+                    +38 068 111 31 84
+                  </a>
+                </li>
+                <li class="messengers__item">
+                  <a class="messengers__link" href="https://t.me/i" target="blank" title="telegram">
+                    <svg class="messengers__icon" width="32" height="32">
+                      <use href="./images/symbol-defs.svg#icon-telegram"></use>
+                    </svg>
+                    +38 068 111 31 64
+                  </a>
+                </li>
+                <li class="messengers__item">
+                  <a class="messengers__link" href="viber://chat?number=%2B3806811131" target="blank" title="telegram">
+                    <svg class="messengers__icon" width="32" height="32">
+                      <use href="./images/symbol-defs.svg#icon-viber"></use>
+                    </svg>
+                    +38 068 111 31 64
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <button class="modal__close-btn modal-button" type="button" data-modal-close>
+              <svg class="modal__close-btn-icon" width="32" height="32">
+                <use href="./images/symbol-defs.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </nav>
     </div>
+  </div>
 </header>

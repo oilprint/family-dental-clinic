@@ -69,7 +69,7 @@
     display: flex;
     align-items: center;
     transition: outline 0.3s,
-    color 0.3s;
+      color 0.3s;
 
     &:not(:last-child) {
       margin-bottom: 4px;
@@ -164,14 +164,15 @@
     @media (max-width: 768px) {
       flex-direction: column;
       font-size: 14px;
-      
+
 
     }
   }
 
   &__bottom-link {
-    transition: outline 0.3s,
-    color 0.3s;
+    transition: outline 0.2s,
+      color 0.3s;
+
     @media (max-width: 768px) {
       text-align: right;
     }
@@ -197,7 +198,7 @@
   align-items: center;
   gap: 10px;
   // padding-left: 80px;
-  
+
 
   &__link {
     display: flex;

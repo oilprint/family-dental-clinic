@@ -14,7 +14,7 @@ body {
   text-align: center;
   color: $dark;
   background-color: $light;
-  
+
   @media (max-width: 576px) {
     font-size: 18px;
   }
@@ -78,6 +78,7 @@ main {
   font-weight: 500;
   color: $primary;
   margin: 0 auto;
+
   @media (max-width: 1200px) {
     font-size: calc(20px + (24 - 20) * ((100vw - 360px) / (1200 - 360)));
   }
@@ -159,6 +160,45 @@ main {
 
   @media (max-width: 1024px) {
     display: block;
+  }
+}
+
+.appointment {
+
+  &__subtitle {
+    color: $secondary;
+    margin-bottom: 20px;
+  }
+}
+
+.messengers {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: color 0.3s ease, outline 0.3s ease;
+
+    &:focus {
+      outline: solid 1px $accent;
+      outline-offset: 4px;
+    }
+
+    &:hover {
+      color: $accent;
+    }
+
+    &:active {
+      color: $secondary;
+    }
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
   }
 }
 

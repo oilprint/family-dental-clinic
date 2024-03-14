@@ -27,8 +27,6 @@
     @media (max-width: 992px) {
       display: none;
     }
-
-
   }
 
   &__content {
@@ -40,8 +38,12 @@
   &__title {
     margin-bottom: 20px;
 
-    &--small{
+    &--small {
       font-size: 40px;
+
+      @media (max-width: 768px) {
+        font-size: 32px;
+      }
     }
   }
 
@@ -99,10 +101,5 @@
       left: 0;
       top: 8px;
     }
-
   }
-
-
-
-
 }
