@@ -1,6 +1,14 @@
 .team {
   &__title {
     margin-bottom: 10px;
+
+    @media (max-width: 768px) {
+      font-size: 32px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 28px;
+    }
   }
 
   &__subtitle {

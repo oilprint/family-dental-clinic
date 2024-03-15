@@ -1,10 +1,14 @@
 .cookies {
-  padding-top: 150px;
+  padding-top: 140px;
   text-align: left;
+
+  @media (max-width: 768px) {
+    padding-top: 100px;
+  }
 
   &__title {
     margin-bottom: 20px;
-    font-size: 24px;
+    font-size: 32px;
 
   }
 
