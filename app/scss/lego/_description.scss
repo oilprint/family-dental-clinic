@@ -67,6 +67,12 @@
     padding-left: 22px;
     margin-bottom: 8px;
 
+    &--text {
+      font-size: 20px;
+      color: $grey-dark;
+      font-weight: 400;
+    }
+
     &::before {
       content: '';
       position: absolute;
