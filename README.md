@@ -4,9 +4,9 @@
 
 # [go to website](https://oilprint.github.io/family-dental-clinic/ )
 
-🎨🖥️ Project Name: Redesign of "Family dental" Dental Clinic Website
+🎨🖥️ Project Name: Redesign of "Family Dental" Dental Clinic Website
 
-🎨🖥️ The "Family dental" project is a redesign of the dental clinic's website aimed at creating an attractive and user-friendly environment for patients. 
+🎨🖥️ The "Family Dental" project is a redesign of the dental clinic's website aimed at creating an attractive and user-friendly environment for patients. 
 The new website will showcase the uniqueness and professionalism of our clinic, provide detailed information about services and the team of doctors, and enable online appointment booking.
 
 🩺 Clinic Profile: Detailed description of the clinic, its history, mission, and values.
