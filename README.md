@@ -1,8 +1,8 @@
 <div align="center">
-<img src="https://github.com/oilprint/bulldogclub/blob/main/bulldog.jpg" target="_blank" align="center" style="width: 100%" />
+<img src="https://github.com/oilprint/family-dental-clinic/blob/main/dental-family.jpg" target="_blank" align="center" style="width: 100%" />
 </div>  
 
-# [website](https://oilprint.github.io/ )
+# [website](https://oilprint.github.io/family-dental-clinic/ )
 
 🎨🖥️ Project Name: Redesign of "Family dental" Dental Clinic Website
 
