@@ -15,316 +15,205 @@
   <link rel="icon" href="favicon/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicon/afavicon/pple-touch-icon.png/">
 
-  <link rel="stylesheet" href="css/index.min.css">
+  <link rel="stylesheet" href="css/about.min.css">
 </head>
 
 <body>
   <div class="wrapper">
 
-    <header class="header">
-  <div class="container">
-    <div class="header__inner">
-      <a class="logo header__logo" href="index.html">
-        <img class="logo__img" src="./images/logo.svg" width="220" height="70" alt="Логотип Сімейной стоматології">
-      </a>
-      <div class="burger">
-        <span class="burger__line"></span>
-      </div>
-      <nav class="nav">
-        <ul class="menu">
-          <li class="menu__item">
-            <a class="menu__link current" href="index.html">
-              Головна
-            </a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link @@about" href="about.html">
-              Про клініку
-            </a>
-          </li>
-          <li class="menu__item">
-            <button class="menu__link menu__btn @@services" type="button">
-              Послуги
-              <svg class="menu__btn-icon" width="24" height="24" viewBox="0 0 24 24">
-                <use href="./images/symbol-defs.svg#icon-chevron"></use>
-              </svg>
-            </button>
-            <div class="dropdown">
-              <ul class="dropdown__list">
-                <li class="dropdown__item">
-                  <a class="dropdown__link" href="kids-dental.html">
-                    Дитяча стоматологія
-                  </a>
-                </li>
-                <li class="dropdown__item">
-                  <a class="dropdown__link" href="therapy.html">
-                    Терапевтична стоматологія
-                  </a>
-                </li>
-                <li class="dropdown__item">
-                  <a class="dropdown__link" href="prosthetics.html">
-                    Протезування
-                  </a>
-                </li>
-                <li class="dropdown__item">
-                  <a class="dropdown__link" href="surgery.html">
-                    Хірургія
-                  </a>
-                </li>
-                <li class="dropdown__item">
-                  <a class="dropdown__link" href="orthodontics.html">
-                    Ортодонтія
-                  </a>
-                </li>
-                <li class="dropdown__item">
-                  <a class="dropdown__link" href="parantology.html">
-                    Паронтологія
-                  </a>
-                </li>
-
-
-              </ul>
-            </div>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link @@contacts" href="contacts.html">
-              Контакти
-            </a>
-          </li>
-        </ul>
-        <button class="button nav__button" type="button" data-modal-button="header-appointment">
-          Записатись
-        </button>
-        <div id="header-appointment" class="backdrop hidden" data-modal>
-          <div class="modal modal--small">
-            <div class="appointment">
-              <div class="appointment__subtitle subtitle">
-                Записатися на прийом:
-              </div>
-              <ul class="appointment__messengers messengers">
-                <li class="messengers__item">
-                  <a class="messengers__link" href="viber://chat?number=%2B380668471146" target="blank"
-                    title="telegram">
-                    <svg class="messengers__icon" width="32" height="32">
-                      <use href="./images/symbol-defs.svg#icon-tel"></use>
-                    </svg>
-                    +38 068 111 31 84
-                  </a>
-                </li>
-                <li class="messengers__item">
-                  <a class="messengers__link" href="https://t.me/i" target="blank" title="telegram">
-                    <svg class="messengers__icon" width="32" height="32">
-                      <use href="./images/symbol-defs.svg#icon-telegram"></use>
-                    </svg>
-                    +38 068 111 31 64
-                  </a>
-                </li>
-                <li class="messengers__item">
-                  <a class="messengers__link" href="viber://chat?number=%2B3806811131" target="blank" title="telegram">
-                    <svg class="messengers__icon" width="32" height="32">
-                      <use href="./images/symbol-defs.svg#icon-viber"></use>
-                    </svg>
-                    +38 068 111 31 64
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <button class="modal__close-btn modal-button" type="button" data-modal-close>
-              <svg class="modal__close-btn-icon" width="32" height="32">
-                <use href="./images/symbol-defs.svg#icon-close"></use>
-              </svg>
-            </button>
-          </div>
-        </div>
-      </nav>
-    </div>
-  </div>
-</header>
+    @@include('../components/header.html', {
+    "about": "current"
+    })
 
     <main>
-      <section class="hero">
-        <div class="hero__swiper swiper swiper-1">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide hero__swiper-slide hero__swiper-slide--1">
-              <div class="container hero__container">
-                <div class="hero__content">
-                  <p class="hero__title">
-                    Дбаємо про посмішку вашої дитини
-                  </p>
-                  <a href="kids-dental.html" class="button">Дізнатися більше</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide hero__swiper-slide hero__swiper-slide--2">
-              <div class="container hero__container">
-                <div class="hero__content">
-                  <h1 class="hero__title">
-                    Стоматологічна допомога для всієї родини
-                  </h1>
-                  <a href="kids-dental.html" class="button">Дізнатися більше
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide hero__swiper-slide hero__swiper-slide--3">
-              <div class="container hero__container">
-                <div class="hero__content">
-                  <p class="hero__title">
-                    Імплантація для здорових та красивих посмішок
-                  </p>
-                  <a href="kids-dental.html" class="button">Дізнатися більше</a>
-                </div>
-              </div>
+      <section class="about-hero section section--bg">
+        <div class="container about-hero__container">
+          <div class="about-hero__content">
+            <h1 class="about-hero__title title">
+              «Family Dental»
+            </h1>
+            <div class="about-hero__description">
+              Якісна стоматологія у житловому масиві Котовського в Одесі
             </div>
           </div>
-          <div class="swiper-pagination pag-1"></div>
+          <div class="about-hero__image" style="background-image: url('./images/decor/about-hero.webp')"></div>
         </div>
       </section>
 
-      <section class="category section section--bg">
+      <section class="description section">
         <div class="container">
-          <h2 class="title category__title">
-            Наші послуги
-          </h2>
-          <div class="category__subtitle subtitle">
-            <p>Стоматологічні послуги, які об'єднують якість, комфорт та індивідуальний підхід
-            </p>
+          <div class="description__wrapper">
+            <div class="description__image" style="background-image: url('./images/decor/2-06.webp')"></div>
+            <div class="description__content">
+              <h2 class="description__title title">
+                Про клініку
+              </h2>
+              <div class="description__text">
+                <p>
+                  Історія клініки "Стоматологічна допомога" розпочалася у 2006 році. Протягом понад 14 років успішної
+                  роботи ми досягли значних результатів, вибудували свою репутацію та загалом підняли рівень
+                  стоматології
+                  на вищий рівень. Проте ми не зупиняємося на досягнутому, продовжуючи постійно розвиватися.
+
+                </p>
+                <p>
+                  Після більш ніж десятилітнього досвіду ми пишаємося тим, що зуміли стати довіреним партнером для наших
+                  пацієнтів у забезпеченні їхнього здоров'я та краси посмішки. Наша команда фахівців постійно покращує
+                  свої навички та впроваджує новітні технології, щоб забезпечити вам найкращий рівень медичної допомоги.
+                  Будучи з нами, ви можете бути впевнені, що ваша посмішка - у надійних руках.
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="swiper swiper-3" data-mobile="false">
-            <ul class="category__list swiper-wrapper">
-              <li class="category__item swiper-slide">
-                <a class="category__link" href="kids-dental.html">
-                  <article class="category-card">
-                    <h3 class="category-card__headline">
-                      Дитяча стоматологія
-                    </h3>
-                    <img class="category-card__img" src="./images/decor/services/kid.webp" alt="Дитяча стоматологія"
-                      width="290" height="180" loading="lazy">
-                  </article>
-                </a>
+        </div>
+      </section>
+
+      <section class="section philosophy philosophy__section">
+        <div class="container philosophy__container">
+          <div class="philosophy__content">
+            <h2 class="philosophy__title title">
+              Философия нашей клиники:
+            </h2>
+            <ul class="philosophy__text">
+              <li class="philosophy__item">
+                індивідуальний підхід до пацієнта;
               </li>
-              <li class="category__item swiper-slide">
-                <a class="category__link" href="therapy.html">
-                  <article class="category-card">
-                    <h3 class="category-card__headline">
-                      Терапевтична стоматологія
-                    </h3>
-                    <img class="category-card__img" src="./images/decor/services/therapeutic.webp"
-                      alt="Терапевтична стоматологія" width="290" height="180" loading="lazy">
-                  </article>
-                </a>
+              <li class="philosophy__item">
+                професіоналізм персоналу;
               </li>
-              <li class="category__item swiper-slide">
-                <a class="category__link" href="prosthetics.html">
-                  <article class="category-card">
-                    <h3 class="category-card__headline">
-                      Протезування
-                    </h3>
-                    <img class="category-card__img" src="./images/decor/services/prosthetics.webp" alt="Протезування"
-                      width="290" height="180" loading="lazy">
-                  </article>
-                </a>
+              <li class="philosophy__item">
+                передові технології та матеріали;
               </li>
-              <li class="category__item swiper-slide">
-                <a class="category__link" href="surgery.html">
-                  <article class="category-card">
-                    <h3 class="category-card__headline">
-                      Хірургічне лікування та імплантація
-                    </h3>
-                    <img class="category-card__img" src="./images/decor/services/implantation.webp"
-                      alt="Хірургічне лікування та імплантація" width="290" height="180" loading="lazy">
-                  </article>
-                </a>
+              <li class="philosophy__item">
+                обладнання від європейських фірм Kavo, Melag, Hu-Friedy.
               </li>
-              <li class="category__item swiper-slide">
-                <a class="category__link" href="orthodontics.html">
-                  <article class="category-card">
-                    <h3 class="category-card__headline">
-                      Ортодонтія (виправлення прикуса)
-                    </h3>
-                    <img class="category-card__img" src="./images/decor/services/orthodontics.webp" alt="Ортодонтія"
-                      width="290" height="180" loading="lazy">
-                  </article>
-                </a>
+              <li class="philosophy__item">
+                ефективні методи знеболювання;
               </li>
-              <li class="category__item swiper-slide">
-                <a class="category__link" href="parantology.html">
-                  <article class="category-card">
-                    <h3 class="category-card__headline">
-                      Паронтологія
-                    </h3>
-                    <img class="category-card__img" src="./images/decor/services/parontology.webp" alt="Паронтологія"
-                      width="290" height="180" loading="lazy">
-                  </article>
-                </a>
+              <li class="philosophy__item">
+                надійні засоби дезінфекції та стерилізації.
               </li>
             </ul>
-            <div class="swiper-pagination pag-3"></div>
           </div>
+          <div class="philosophy__image" style="background-image: url('./images/decor/booking-bg.webp')"></div>
         </div>
       </section>
 
-      <section class="section about">
-        <div class="container about__container">
-          <div class="about__images" style="background-image: url('images/decor/about__image.webp')"></div>
-          <div class="about__content">
-            <h2 class="title about__title">
-              О нас
-            </h2>
-            <p class="about__text">
-              «Family Dental» — стоматологічна клініка для всієї родини, що пропонує Вам повний комплекс послуг у
-              галузі стоматології: лікування карієсу, пульпіту, періодонтиту, видалення зубів, протезування та
-              імплантацію зубів, професійне чищення, і пародонтологічне лікування, відбілювання зубів, косметичну
-              реставрацію зубів, та виправлення прикусу.
-            </p>
-            <div class="about__info">
-              <h3 class="about__subtitle subtitle">
-                Ми забезпечуємо:
-              </h3>
-              <ul class="about__list">
-                <li class="about__item">
-                  індивідуальний підхід до пацієнта;
-                </li>
-                <li class="about__item">
-                  професіоналізм персоналу;
-                </li>
-                <li class="about__item">
-                  передові технології та матеріали;
-                </li>
-                <li class="about__item">
-                  обладнання від європейських фірм Kavo, Melag, Hu-Friedy;
-                </li>
-                <li class="about__item">
-                  ефективні методи знеболювання;
-                </li>
-                <li class="about__item">
-                  надійні засоби дезінфекції та стерилізації.
-                </li>
-              </ul>
+      <section class="description section">
+        <div class="container">
+          <div class="description__wrapper description__wrapper--add-margin">
+            <div class="description__image" style="background-image: url('./images/decor/106.webp')"></div>
+            <div class="description__content">
+              <h2 class="description__title title">
+                Устаткування клініки
+              </h2>
+              <div class="description__text">
+                <p>
+                  У нашій клініці ми вкладаємо значні зусилля у забезпечення найсучаснішого обладнання для надання
+                  високоякісних медичних послуг. Ми обираємо тільки найкращі технології та обладнання від провідних
+                  виробників у галузі стоматології. Наше обладнання відповідає найвищим стандартам якості та безпеки,
+                  щоб ми могли забезпечити нашим пацієнтам найкращу можливу допомогу.
+
+                </p>
+                <p>
+                  Завдяки сучасному обладнанню наші лікарі можуть проводити різноманітні процедури більш ефективно та
+                  безболісно. Ми прагнемо забезпечити комфортне та безпечне середовище для наших пацієнтів, де кожен
+                  візит до нашої клініки пройде з максимальним комфортом та забезпечить відмінні результати лікування.
+                </p>
+              </div>
             </div>
-            <a class="button button--secondary about__button" href="about.html">
-              Більше про клініку
-            </a>
           </div>
-        </div>
-      </section>
+          <div class="tabs">
+            <ul class="tabs__nav">
+              <li class="tabs__nav-item active" data-id="tab1">
+                вул. Висоцького, 6
+              </li>
+              <li class="tabs__nav-item" data-id="tab2">
+                вул. Ак. Заболотного, 2
+              </li>
+            </ul>
+            <ul class="tabs__content">
+              <li class="tabs__content-item active" data-content="tab1">
+                <div class="tabs__box">
+                  <a class="tabs__link" href="./images/gallery/gallery-1/num_2/2-01.webp" data-fslightbox="gallery">
+                    <img class="tabs__image" src="./images/gallery/gallery-1/num_2/2-01.webp" alt="Клініка" width="380"
+                      height="500">
+                  </a>
+                </div>
+                <div class="tabs__box">
+                  <a class="tabs__link" href="./images/gallery/gallery-1/num_2/2-02.webp" data-fslightbox="gallery">
+                    <img class="tabs__image" src="./images/gallery/gallery-1/num_2/2-02.webp" alt="Клініка" width="380"
+                      height="500">
+                  </a>
+                </div>
+                <div class="tabs__box">
+                  <a class="tabs__link" href="./images/gallery/gallery-1/num_2/2-03.webp" data-fslightbox="gallery">
+                    <img class="tabs__image" src="./images/gallery/gallery-1/num_2/2-03.webp" alt="Клініка" width="380"
+                      height="500">
+                  </a>
+                </div>
+                <div class="tabs__box">
+                  <a class="tabs__link" href="./images/gallery/gallery-1/num_2/2-04.webp" data-fslightbox="gallery">
+                    <img class="tabs__image" src="./images/gallery/gallery-1/num_2/2-04.webp" alt="Клініка" width="380"
+                      height="500">
+                  </a>
+                </div>
+                <div class="tabs__box">
+                  <a class="tabs__link" href="./images/gallery/gallery-1/num_2/2-05.webp" data-fslightbox="gallery">
+                    <img class="tabs__image" src="./images/gallery/gallery-1/num_2/2-05.webp" alt="Клініка" width="380"
+                      height="500">
+                  </a>
+                </div>
+                <div class="tabs__box">
+                  <a class="tabs__link" href="./images/gallery/gallery-1/num_2/2-06.webp" data-fslightbox="gallery">
+                    <img class="tabs__image" src="./images/gallery/gallery-1/num_2/2-06.webp" alt="Клініка" width="380"
+                      height="500">
+                  </a>
+                </div>
+              </li>
+              <li class="tabs__content-item" data-content="tab2">
+                <div class="tabs__box">
+                  <a class="tabs__link" href="./images/gallery/gallery-1/num_1/1-01.webp" data-fslightbox="gallery">
+                    <img class="tabs__image" src="./images/gallery/gallery-1/num_1/1-01.webp" alt="Клініка" width="380"
+                      height="500">
+                  </a>
+                </div>
+                <div class="tabs__box">
+                  <a class="tabs__link" href="./images/gallery/gallery-1/num_1/1-02.webp" data-fslightbox="gallery">
+                    <img class="tabs__image" src="./images/gallery/gallery-1/num_1/1-02.webp" alt="Клініка" width="380"
+                      height="500">
+                  </a>
+                </div>
+                <div class="tabs__box">
+                  <a class="tabs__link" href="./images/gallery/gallery-1/num_1/1-03.webp" data-fslightbox="gallery">
+                    <img class="tabs__image" src="./images/gallery/gallery-1/num_1/1-03.webp" alt="Клініка" width="380"
+                      height="500">
+                  </a>
+                </div>
+                <div class="tabs__box">
+                  <a class="tabs__link" href="./images/gallery/gallery-1/num_1/1-04.webp" data-fslightbox="gallery">
+                    <img class="tabs__image" src="./images/gallery/gallery-1/num_1/1-04.webp" alt="Клініка" width="380"
+                      height="500">
+                  </a>
+                </div>
+                <div class="tabs__box">
+                  <a class="tabs__link" href="./images/gallery/gallery-1/num_1/1-05.webp" data-fslightbox="gallery">
+                    <img class="tabs__image" src="./images/gallery/gallery-1/num_1/1-05.webp" alt="Клініка" width="380"
+                      height="500">
+                  </a>
+                </div>
+                <div class="tabs__box">
+                  <a class="tabs__link" href="./images/gallery/gallery-1/num_1/1-06.webp" data-fslightbox="gallery">
+                    <img class="tabs__image" src="./images/gallery/gallery-1/num_1/1-06.webp" alt="Клініка" width="380"
+                      height="500">
+                  </a>
+                </div>
+              </li>
+            </ul>
 
-      <section class="section price">
-        <div class="container price__container">
-          <div class="price__inner" style="background-image: url('images/gallery/02.webp');">
-            <h2 class="title price__title">
-              Послуги та ціни стоматології
-            </h2>
-            <p class="price__description">
-              Повна вартість послуг розраховується після огляду лікаря та складання плану лікування
-            </p>
-            <a class="button price__button" href="./files/23.pdf" target="_blank">
-              Переглянути прайс
-            </a>
           </div>
         </div>
+
       </section>
 
       <section class="section team section--bg">
@@ -338,7 +227,7 @@
           <div class="team__filters">
             <button class="filter-btn" type="button" data-filter="all">Усі лікарі</button>
             <button class="filter-btn" type="button" data-filter="kids">Дітячий Стоматолог</button>
-            <button class="filter-btn" type="button" data-filter="therapist is-active">Терапевт</button>
+            <button class="filter-btn  is-active" type="button" data-filter="therapist">Терапевт</button>
             <button class="filter-btn" type="button" data-filter="surgeon">Хірург</button>
             <button class="filter-btn" type="button" data-filter="orthodontist">Ортодонт</button>
           </div>
@@ -440,7 +329,7 @@
                 </article>
               </div>
             </li>
-            <li class="team__item all orthodontist hide">
+            <li class="team__item all orthodontist show">
               <div class="team__button" data-modal-button="modal-5">
                 <article class="team-card">
                   <div class="team-card__box">
@@ -948,362 +837,18 @@
           </div>
         </div>
       </section>
-
-      <section class="section booking">
-        <div class="container booking__container">
-          <div class="booking__content">
-
-            <h2 class="title booking__title">
-              Запишіться онлайн
-            </h2>
-            <div class="booking__text">
-              <p>Запишіться на консультацію. Ми проведемо огляд вашого зубного здоров'я та розробимо план лікування.
-              </p>
-            </div>
-            <button class="button booking__button" type="button" data-modal-button="appointment">
-              Записатись на прийом
-            </button>
-
-            <div id="appointment" class="backdrop hidden" data-modal>
-              <div class="modal modal--small">
-                <div class="appointment">
-                  <div class="appointment__subtitle subtitle">
-                    Записатися на прийом:
-                  </div>
-                  <ul class="appointment__messengers messengers">
-                    <li class="messengers__item">
-                      <a class="messengers__link" href="viber://chat?number=%2B380668471146" target="blank"
-                        title="telegram">
-                        <svg class="messengers__icon" width="32" height="32">
-                          <use href="./images/symbol-defs.svg#icon-tel"></use>
-                        </svg>
-                        +38 068 111 31 84
-                      </a>
-                    </li>
-                    <li class="messengers__item">
-                      <a class="messengers__link" href="https://t.me/i" target="blank" title="telegram">
-                        <svg class="messengers__icon" width="32" height="32">
-                          <use href="./images/symbol-defs.svg#icon-telegram"></use>
-                        </svg>
-                        +38 068 111 31 64
-                      </a>
-                    </li>
-                    <li class="messengers__item">
-                      <a class="messengers__link" href="viber://chat?number=%2B3806811131" target="blank"
-                        title="telegram">
-                        <svg class="messengers__icon" width="32" height="32">
-                          <use href="./images/symbol-defs.svg#icon-viber"></use>
-                        </svg>
-                        +38 068 111 31 64
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <button class="modal__close-btn modal-button" type="button" data-modal-close>
-                  <svg class="modal__close-btn-icon" width="32" height="32">
-                    <use href="./images/symbol-defs.svg#icon-close"></use>
-                  </svg>
-                </button>
-              </div>
-            </div>
-
-          </div>
-          <div class="booking__image" style="background-image: url('images/decor/booking-bg.webp')"></div>
-        </div>
-      </section>
-
-      <section class="section section--bg reviews">
-        <div class="reviews__container">
-          <div class="reviews__head">
-            <h2 class="title">
-              Відгуки наших пацієнтів
-            </h2>
-            <a class="button button--secondary" href="">
-              Залишити відгук
-            </a>
-          </div>
-          <div class="reviews-slider swiper swiper-2" id="swiper-2">
-            <ul class="reviews-slider__list swiper-wrapper">
-
-              <li class="reviews-slider__item swiper-slide">
-                <figure class="review-card">
-                  <blockquote class="review-card__text">
-                    <p>Дуже задоволений результатом лікування! Все проходило швидко і безболісно
-                    </p>
-                  </blockquote>
-                  <figcaption class="review-card__info">
-                    <div class="review-card__author">
-                      Олексій
-                    </div>
-                    <div class="review-card__stars"></div>
-                  </figcaption>
-
-                </figure>
-              </li>
-              <li class="reviews-slider__item swiper-slide">
-                <figure class="review-card">
-                  <blockquote class="review-card__text">
-                    <p>Професійний підхід та приємна атмосфера. Рекомендую! </p>
-                  </blockquote>
-                  <figcaption class="review-card__info">
-                    <div class="review-card__author">
-                      Марія Іванівна
-                    </div>
-                    <div class="review-card__stars"></div>
-                  </figcaption>
-
-                </figure>
-              </li>
-              <li class="reviews-slider__item swiper-slide">
-                <figure class="review-card">
-                  <blockquote class="review-card__text">
-                    <p>Завжди відмінний сервіс та увага до деталей. Дякую за чудову роботу!
-                    </p>
-                  </blockquote>
-                  <figcaption class="review-card__info">
-                    <div class="review-card__author">
-                      Ігор
-                    </div>
-                  </figcaption>
-
-                </figure>
-              </li>
-              <li class="reviews-slider__item swiper-slide">
-                <figure class="review-card">
-                  <blockquote class="review-card__text">
-                    <p>Клініка, де працюють справжні професіонали. Результат перевершив мої очікування.
-                    </p>
-                  </blockquote>
-                  <figcaption class="review-card__info">
-                    <div class="review-card__author">
-                      Анна
-                    </div>
-                  </figcaption>
-
-                </figure>
-              </li>
-              <li class="reviews-slider__item swiper-slide">
-                <figure class="review-card">
-                  <blockquote class="review-card__text">
-                    <p>Швидко та якісно. Дуже задоволена обслуговуванням.
-                    </p>
-                  </blockquote>
-                  <figcaption class="review-card__info">
-                    <div class="review-card__author">
-                      Вікторія
-                    </div>
-                  </figcaption>
-
-                </figure>
-              </li>
-              <li class="reviews-slider__item swiper-slide">
-                <figure class="review-card">
-                  <blockquote class="review-card__text">
-                    <p>Вражаюча якість послуг та дбайливе ставлення до пацієнтів. Рекомендую всім!
-                    </p>
-                  </blockquote>
-                  <figcaption class="review-card__info">
-                    <div class="review-card__author">
-                      Олена
-                    </div>
-                  </figcaption>
-
-                </figure>
-              </li>
-              <li class="reviews-slider__item swiper-slide">
-                <figure class="review-card">
-                  <blockquote class="review-card__text">
-                    <p>Найкращий вибір для тих, хто цінує своє здоров'я та комфорт. Дякую за вашу роботу!
-                    </p>
-                  </blockquote>
-                  <figcaption class="review-card__info">
-                    <div class="review-card__author">
-                      Сергій Миколайович
-                    </div>
-                  </figcaption>
-
-                </figure>
-              </li>
-            </ul>
-            <div class="reviews__nav">
-
-
-
-              <!-- If we need navigation buttons -->
-              <div class="swiper-button-prev swiper-button-prev-2 "></div>
-
-              <div class="swiper-pagination pag-2"></div>
-
-              <div class="swiper-button-next swiper-button-next-2"></div>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      <section class="section gallery">
-        <div class="container">
-          <h2 class="title gallery__title">
-            Наші клініки оснащені сучасним лікувальним обладнанням
-          </h2>
-          <p class="gallery__subtitle subtitle">
-            Наші клініки використовують передове обладнання, матеріали та інструменти від кращих виробників для
-            застосування сучасних методик лікування стоматологічних захворювань
-          </p>
-          <a class="button gallery__button" href="#">
-            Дізнатись більше
-          </a>
-
-          <div class="gallery__grid">
-
-            <div class="gallery__box gallery__box--1">
-              <img class="gallery__img" src="images/gallery/01.webp" alt="Стоматологічна клініка Сімейна стоматологія"
-                width="574" height="574">
-            </div>
-            <div class="gallery__box gallery__box--2">
-              <img class="gallery__img" src="images/gallery/02.webp" alt="Стоматологічна клініка Сімейна стоматологія"
-                width="574" height="574">
-            </div>
-            <div class="gallery__box gallery__box--3">
-              <img class="gallery__img" src="images/gallery/03.webp" alt="Стоматологічна клініка Сімейна стоматологія"
-                width="574" height="574">
-            </div>
-            <div class="gallery__box gallery__box--4">
-              <img class="gallery__img" src="images/gallery/04.webp" alt="Стоматологічна клініка Сімейна стоматологія"
-                width="574" height="574">
-            </div>
-            <div class="gallery__box gallery__box--5">
-              <img class="gallery__img" src="images/gallery/05.webp" alt="Стоматологічна клініка Сімейна стоматологія"
-                width="574" height="574">
-            </div>
-            <div class="gallery__box gallery__box--6">
-              <img class="gallery__img" src="images/gallery/06.webp" alt="Стоматологічна клініка Сімейна стоматологія"
-                width="574" height="574">
-            </div>
-            <div class="gallery__box gallery__box--7">
-              <img class="gallery__img" src="images/gallery/07.webp" alt="Стоматологічна клініка Сімейна стоматологія"
-                width="574" height="574">
-            </div>
-          </div>
-        </div>
-      </section>
-
-
     </main>
 
-    <footer class="footer">
-  <div class="container footer__container">
-    <div class="footer__head">
-      <div class="footer__links">
-        <a class="logo footer__logo" href="index.html">
-          <img class="logo__img" src="images/logo-white.svg" width="242" height="70"
-            alt="Логотип Сімейной стоматології">
-        </a>
-        <ul class="social">
-          <li class="social__item">
-            <a class="social__link" href="" title="Перейти на Інстаграм сторінку">
-              <svg class="social__icon" width="24" height="24" viewBox="0 0 24 24">
-                <use href="./images/symbol-defs.svg#icon-insta"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#" title="Перейти на Інстаграм сторінку">
-              <svg class="social__icon" width="24" height="24" viewBox="0 0 24 24">
-                <use href="./images/symbol-defs.svg#icon-fb"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="" title="Перейти на Інстаграм сторінку">
-              <svg class="social__icon" width="24" height="24" viewBox="0 0 24 24">
-                <use href="./images/symbol-defs.svg#icon-mail"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <ul class="footer__contacts">
-        <li class="footer__contact">
-          <a class="footer__contact-link footer__contact-link--address" href="#">
-            <svg class="footer__contact-icon" width="24" height="24" viewBox="0 0 24 24">
-              <use href="images/symbol-defs.svg#icon-geo"></use>
-            </svg>
-            Одеса, Володимира Висоцького, 6
-          </a>
-          <a class="footer__contact-link footer__contact-link--phone" href="tel:+380977213406">
-            +38 097 721 34 06
-          </a>
-          <time class="footer__contact-link" datetime="2024-03-14T09:00">
-            <svg class="footer__contact-icon" width="24" height="24" viewBox="0 0 24 24">
-              <use href="images/symbol-defs.svg#icon-time"></use>
-            </svg>
-            Пн-пт 9:00 - 20:00 / Сб до 14:30
-          </time>
-        </li>
-        <li class="footer__contact">
-          <a class="footer__contact-link footer__contact-link--address" href="#">
-            <svg class="footer__contact-icon" width="24" height="24" viewBox="0 0 24 24">
-              <use href="./images/symbol-defs.svg#icon-geo"></use>
-            </svg>
-            Одеса, Академіка Заболотного, 2
-          </a>
-          <a class="footer__contact-link footer__contact-link--phone" href="tel:+380687653164">
-            +38 068 765 31 64
-          </a>
-          <time class="footer__contact-link" datetime="2024-03-14T09:00">
-            <svg class="footer__contact-icon" width="24" height="24" viewBox="0 0 24 24">
-              <use href="./images/symbol-defs.svg#icon-time"></use>
-            </svg>
-            Пн-пт 9:00 - 20:00 / Сб до 14:30
-          </time>
-        </li>
-      </ul>
-      <ul class="footer__list">
-        <li class="footer__item">
-          <a class="footer__link" href="./files/23.pdf" target="_blank">Ціни</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="policy.html">
-            Обробка персональних даних
-          </a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="cookies.html">
-            Політика файлів cookie
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="footer__bottom">
-      <div class="footer__bottom-left">
-        <p class="footer__bottom-text">
-          © 2023. All rights reserved
-        </p>
-        <p class="footer__bottom-text">
-          Photo by <a class="footer__bottom-link" href="www.freepik.com">
-            Freepik
-          </a>
-        </p>
-      </div>
-
-
-      <a class="footer__link" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=kozlova.ux@gmail.com"
-        target="_blank">
-        created by kozlova.ux
-      </a>
-    </div>
+    @@include('../components/footer.html')
 
   </div>
-</footer>
-  </div>
-
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
   <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
 
-
-  <script src="js/index.js"></script>
+  <script src="js/filter-team.js"></script>
+  <script src="js/fslightbox.js"></script>
+  <script src="js/about.js"></script>
   <script src="js/main.min.js"></script>
 </body>
 
