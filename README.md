@@ -2,25 +2,23 @@
 <img src="https://github.com/oilprint/family-dental-clinic/blob/main/dental-family.jpg" target="_blank" align="center" style="width: 100%" />
 </div>  
 
-# [website](https://oilprint.github.io/family-dental-clinic/ )
+# [go to website](https://oilprint.github.io/family-dental-clinic/ )
 
 🎨🖥️ Project Name: Redesign of "Family dental" Dental Clinic Website
 
-Description:
 🎨🖥️ The "Family dental" project is a redesign of the dental clinic's website aimed at creating an attractive and user-friendly environment for patients. 
 The new website will showcase the uniqueness and professionalism of our clinic, provide detailed information about services and the team of doctors, and enable online appointment booking.
 
-Key Features:
-
 🩺 Clinic Profile: Detailed description of the clinic, its history, mission, and values.
+
 🩺 Services and Pricing: Comprehensive list of services, their descriptions, and costs.
+
 🩺 Doctor's Team: Presentation of the qualified medical team with photos and short biographies.
 
 🛠️📱Technologies:
 The project will be implemented using modern web technologies, such as HTML, CSS, JavaScript, GSAP for the frontend
 
-Project Goal:
-The goal of redesigning the "SmileCare" dental clinic website is to create a convenient and informative environment for patients, allowing them to familiarize themselves with the clinic's services, find necessary information about the team of doctors, and make online appointments to ensure maximum convenience and accessibility of medical services.
+🎯The goal of redesigning the "SmileCare" dental clinic website is to create a convenient and informative environment for patients, allowing them to familiarize themselves with the clinic's services, find necessary information about the team of doctors, and make online appointments to ensure maximum convenience and accessibility of medical services.
 
 
 ## Technologies Used:
