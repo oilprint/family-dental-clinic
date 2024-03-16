@@ -85,19 +85,6 @@ document.addEventListener('DOMContentLoaded', () => {
     stagger: 0.4
   });
 
-  gsap.from('.team__item ', {
-    scrollTrigger: {
-      trigger: '.team',
-      start: 'top center',
-      end: '+=300px',
-      srub: true
-    },
-    scale: 0,
-    transformOrigin: 'top center',
-    ease: 'Power2.easeOut',
-    stagger: 0.3
-  })
-
   //laptop animation 
   const laptopScreen = window.matchMedia('(min-width: 992px)')
 
