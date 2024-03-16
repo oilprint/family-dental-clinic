@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Стоматологічна клиніка Сімейна стоматологія</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="favicon/favicon.ico" sizes="any">
+  <link rel="icon" href="favicon/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon/afavicon/pple-touch-icon.png/">
+
+  <link rel="stylesheet" href="css/about.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <a class="logo header__logo" href="index.html">
+        <img class="logo__img" src="./images/logo.svg" width="220" height="70" alt="Логотип Сімейной стоматології">
+      </a>
+      <div class="burger">
+        <span class="burger__line"></span>
+      </div>
+      <nav class="nav">
+        <ul class="menu">
+          <li class="menu__item">
+            <a class="menu__link @@home" href="index.html">
+              Головна
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link current" href="about.html">
+              Про клініку
+            </a>
+          </li>
+          <li class="menu__item">
+            <button class="menu__link menu__btn @@services" type="button">
+              Послуги
+              <svg class="menu__btn-icon" width="24" height="24" viewBox="0 0 24 24">
+                <use href="./images/symbol-defs.svg#icon-chevron"></use>
+              </svg>
+            </button>
+            <div class="dropdown">
+              <ul class="dropdown__list">
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="kids-dental.html">
+                    Дитяча стоматологія
+                  </a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="therapy.html">
+                    Терапевтична стоматологія
+                  </a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="prosthetics.html">
+                    Протезування
+                  </a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="surgery.html">
+                    Хірургія
+                  </a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="orthodontics.html">
+                    Ортодонтія
+                  </a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="parantology.html">
+                    Паронтологія
+                  </a>
+                </li>
+
+
+              </ul>
+            </div>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link @@contacts" href="contacts.html">
+              Контакти
+            </a>
+          </li>
+        </ul>
+        <button class="button nav__button" type="button" data-modal-button="header-appointment">
+          Записатись
+        </button>
+        <div id="header-appointment" class="backdrop hidden" data-modal>
+          <div class="modal modal--small">
+            <div class="appointment">
+              <div class="appointment__subtitle subtitle">
+                Записатися на прийом:
+              </div>
+              <ul class="appointment__messengers messengers">
+                <li class="messengers__item">
+                  <a class="messengers__link" href="viber://chat?number=%2B380668471146" target="blank"
+                    title="telegram">
+                    <svg class="messengers__icon" width="32" height="32">
+                      <use href="./images/symbol-defs.svg#icon-tel"></use>
+                    </svg>
+                    +38 068 111 31 84
+                  </a>
+                </li>
+                <li class="messengers__item">
+                  <a class="messengers__link" href="https://t.me/i" target="blank" title="telegram">
+                    <svg class="messengers__icon" width="32" height="32">
+                      <use href="./images/symbol-defs.svg#icon-telegram"></use>
+                    </svg>
+                    +38 068 111 31 64
+                  </a>
+                </li>
+                <li class="messengers__item">
+                  <a class="messengers__link" href="viber://chat?number=%2B3806811131" target="blank" title="telegram">
+                    <svg class="messengers__icon" width="32" height="32">
+                      <use href="./images/symbol-defs.svg#icon-viber"></use>
+                    </svg>
+                    +38 068 111 31 64
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <button class="modal__close-btn modal-button" type="button" data-modal-close>
+              <svg class="modal__close-btn-icon" width="32" height="32">
+                <use href="./images/symbol-defs.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+
+    <main>
+      <section class="about-hero section section--bg">
+        <div class="container about-hero__container">
+          <div class="about-hero__content">
+            <h1 class="about-hero__title title">
+              «Family Dental»
+            </h1>
+            <div class="about-hero__description">
+              Якісна стоматологія у житловому масиві Котовського в Одесі
+            </div>
+          </div>
+          <div class="about-hero__image" style="background-image: url('./images/decor/about-hero.webp')"></div>
+        </div>
+      </section>
+
+      <section class="description section">
+        <div class="container">
+          <div class="description__wrapper">
+            <div class="description__image" style="background-image: url('./images/decor/2-06.webp')"></div>
+            <div class="description__content">
+              <h2 class="description__title title">
+                Про клініку
+              </h2>
+              <div class="description__text">
+                <p>
+                  Історія клініки "Стоматологічна допомога" розпочалася у 2006 році. Протягом понад 14 років успішної
+                  роботи ми досягли значних результатів, вибудували свою репутацію та загалом підняли рівень
+                  стоматології
+                  на вищий рівень. Проте ми не зупиняємося на досягнутому, продовжуючи постійно розвиватися.
+
+                </p>
+                <p>
+                  Після більш ніж десятилітнього досвіду ми пишаємося тим, що зуміли стати довіреним партнером для наших
+                  пацієнтів у забезпеченні їхнього здоров'я та краси посмішки. Наша команда фахівців постійно покращує
+                  свої навички та впроваджує новітні технології, щоб забезпечити вам найкращий рівень медичної допомоги.
+                  Будучи з нами, ви можете бути впевнені, що ваша посмішка - у надійних руках.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section philosophy philosophy__section">
+        <div class="container philosophy__container">
+          <div class="philosophy__content">
+            <h2 class="philosophy__title title">
+              Философия нашей клиники:
+            </h2>
+            <ul class="philosophy__text">
+              <li class="philosophy__item">
+                індивідуальний підхід до пацієнта;
+              </li>
+              <li class="philosophy__item">
+                професіоналізм персоналу;
+              </li>
+              <li class="philosophy__item">
+                передові технології та матеріали;
+              </li>
+              <li class="philosophy__item">
+                обладнання від європейських фірм Kavo, Melag, Hu-Friedy.
+              </li>
+              <li class="philosophy__item">
+                ефективні методи знеболювання;
+              </li>
+              <li class="philosophy__item">
+                надійні засоби дезінфекції та стерилізації.
+              </li>
+            </ul>
+          </div>
+          <div class="philosophy__image" style="background-image: url('./images/decor/booking-bg.webp')"></div>
+        </div>
+      </section>
+
+      <section class="description section">
+        <div class="container">
+          <div class="description__wrapper description__wrapper--add-margin">
+            <div class="description__image" style="background-image: url('./images/decor/106.webp')"></div>
+            <div class="description__content">
+              <h2 class="description__title title">
+                Устаткування клініки
+              </h2>
+              <div class="description__text">
+                <p>
+                  У нашій клініці ми вкладаємо значні зусилля у забезпечення найсучаснішого обладнання для надання
+                  високоякісних медичних послуг. Ми обираємо тільки найкращі технології та обладнання від провідних
+                  виробників у галузі стоматології. Наше обладнання відповідає найвищим стандартам якості та безпеки,
+                  щоб ми могли забезпечити нашим пацієнтам найкращу можливу допомогу.
+
+                </p>
+                <p>
+                  Завдяки сучасному обладнанню наші лікарі можуть проводити різноманітні процедури більш ефективно та
+                  безболісно. Ми прагнемо забезпечити комфортне та безпечне середовище для наших пацієнтів, де кожен
+                  візит до нашої клініки пройде з максимальним комфортом та забезпечить відмінні результати лікування.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="tabs">
+            <ul class="tabs__nav">
+              <li class="tabs__nav-item active" data-id="tab1">
+                вул. Висоцького, 6
+              </li>
+              <li class="tabs__nav-item" data-id="tab2">
+                вул. Ак. Заболотного, 2
+              </li>
+            </ul>
+            <ul class="tabs__content">
+              <li class="tabs__content-item active" data-content="tab1">
+                <div class="tabs__box">
+                  <a class="tabs__link" href="./images/gallery/gallery-1/num_2/2-01.webp" data-fslightbox="gallery">
+                    <img class="tabs__image" src="./images/gallery/gallery-1/num_2/2-01.webp" alt="Клініка" width="380"
+                      height="500">
+                  </a>
+                </div>
+                <div class="tabs__box">
+                  <a class="tabs__link" href="./images/gallery/gallery-1/num_2/2-02.webp" data-fslightbox="gallery">
+                    <img class="tabs__image" src="./images/gallery/gallery-1/num_2/2-02.webp" alt="Клініка" width="380"
+                      height="500">
+                  </a>
+                </div>
+                <div class="tabs__box">
+                  <a class="tabs__link" href="./images/gallery/gallery-1/num_2/2-03.webp" data-fslightbox="gallery">
+                    <img class="tabs__image" src="./images/gallery/gallery-1/num_2/2-03.webp" alt="Клініка" width="380"
+                      height="500">
+                  </a>
+                </div>
+                <div class="tabs__box">
+                  <a class="tabs__link" href="./images/gallery/gallery-1/num_2/2-04.webp" data-fslightbox="gallery">
+                    <img class="tabs__image" src="./images/gallery/gallery-1/num_2/2-04.webp" alt="Клініка" width="380"
+                      height="500">
+                  </a>
+                </div>
+                <div class="tabs__box">
+                  <a class="tabs__link" href="./images/gallery/gallery-1/num_2/2-05.webp" data-fslightbox="gallery">
+                    <img class="tabs__image" src="./images/gallery/gallery-1/num_2/2-05.webp" alt="Клініка" width="380"
+                      height="500">
+                  </a>
+                </div>
+                <div class="tabs__box">
+                  <a class="tabs__link" href="./images/gallery/gallery-1/num_2/2-06.webp" data-fslightbox="gallery">
+                    <img class="tabs__image" src="./images/gallery/gallery-1/num_2/2-06.webp" alt="Клініка" width="380"
+                      height="500">
+                  </a>
+                </div>
+              </li>
+              <li class="tabs__content-item" data-content="tab2">
+                <div class="tabs__box">
+                  <a class="tabs__link" href="./images/gallery/gallery-1/num_1/1-01.webp" data-fslightbox="gallery">
+                    <img class="tabs__image" src="./images/gallery/gallery-1/num_1/1-01.webp" alt="Клініка" width="380"
+                      height="500">
+                  </a>
+                </div>
+                <div class="tabs__box">
+                  <a class="tabs__link" href="./images/gallery/gallery-1/num_1/1-02.webp" data-fslightbox="gallery">
+                    <img class="tabs__image" src="./images/gallery/gallery-1/num_1/1-02.webp" alt="Клініка" width="380"
+                      height="500">
+                  </a>
+                </div>
+                <div class="tabs__box">
+                  <a class="tabs__link" href="./images/gallery/gallery-1/num_1/1-03.webp" data-fslightbox="gallery">
+                    <img class="tabs__image" src="./images/gallery/gallery-1/num_1/1-03.webp" alt="Клініка" width="380"
+                      height="500">
+                  </a>
+                </div>
+                <div class="tabs__box">
+                  <a class="tabs__link" href="./images/gallery/gallery-1/num_1/1-04.webp" data-fslightbox="gallery">
+                    <img class="tabs__image" src="./images/gallery/gallery-1/num_1/1-04.webp" alt="Клініка" width="380"
+                      height="500">
+                  </a>
+                </div>
+                <div class="tabs__box">
+                  <a class="tabs__link" href="./images/gallery/gallery-1/num_1/1-05.webp" data-fslightbox="gallery">
+                    <img class="tabs__image" src="./images/gallery/gallery-1/num_1/1-05.webp" alt="Клініка" width="380"
+                      height="500">
+                  </a>
+                </div>
+                <div class="tabs__box">
+                  <a class="tabs__link" href="./images/gallery/gallery-1/num_1/1-06.webp" data-fslightbox="gallery">
+                    <img class="tabs__image" src="./images/gallery/gallery-1/num_1/1-06.webp" alt="Клініка" width="380"
+                      height="500">
+                  </a>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+
+      </section>
+
+      <section class="section team section--bg">
+        <div class="container">
+          <h2 class="title team__title">
+            Наші лікарі
+          </h2>
+          <div class="subtitle team__subtitle">
+            <p>Стоматологічні послуги, які об'єднують якість, комфорт та індивідуальний підхід</p>
+          </div>
+          <div class="team__filters">
+            <button class="filter-btn" type="button" data-filter="all">Усі лікарі</button>
+            <button class="filter-btn" type="button" data-filter="kids">Дітячий Стоматолог</button>
+            <button class="filter-btn  is-active" type="button" data-filter="therapist">Терапевт</button>
+            <button class="filter-btn" type="button" data-filter="surgeon">Хірург</button>
+            <button class="filter-btn" type="button" data-filter="orthodontist">Ортодонт</button>
+          </div>
+          <ul class="team__list">
+            <li class="team__item all therapist kids show">
+              <div class="team__button" data-modal-button="modal-1">
+                <article class="team-card">
+                  <div class="team-card__box">
+                    <img class="team-card__image" src="./images/team/team-01.webp" alt="Сиротин Михаил Юрьевич"
+                      width="460" height="300" loading="lazy">
+                  </div>
+                  <div class="team-card__content">
+                    <p class="team-card__lastname">
+                      Сиротин
+                    </p>
+                    <p class="team-card__name">
+                      Михайло Юрійович
+                    </p>
+                    <h3 class="team-card__description">
+                      Головний лікар. Лікар стоматолог
+                    </h3>
+                    <div class="team-card__text">
+                      Більше про лікаря
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </li>
+            <li class="team__item all therapist kids show">
+              <div class="team__button" data-modal-button="modal-2">
+                <article class="team-card">
+                  <div class="team-card__box">
+                    <img class="team-card__image" src="./images/team/team-02.webp" alt="Філіппова Ольга Миколаївна"
+                      width="460" height="300" loading="lazy">
+                  </div>
+                  <div class="team-card__content">
+                    <p class="team-card__lastname">
+                      Філіппова
+                    </p>
+                    <p class="team-card__name">
+                      Ольга Миколаївна
+                    </p>
+                    <h3 class="team-card__description">
+                      Засновник клініки. Cтоматолог-терапевт
+                    </h3>
+                    <div class="team-card__text">
+                      Більше про лікаря
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </li>
+            <li class="team__item all surgeon hide">
+              <div class="team__button" data-modal-button="modal-3">
+                <article class="team-card">
+                  <div class="team-card__box">
+                    <img class="team-card__image" src="./images/team/team-03.webp"
+                      alt="Стеценко Андрій Вікторович Лікар стоматолог. Ортодонт" width="460" height="300"
+                      loading="lazy">
+                  </div>
+                  <div class="team-card__content">
+                    <p class="team-card__lastname">
+                      Стеценко
+                    </p>
+                    <p class="team-card__name">
+                      Андрій Вікторович
+                    </p>
+                    <h3 class="team-card__description">
+                      Лікар стоматолог. Ортодонт
+                    </h3>
+                    <div class="team-card__text">
+                      Більше про лікаря
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </li>
+            <li class="team__item all kids hide">
+              <div class="team__button" data-modal-button="modal-4">
+                <article class="team-card">
+                  <div class="team-card__box">
+                    <img class="team-card__image" src="./images/team/team-04.webp" alt="Боярська Наталія Леонідівна"
+                      width="460" height="420" loading="lazy">
+                  </div>
+                  <div class="team-card__content">
+                    <p class="team-card__lastname">
+                      Боярська
+                    </p>
+                    <p class="team-card__name">
+                      Наталія Леонідівна
+                    </p>
+                    <h3 class="team-card__description">
+                      Cтоматолог-Терапевт. Дитячий стоматолог
+                    </h3>
+                    <div class="team-card__text">
+                      Більше про лікаря
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </li>
+            <li class="team__item all orthodontist show">
+              <div class="team__button" data-modal-button="modal-5">
+                <article class="team-card">
+                  <div class="team-card__box">
+                    <img class="team-card__image" src="./images/team/team-06.webp" alt="Кавака Іван Євгенович"
+                      width="460" height="420" loading="lazy">
+                  </div>
+                  <div class="team-card__content">
+                    <p class="team-card__lastname">
+                      Кавака
+                    </p>
+                    <p class="team-card__name">
+                      Іван Євгенович
+                    </p>
+                    <h3 class="team-card__description">
+                      Лікар стоматолог
+                    </h3>
+                    <div class="team-card__text">
+                      Більше про лікаря
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </li>
+            <li class="team__item all therapist show">
+              <div class="team__button" data-modal-button="modal-6">
+                <article class="team-card">
+                  <div class="team-card__box">
+                    <img class="team-card__image" src="./images/team/team-05.webp" alt="Данилова Ольга Володимирівна"
+                      width="460" height="420" loading="lazy">
+                  </div>
+                  <div class="team-card__content">
+                    <p class="team-card__lastname">
+                      Данилова
+                    </p>
+                    <p class="team-card__name">
+                      Ольга Володимирівна
+                    </p>
+                    <h3 class="team-card__description">
+                      Лікар стоматолог. Пародонтолог
+                    </h3>
+                    <div class="team-card__text">
+                      Більше про лікаря
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </li>
+            <li class="team__item all surgeon hide">
+              <div class="team__button" data-modal-button="modal-7">
+                <article class="team-card">
+                  <div class="team-card__box">
+                    <img class="team-card__image" src="./images/team/team-07.webp" alt="Сушко Віталій Олександрович"
+                      width="460" height="420" loading="lazy">
+                  </div>
+                  <div class="team-card__content">
+                    <p class="team-card__lastname">
+                      Сушко
+                    </p>
+                    <p class="team-card__name">
+                      Віталій Олександрович
+                    </p>
+                    <h3 class="team-card__description">
+                      Лікар стоматолог. Загальна практика
+                    </h3>
+                    <div class="team-card__text">
+                      Більше про лікаря
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </li>
+            <li class="team__item all therapist show">
+              <div class="team__button" data-modal-button="modal-8">
+                <article class="team-card">
+                  <div class="team-card__box">
+                    <img class="team-card__image" src="./images/team/team-08.webp" alt="Щербiна Тетяна Ігорівна"
+                      width="460" height="420" loading="lazy">
+                  </div>
+                  <div class="team-card__content">
+                    <p class="team-card__lastname">
+                      Щербiна
+                    </p>
+                    <p class="team-card__name">
+                      Валерій Олександрович
+                    </p>
+                    <h3 class="team-card__description">
+                      Лікар стоматолог. Хірург
+                    </h3>
+                    <div class="team-card__text">
+                      Більше про лікаря
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </li>
+            <li class="team__item all therapist orthodontist show">
+              <div class="team__button" data-modal-button="modal-9">
+                <article class="team-card">
+                  <div class="team-card__box">
+                    <img class="team-card__image" src="./images/team/team-09.webp" alt="Щербiна Тетяна Ігорівна"
+                      width="460" height="420" loading="lazy">
+                  </div>
+                  <div class="team-card__content">
+                    <p class="team-card__lastname">
+                      Щербiна
+                    </p>
+                    <p class="team-card__name">
+                      Тетяна Ігорівна
+                    </p>
+                    <h3 class="team-card__description">
+                      Лікар-стоматолог, ортодонт.
+                    </h3>
+                    <div class="team-card__text">
+                      Більше про лікаря
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </li>
+          </ul>
+
+          <div class="modals">
+            <div id="modal-1" class="backdrop hidden" data-modal>
+              <div class="modal">
+                <div class="modal__head">
+                  <img class="modal__img" src="images/team/team-01.webp" width="240" height="290"
+                    alt="Стоматолог-терапевт Михайло Юрійович">
+                  <div class="modal__info">
+                    <div class="modal__last-name">
+                      Сиротин
+                    </div>
+                    <div class="modal__first-name">
+                      Михайло Юрійович
+                    </div>
+                    <div class="modal__subtitle">
+                      Головний лікар. Лікар стоматолог
+                    </div>
+                    <div class="modal__text">
+                      Член Асоціації імплантологів України, член Української Академії Пародонтології, член ITI
+                      (International Team for Implantology).
+                    </div>
+                    <div class="modal__text">
+                      Закінчил Одеський державний медичний університет
+                    </div>
+                  </div>
+                </div>
+                <ul class="modal__content">
+                  <li class="modal__item">
+                    Лікування порушень прикусу та зубного ряду
+                  </li>
+                  <li class="modal__item">
+                    Лікування з використанням брекет-системи
+                  </li>
+                  <li class="modal__item">
+                    Патологія зубних рядів та прикусу
+                  </li>
+                  <li class="modal__item">
+                    Комплексне лікування скелетних аномалій
+                  </li>
+                </ul>
+                <button class="modal__close-btn modal-button" type="button" data-modal-close>
+                  <svg class="modal__close-btn-icon" width="32" height="32">
+                    <use href="./images/symbol-defs.svg#icon-close"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div id="modal-2" class="backdrop hidden" data-modal>
+              <div class="modal">
+                <div class="modal__head">
+                  <img class="modal__img" src="images/team/team-02.webp" width="240" height="290"
+                    alt="Стоматолог-терапевт Філіппова Ольга Миколаївна">
+                  <div class="modal__info">
+                    <div class="modal__last-name">
+                      Філіппова
+                    </div>
+                    <div class="modal__first-name">
+                      Ольга Миколаївна
+                    </div>
+                    <div class="modal__subtitle">
+                      Засновник клініки. Лікар стоматолог. Терапевт
+                    </div>
+
+                    <div class="modal__text">
+                      Закінчила Одеський державний медичний університет
+                    </div>
+                  </div>
+                </div>
+                <ul class="modal__content">
+                  <li class="modal__item">
+                    Лікування порушень прикусу та зубного ряду
+                  </li>
+                  <li class="modal__item">
+                    Лікування з використанням брекет-системи
+                  </li>
+                  <li class="modal__item">
+                    Патологія зубних рядів та прикусу
+                  </li>
+                  <li class="modal__item">
+                    Комплексне лікування скелетних аномалій
+                  </li>
+                </ul>
+                <button class="modal__close-btn modal-button" type="button" data-modal-close>
+                  <svg class="modal__close-btn-icon" width="32" height="32">
+                    <use href="./images/symbol-defs.svg#icon-close"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div id="modal-3" class="backdrop hidden" data-modal>
+              <div class="modal">
+                <div class="modal__head">
+                  <img class="modal__img" src="images/team/team-03.webp" width="240" height="290" alt="Стеценко Андрій Вікторович
+                     Лікар стоматолог. Ортодонт">
+                  <div class="modal__info">
+                    <div class="modal__last-name">
+                      Стеценко
+                    </div>
+                    <div class="modal__first-name">
+                      Андрій Вікторович
+                    </div>
+                    <div class="modal__subtitle">
+                      Лікар стоматолог
+                    </div>
+                    <div class="modal__text">
+                      Закінчил Одеський державний медичний університет
+                    </div>
+                  </div>
+                </div>
+                <ul class="modal__content">
+                  <li class="modal__item">
+                    Лікування порушень прикусу та зубного ряду
+                  </li>
+                  <li class="modal__item">
+                    Лікування з використанням брекет-системи
+                  </li>
+                  <li class="modal__item">
+                    Патологія зубних рядів та прикусу
+                  </li>
+                  <li class="modal__item">
+                    Комплексне лікування скелетних аномалій
+                  </li>
+                </ul>
+                <button class="modal__close-btn modal-button" type="button" data-modal-close>
+                  <svg class="modal__close-btn-icon" width="32" height="32">
+                    <use href="./images/symbol-defs.svg#icon-close"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div id="modal-4" class="backdrop hidden" data-modal>
+              <div class="modal">
+                <div class="modal__head">
+                  <img class="modal__img" src="images/team/team-04.webp" width="240" height="290"
+                    alt="Боярська Наталія Леонідівна">
+                  <div class="modal__info">
+                    <div class="modal__last-name">
+                      Боярська
+                    </div>
+                    <div class="modal__first-name">
+                      Наталія Леонідівна
+                    </div>
+                    <div class="modal__subtitle">
+                      Дитячий стоматолог
+                    </div>
+                    <div class="modal__text">
+                      Закінчила Одеський державний медичний університет
+                    </div>
+                  </div>
+                </div>
+                <ul class="modal__content">
+                  <li class="modal__item">
+                    Лікування порушень прикусу та зубного ряду
+                  </li>
+                  <li class="modal__item">
+                    Лікування з використанням брекет-системи
+                  </li>
+                  <li class="modal__item">
+                    Патологія зубних рядів та прикусу
+                  </li>
+                  <li class="modal__item">
+                    Комплексне лікування скелетних аномалій
+                  </li>
+                </ul>
+                <button class="modal__close-btn modal-button" type="button" data-modal-close>
+                  <svg class="modal__close-btn-icon" width="32" height="32">
+                    <use href="./images/symbol-defs.svg#icon-close"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div id="modal-5" class="backdrop hidden" data-modal>
+              <div class="modal">
+                <div class="modal__head">
+                  <img class="modal__img" src="images/team/team-06.webp" width="240" height="290"
+                    alt="Кавака Іван Євгенович">
+                  <div class="modal__info">
+                    <div class="modal__last-name">
+                      Кавака
+                    </div>
+                    <div class="modal__first-name">
+                      Іван Євгенович
+                    </div>
+                    <div class="modal__subtitle">
+                      Лікар стоматолог. Загальна практика
+                    </div>
+                    <div class="modal__text">
+                      Закінчил Одеський державний медичний університет
+                    </div>
+                  </div>
+                </div>
+                <ul class="modal__content">
+                  <li class="modal__item">
+                    Лікування порушень прикусу та зубного ряду
+                  </li>
+                  <li class="modal__item">
+                    Лікування з використанням брекет-системи
+                  </li>
+                  <li class="modal__item">
+                    Патологія зубних рядів та прикусу
+                  </li>
+                  <li class="modal__item">
+                    Комплексне лікування скелетних аномалій
+                  </li>
+                </ul>
+                <button class="modal__close-btn modal-button" type="button" data-modal-close>
+                  <svg class="modal__close-btn-icon" width="32" height="32">
+                    <use href="./images/symbol-defs.svg#icon-close"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div id="modal-6" class="backdrop hidden" data-modal>
+              <div class="modal">
+                <div class="modal__head">
+                  <img class="modal__img" src="images/team/team-05.webp" width="240" height="290"
+                    alt="Стоматолог-терапевт Данилова Ольга Володимирівна">
+                  <div class="modal__info">
+                    <div class="modal__last-name">
+                      Данилова
+                    </div>
+                    <div class="modal__first-name">
+                      Ольга Володимирівна
+                    </div>
+                    <div class="modal__subtitle">
+                      Лікар стоматолог. Пародонтолог
+                    </div>
+                    <div class="modal__text">
+                      Член Української Академії Пародонтології.
+                      Спеціалізується в галузі терапевтичної, дитячої стоматології та пародонтології.
+                    </div>
+                    <div class="modal__text">
+                      Закінчила Одеський державний медичний університет
+                    </div>
+                  </div>
+                </div>
+                <ul class="modal__content">
+                  <li class="modal__item">
+                    Лікування порушень прикусу та зубного ряду
+                  </li>
+                  <li class="modal__item">
+                    Лікування з використанням брекет-системи
+                  </li>
+                  <li class="modal__item">
+                    Патологія зубних рядів та прикусу
+                  </li>
+                  <li class="modal__item">
+                    Комплексне лікування скелетних аномалій
+                  </li>
+                </ul>
+                <button class="modal__close-btn modal-button" type="button" data-modal-close>
+                  <svg class="modal__close-btn-icon" width="32" height="32">
+                    <use href="./images/symbol-defs.svg#icon-close"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div id="modal-7" class="backdrop hidden" data-modal>
+              <div class="modal">
+                <div class="modal__head">
+                  <img class="modal__img" src="images/team/team-07.webp" width="240" height="290"
+                    alt="Сушко Віталій Олександрович">
+                  <div class="modal__info">
+                    <div class="modal__last-name">
+                      Сушко
+                    </div>
+                    <div class="modal__first-name">
+                      Віталій Олександрович
+                    </div>
+                    <div class="modal__subtitle">
+                      Лікар стоматолог. Загальна практика
+                    </div>
+                    <div class="modal__text">
+                      Закінчил Одеський державний медичний університет
+                    </div>
+                  </div>
+                </div>
+                <ul class="modal__content">
+                  <li class="modal__item">
+                    Лікування порушень прикусу та зубного ряду
+                  </li>
+                  <li class="modal__item">
+                    Лікування з використанням брекет-системи
+                  </li>
+                  <li class="modal__item">
+                    Патологія зубних рядів та прикусу
+                  </li>
+                  <li class="modal__item">
+                    Комплексне лікування скелетних аномалій
+                  </li>
+                </ul>
+                <button class="modal__close-btn modal-button" type="button" data-modal-close>
+                  <svg class="modal__close-btn-icon" width="32" height="32">
+                    <use href="./images/symbol-defs.svg#icon-close"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div id="modal-8" class="backdrop hidden" data-modal>
+              <div class="modal">
+                <div class="modal__head">
+                  <img class="modal__img" src="images/team/team-08.webp" width="240" height="290"
+                    alt="Щербина Валерій Олександрович">
+                  <div class="modal__info">
+                    <div class="modal__last-name">
+                      Щербина
+                    </div>
+                    <div class="modal__first-name">
+                      Валерій Олександрович
+                    </div>
+                    <div class="modal__subtitle">
+                      Лікар стоматолог. Хірург
+                    </div>
+                    <div class="modal__text">
+                      Закінчил Одеський державний медичний університет
+                    </div>
+                  </div>
+                </div>
+                <ul class="modal__content">
+                  <li class="modal__item">
+                    Лікування порушень прикусу та зубного ряду
+                  </li>
+                  <li class="modal__item">
+                    Лікування з використанням брекет-системи
+                  </li>
+                  <li class="modal__item">
+                    Патологія зубних рядів та прикусу
+                  </li>
+                  <li class="modal__item">
+                    Комплексне лікування скелетних аномалій
+                  </li>
+                </ul>
+                <button class="modal__close-btn modal-button" type="button" data-modal-close>
+                  <svg class="modal__close-btn-icon" width="32" height="32">
+                    <use href="./images/symbol-defs.svg#icon-close"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div id="modal-9" class="backdrop hidden" data-modal>
+              <div class="modal">
+                <div class="modal__head">
+                  <img class="modal__img" src="images/team/team-09.webp" width="240" height="290"
+                    alt="Щербiна Тетяна Ігорівна">
+                  <div class="modal__info">
+                    <div class="modal__last-name">
+                      Щербiна
+                    </div>
+                    <div class="modal__first-name">
+                      Тетяна Ігорівна
+                    </div>
+                    <div class="modal__subtitle">
+                      Лікар-стоматолог, ортодонт.
+                    </div>
+                    <div class="modal__text">
+                      Член асоціації ортодонтів України.
+                    </div>
+                    <div class="modal__text">
+                      Закінчила Одеський державний медичний університет
+                    </div>
+                  </div>
+                </div>
+                <ul class="modal__content">
+                  <li class="modal__item">
+                    Лікування порушень прикусу та зубного ряду
+                  </li>
+                  <li class="modal__item">
+                    Лікування з використанням брекет-системи
+                  </li>
+                  <li class="modal__item">
+                    Патологія зубних рядів та прикусу
+                  </li>
+                  <li class="modal__item">
+                    Комплексне лікування скелетних аномалій
+                  </li>
+                </ul>
+                <button class="modal__close-btn modal-button" type="button" data-modal-close>
+                  <svg class="modal__close-btn-icon" width="32" height="32">
+                    <use href="./images/symbol-defs.svg#icon-close"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+  <div class="container footer__container">
+    <div class="footer__head">
+      <div class="footer__links">
+        <a class="logo footer__logo" href="index.html">
+          <img class="logo__img" src="images/logo-white.svg" width="242" height="70"
+            alt="Логотип Сімейной стоматології">
+        </a>
+        <ul class="social">
+          <li class="social__item">
+            <a class="social__link" href="" title="Перейти на Інстаграм сторінку">
+              <svg class="social__icon" width="24" height="24" viewBox="0 0 24 24">
+                <use href="./images/symbol-defs.svg#icon-insta"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" title="Перейти на Інстаграм сторінку">
+              <svg class="social__icon" width="24" height="24" viewBox="0 0 24 24">
+                <use href="./images/symbol-defs.svg#icon-fb"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="" title="Перейти на Інстаграм сторінку">
+              <svg class="social__icon" width="24" height="24" viewBox="0 0 24 24">
+                <use href="./images/symbol-defs.svg#icon-mail"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="footer__contacts">
+        <li class="footer__contact">
+          <a class="footer__contact-link footer__contact-link--address" href="#">
+            <svg class="footer__contact-icon" width="24" height="24" viewBox="0 0 24 24">
+              <use href="images/symbol-defs.svg#icon-geo"></use>
+            </svg>
+            Одеса, Володимира Висоцького, 6
+          </a>
+          <a class="footer__contact-link footer__contact-link--phone" href="tel:+380977213406">
+            +38 097 721 34 06
+          </a>
+          <time class="footer__contact-link" datetime="2024-03-14T09:00">
+            <svg class="footer__contact-icon" width="24" height="24" viewBox="0 0 24 24">
+              <use href="images/symbol-defs.svg#icon-time"></use>
+            </svg>
+            Пн-пт 9:00 - 20:00 / Сб до 14:30
+          </time>
+        </li>
+        <li class="footer__contact">
+          <a class="footer__contact-link footer__contact-link--address" href="#">
+            <svg class="footer__contact-icon" width="24" height="24" viewBox="0 0 24 24">
+              <use href="./images/symbol-defs.svg#icon-geo"></use>
+            </svg>
+            Одеса, Академіка Заболотного, 2
+          </a>
+          <a class="footer__contact-link footer__contact-link--phone" href="tel:+380687653164">
+            +38 068 765 31 64
+          </a>
+          <time class="footer__contact-link" datetime="2024-03-14T09:00">
+            <svg class="footer__contact-icon" width="24" height="24" viewBox="0 0 24 24">
+              <use href="./images/symbol-defs.svg#icon-time"></use>
+            </svg>
+            Пн-пт 9:00 - 20:00 / Сб до 14:30
+          </time>
+        </li>
+      </ul>
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a class="footer__link" href="./files/23.pdf" target="_blank">Ціни</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="policy.html">
+            Обробка персональних даних
+          </a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="cookies.html">
+            Політика файлів cookie
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__bottom-left">
+        <p class="footer__bottom-text">
+          © 2023. All rights reserved
+        </p>
+        <p class="footer__bottom-text">
+          Photo by <a class="footer__bottom-link" href="www.freepik.com">
+            Freepik
+          </a>
+        </p>
+      </div>
+
+
+      <a class="footer__link" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=kozlova.ux@gmail.com"
+        target="_blank">
+        created by kozlova.ux
+      </a>
+    </div>
+
+  </div>
+</footer>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
+
+  <script src="js/filter-team.js"></script>
+  <script src="js/fslightbox.js"></script>
+  <script src="js/about.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
