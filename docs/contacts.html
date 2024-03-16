@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Стоматологічна клиніка Сімейна стоматологія</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="favicon/favicon.ico" sizes="any">
+  <link rel="icon" href="favicon/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon/afavicon/pple-touch-icon.png/">
+
+  <link rel="stylesheet" href="css/contacts.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <a class="logo header__logo" href="index.html">
+        <img class="logo__img" src="./images/logo.svg" width="220" height="70" alt="Логотип Сімейной стоматології">
+      </a>
+      <div class="burger">
+        <span class="burger__line"></span>
+      </div>
+      <nav class="nav">
+        <ul class="menu">
+          <li class="menu__item">
+            <a class="menu__link @@home" href="index.html">
+              Головна
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link current" href="about.html">
+              Про клініку
+            </a>
+          </li>
+          <li class="menu__item">
+            <button class="menu__link menu__btn @@services" type="button">
+              Послуги
+              <svg class="menu__btn-icon" width="24" height="24" viewBox="0 0 24 24">
+                <use href="./images/symbol-defs.svg#icon-chevron"></use>
+              </svg>
+            </button>
+            <div class="dropdown">
+              <ul class="dropdown__list">
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="kids-dental.html">
+                    Дитяча стоматологія
+                  </a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="therapy.html">
+                    Терапевтична стоматологія
+                  </a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="prosthetics.html">
+                    Протезування
+                  </a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="surgery.html">
+                    Хірургія
+                  </a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="orthodontics.html">
+                    Ортодонтія
+                  </a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="parantology.html">
+                    Паронтологія
+                  </a>
+                </li>
+
+
+              </ul>
+            </div>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link @@contacts" href="contacts.html">
+              Контакти
+            </a>
+          </li>
+        </ul>
+        <button class="button nav__button" type="button" data-modal-button="header-appointment">
+          Записатись
+        </button>
+        <div id="header-appointment" class="backdrop hidden" data-modal>
+          <div class="modal modal--small">
+            <div class="appointment">
+              <div class="appointment__subtitle subtitle">
+                Записатися на прийом:
+              </div>
+              <ul class="appointment__messengers messengers">
+                <li class="messengers__item">
+                  <a class="messengers__link" href="viber://chat?number=%2B380668471146" target="blank"
+                    title="telegram">
+                    <svg class="messengers__icon" width="32" height="32">
+                      <use href="./images/symbol-defs.svg#icon-tel"></use>
+                    </svg>
+                    +38 068 111 31 84
+                  </a>
+                </li>
+                <li class="messengers__item">
+                  <a class="messengers__link" href="https://t.me/i" target="blank" title="telegram">
+                    <svg class="messengers__icon" width="32" height="32">
+                      <use href="./images/symbol-defs.svg#icon-telegram"></use>
+                    </svg>
+                    +38 068 111 31 64
+                  </a>
+                </li>
+                <li class="messengers__item">
+                  <a class="messengers__link" href="viber://chat?number=%2B3806811131" target="blank" title="telegram">
+                    <svg class="messengers__icon" width="32" height="32">
+                      <use href="./images/symbol-defs.svg#icon-viber"></use>
+                    </svg>
+                    +38 068 111 31 64
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <button class="modal__close-btn modal-button" type="button" data-modal-close>
+              <svg class="modal__close-btn-icon" width="32" height="32">
+                <use href="./images/symbol-defs.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+
+    <main>
+      <section class="contact section">
+        <div class="container">
+          <h1 class="title contact__title">
+            Наші філії
+          </h1>
+          <div class="contact__inner">
+            <ul class="contact__list">
+              <li class="contact__item">
+                <div class="contact__subtitle subtitle">
+                  Адреса
+                </div>
+                <div class="contact__info">
+                  <p class="contact__text">
+                    Одеса,
+                  </p>
+                  <p class="contact__text contact__text--bold">
+                    вул. Володимира Висоцького, 6
+                  </p>
+                </div>
+              </li>
+              <li class="contact__item">
+                <div class="contact__subtitle subtitle">
+                  Графік роботи:
+                </div>
+                <div class="contact__info">
+                  <p class="contact__text">
+                    Понеділок – п’ятниця з 9:00 до 20:00
+                  </p>
+                  <p class="contact__info">
+                    Субота з 9:00 до 14:30
+                  </p>
+                </div>
+              </li>
+              <li class="contact__item">
+                <div class="appointment">
+                  <div class="appointment__subtitle subtitle">
+                    Записатися на прийом:
+                  </div>
+                  <ul class="appointment__messengers messengers">
+
+                    <li class="messengers__item">
+                      <a class="messengers__link" href="viber://chat?number=%2B380668471146" target="blank"
+                        title="telegram">
+                        <svg class="messengers__icon" width="32" height="32">
+                          <use href="./images/symbol-defs.svg#icon-tel"></use>
+                        </svg>
+                        +38 068 111 31 84
+                      </a>
+                    </li>
+                    <li class="messengers__item">
+                      <a class="messengers__link" href="https://t.me/i" target="blank" title="telegram">
+                        <svg class="messengers__icon" width="32" height="32">
+                          <use href="./images/symbol-defs.svg#icon-telegram"></use>
+                        </svg>
+                        +38 068 111 31 64
+                      </a>
+                    </li>
+                    <li class="messengers__item">
+                      <a class="messengers__link" href="viber://chat?number=%2B3806811131" target="blank"
+                        title="telegram">
+                        <svg class="messengers__icon" width="32" height="32">
+                          <use href="./images/symbol-defs.svg#icon-viber"></use>
+                        </svg>
+                        +38 068 111 31 64
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+            <div class="contact__map">
+              <iframe class="contact__map-frame"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1371.1864641680206!2d30.80248032613327!3d46.579864571918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c63b2d18bcaa4d%3A0x9a7dd302afc280c4!2z0YPQuy4g0JLQu9Cw0LTQuNC80LjRgNCwINCS0YvRgdC-0YbQutC-0LPQviwgNiwg0J7QtNC10YHRgdCwLCDQntC00LXRgdGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA2NTAwMA!5e0!3m2!1sru!2sua!4v1706538896193!5m2!1sru!2sua"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+          <div class="contact__inner">
+            <div class="contact__map contact__map--bottom">
+              <iframe class="contact__map-frame"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2742.18557530488!2d30.78050047665483!3d46.58356865806055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c624da23ff87f7%3A0x3a0049aeec051cde!2z0YPQuy4g0JDQutCw0LTQtdC80LjQutCwINCX0LDQsdC-0LvQvtGC0L3QvtCz0L4sIDIsINCe0LTQtdGB0YHQsCwg0J7QtNC10YHRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgNjUwMDA!5e0!3m2!1sru!2sua!4v1706547760544!5m2!1sru!2sua"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <ul class="contact__list">
+              <li class="contact__item">
+                <div class="contact__subtitle subtitle">
+                  Адреса
+                </div>
+                <div class="contact__info">
+                  <p class="contact__text">
+                    Одеса,
+                  </p>
+                  <p class="contact__text contact__text--bold">
+                    вул. Академіка Заболотного, 2
+                  </p>
+                </div>
+              </li>
+              <li class="contact__item">
+                <div class="contact__subtitle subtitle">
+                  Графік роботи:
+                </div>
+                <div class="contact__info">
+                  <p class="contact__text">
+                    Понеділок – п’ятниця з 9:00 до 20:00
+                  </p>
+                  <p class="contact__info">
+                    Субота з 9:00 до 14:30
+                  </p>
+                </div>
+              </li>
+              <li class="contact__item">
+                <div class="appointment">
+                  <div class="appointment__subtitle subtitle">
+                    Записатися на прийом:
+                  </div>
+                  <ul class="appointment__messengers messengers">
+
+                    <li class="messengers__item">
+                      <a class="messengers__link" href="viber://chat?number=%2B380668471146" target="blank"
+                        title="telegram">
+                        <svg class="messengers__icon" width="32" height="32">
+                          <use href="./images/symbol-defs.svg#icon-tel"></use>
+                        </svg>
+                        +38 068 111 31 64
+                      </a>
+                    </li>
+                    <li class="messengers__item">
+                      <a class="messengers__link" href="https://t.me/i" target="blank" title="telegram">
+                        <svg class="messengers__icon" width="32" height="32">
+                          <use href="./images/symbol-defs.svg#icon-telegram"></use>
+                        </svg>
+                        +38 068 111 31 64
+                      </a>
+                    </li>
+                    <li class="messengers__item">
+                      <a class="messengers__link" href="viber://chat?number=%2B3806811131" target="blank"
+                        title="telegram">
+                        <svg class="messengers__icon" width="32" height="32">
+                          <use href="./images/symbol-defs.svg#icon-viber"></use>
+                        </svg>
+                        +38 068 111 31 64
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+          <div class="contact__attention">
+            Ми працюємо в період відключення електрики (клініки оснащені генераторами), але якщо ви не можете
+            додзвонитися за
+            вказаними телефонами, ви можете написати нам у Viber.
+          </div>
+
+          <div class="contact__rules">
+            <h2 class="contact__rules-title title">
+              Правила відвідування клініки
+            </h2>
+            <div class="contact__rules-content">
+              <ul class="contact__rules-list">
+                <li class="contact__rules-item">
+                  Якщо у вас чи у вашої дитини є ознаки ГРВІ (температура вище 37, нежить, кашель, болить горло), будь
+                  ласка, повідомте
+                  нам — ми з вами підберемо інший час візиту.
+                </li>
+                <li class="contact__rules-item">
+                  Послуги надаються за попереднім записом, що здійснюється телефоном або через Viber. Надання послуг без
+                  попереднього запису можливе виключно у разі відсутності попереднього запису на даний момент інших
+                  пацієнтів.
+                </li>
+                <li class="contact__rules-item">
+                  Просимо вас приїжджати до клініки не пізніше ніж за 5-10 хвилин до початку прийому. Це дозволить легше
+                  і швидше адаптуватися до огляду або лікування, оформити всі необхідні документи.
+                </li>
+                <li class="contact__rules-item">
+                  Будь ласка, не спізнюйтесь! Якщо ви запізнилися більш ніж на 15 хвилин (або на 25% від
+                  запланованого часу прийому), ваш прийом може не відбутися.
+                </li>
+                <li class="contact__rules-item">
+                  Якщо ви змушені скасувати свій візит до нас, просимо вас повідомляти нам про це не пізніше ніж за 24
+                  години до прийому.
+                </li>
+                <li class="contact__rules-item">
+                  Напередодні візиту адміністратор клініки зв’яжеться з вами, щоб підтвердити вашу парафію. Просимо вас
+                  бути на зв’язку.
+                </li>
+                <li class="contact__rules-item">
+                  У ситуації, якщо запізнення або неявки на прийом регулярні (більше 2-х разів поспіль), ми залишаємо за
+                  собою правопропонувати вам наступні прийоми «день на день» у день звернення за наявності вільного
+                  часу у лікаря.
+                </li>
+              </ul>
+
+              <p class="contact__rules-text">Дякуємо вам за розуміння!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+  <div class="container footer__container">
+    <div class="footer__head">
+      <div class="footer__links">
+        <a class="logo footer__logo" href="index.html">
+          <img class="logo__img" src="images/logo-white.svg" width="242" height="70"
+            alt="Логотип Сімейной стоматології">
+        </a>
+        <ul class="social">
+          <li class="social__item">
+            <a class="social__link" href="" title="Перейти на Інстаграм сторінку">
+              <svg class="social__icon" width="24" height="24" viewBox="0 0 24 24">
+                <use href="./images/symbol-defs.svg#icon-insta"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" title="Перейти на Інстаграм сторінку">
+              <svg class="social__icon" width="24" height="24" viewBox="0 0 24 24">
+                <use href="./images/symbol-defs.svg#icon-fb"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="" title="Перейти на Інстаграм сторінку">
+              <svg class="social__icon" width="24" height="24" viewBox="0 0 24 24">
+                <use href="./images/symbol-defs.svg#icon-mail"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="footer__contacts">
+        <li class="footer__contact">
+          <a class="footer__contact-link footer__contact-link--address" href="#">
+            <svg class="footer__contact-icon" width="24" height="24" viewBox="0 0 24 24">
+              <use href="images/symbol-defs.svg#icon-geo"></use>
+            </svg>
+            Одеса, Володимира Висоцького, 6
+          </a>
+          <a class="footer__contact-link footer__contact-link--phone" href="tel:+380977213406">
+            +38 097 721 34 06
+          </a>
+          <time class="footer__contact-link" datetime="2024-03-14T09:00">
+            <svg class="footer__contact-icon" width="24" height="24" viewBox="0 0 24 24">
+              <use href="images/symbol-defs.svg#icon-time"></use>
+            </svg>
+            Пн-пт 9:00 - 20:00 / Сб до 14:30
+          </time>
+        </li>
+        <li class="footer__contact">
+          <a class="footer__contact-link footer__contact-link--address" href="#">
+            <svg class="footer__contact-icon" width="24" height="24" viewBox="0 0 24 24">
+              <use href="./images/symbol-defs.svg#icon-geo"></use>
+            </svg>
+            Одеса, Академіка Заболотного, 2
+          </a>
+          <a class="footer__contact-link footer__contact-link--phone" href="tel:+380687653164">
+            +38 068 765 31 64
+          </a>
+          <time class="footer__contact-link" datetime="2024-03-14T09:00">
+            <svg class="footer__contact-icon" width="24" height="24" viewBox="0 0 24 24">
+              <use href="./images/symbol-defs.svg#icon-time"></use>
+            </svg>
+            Пн-пт 9:00 - 20:00 / Сб до 14:30
+          </time>
+        </li>
+      </ul>
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a class="footer__link" href="./files/23.pdf" target="_blank">Ціни</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="policy.html">
+            Обробка персональних даних
+          </a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="cookies.html">
+            Політика файлів cookie
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__bottom-left">
+        <p class="footer__bottom-text">
+          © 2023. All rights reserved
+        </p>
+        <p class="footer__bottom-text">
+          Photo by <a class="footer__bottom-link" href="www.freepik.com">
+            Freepik
+          </a>
+        </p>
+      </div>
+
+
+      <a class="footer__link" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=kozlova.ux@gmail.com"
+        target="_blank">
+        created by kozlova.ux
+      </a>
+    </div>
+
+  </div>
+</footer>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
+
+  <script src="js/fslightbox.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

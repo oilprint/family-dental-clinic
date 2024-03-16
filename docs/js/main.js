@@ -11,128 +11,129 @@ document.addEventListener('DOMContentLoaded', () => {
     wrapper.classList.toggle('lock');
   });
 
-  //swiper
-  const swiper1 = new Swiper('.swiper-1', {
-    slidesPerView: 1,
-    spaceBetween: 10,
-    loop: true,
-     autoplay: {
-      delay: 3000,
-    },
-    // slideToClickedSlide: true,
+  // dropdown
 
-    // If we need pagination
-    pagination: {
-      el: '.pag-1',
-      type: 'bullets',
-      clickable: true
-    },
-  });
+  const menuBtn = document.querySelector('.menu__btn');
 
-  const swiper = new Swiper('.swiper-2', {
-      slidesPerView: 1,
-      spaceBetween: 10,
-      loop: true,
-      // slideToClickedSlide: true,
+  menuBtn.addEventListener('click', (e) => {
+    console.log('click');
+    let dropdown = e.target.closest('.menu__item').querySelector('.dropdown');
+    console.log(dropdown);
+    dropdown.classList.toggle('dropdown--active');
 
-      navigation: {
-        nextEl: '.swiper-button-next-2',
-        prevEl: '.swiper-button-prev-2',
-      },
-
-    // If we need pagination
-    pagination: {
-      el: '.pag-2',
-      type: 'bullets',
-      clickable: true
-    },
-
-    breakpoints: {
-     
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 16,
-        // Navigation arrows
-       
-      },
-     
-      1200: {
-        slidesPerView: 4,
-        spaceBetween: 30
-      }
-    }
-  });
-
-  const slider3 = document.querySelector('.swiper-3');
-  console.log(slider3);
-  let mySwiper;
-
-  function mobileSlider() {
-    if (window.innerWidth <= 576 && slider3.dataset.mobile == 'false') {
-      const swiper3 = new Swiper(slider3, {
-      slidesPerView: 1,
-      spaceBetween: 16,
-      loop: true,
-      slideClass: 'category__item',
-      pagination: {
-        el: '.pag-3',
-        type: 'bullets',
-        clickable: true
-      }
-    });
-
-      slider3.dataset.mobile = 'true'
-    };
-
-    if (window.innerWidth > 576) {
-      slider3.dataset.mobile = 'false';
-
-      if (slider3.classList.contains('swiper-initialized')) {
-        mySwiper.destroy();
-      }
-    }
-  };
-  mobileSlider();
-
-  window.addEventListener('resize', () => {
-    mobileSlider();
-  });
-
-
-  // filters
-  const filterBtns = document.querySelectorAll(".filter-btn");
-  const teamList = document.querySelector(".team__list");
-
-  filterBtns.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      filterBtns.forEach((filterBtn) => {
-        filterBtn.classList.remove("is-active");
-      });
-      btn.classList.add("is-active");
-
-      const filterValue = btn.getAttribute("data-filter");
-
-      for (const item of teamList.children) {
-        if (filterValue === "all") {
-          item.classList.remove('hide');
-          item.classList.add('show');
-        } else if (item.classList.contains(filterValue)) {
-          item.classList.remove('hide')
-          item.classList.add('show')
-        } else {
-          item.classList.remove('show')
-          item.classList.add('hide')
-        }
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.menu__item')) {
+        dropdown.classList.remove('dropdown--active');
       }
     });
   });
 
+
+  //Lenis Smooth scroll
+	const lenis = new Lenis({
+		duration: 1.2,
+	});
+	function raf(time) {
+		lenis.raf(time)
+		requestAnimationFrame(raf)
+	}
+
+	requestAnimationFrame(raf)
+
+	//Integration Lenis on GSAP ScrollTrigger
+	lenis.on('scroll', ScrollTrigger.update)
+
+	gsap.ticker.add((time) => {
+		lenis.raf(time * 1000)
+	})
+
+
+  ///gsap
+
+  gsap.registerPlugin(ScrollTrigger)
+
+   gsap.from('.hero__content', {
+    y: 50,
+    opacity: 0,   
+  });
+
+  const sections = gsap.utils.toArray('.section');
+  sections.forEach((section, i) => {
+    
+    gsap.from(section.querySelector('.title'), {
+      scrollTrigger: {
+        trigger: section,
+        start: 'top bottom', 
+        end: '+=500',
+        scrub: 1
+      },  
+      y: -50,
+      ease: 'none'
+    });   
+  });
+
+  gsap.from('.category__item', {
+    scrollTrigger: {
+      trigger: '.category',
+      start: 'top center',
+      end: '+=300px',
+      srub: true
+    },
+    scale: 0,
+    transformOrigin: 'top center',
+    ease: 'Power2.easeOut',
+    stagger: 0.4
+  });
+
+  gsap.from('.team__item ', {
+    scrollTrigger: {
+      trigger: '.team',
+      start: 'top center',
+      end: '+=300px',
+      srub: true
+    },
+    scale: 0,
+    transformOrigin: 'top center',
+    ease: 'Power2.easeOut',
+    stagger: 0.3
+  })
+
+  //laptop animation 
+  const laptopScreen = window.matchMedia('(min-width: 992px)')
+
+  if (laptopScreen.matches) {
+    
+    gsap.from('.about__images', {
+    scrollTrigger: {
+      trigger: '.about',
+      start: '-10% bottom',
+      end: '20% top',
+      scrub: true,
+      },
+      css: {
+        width: 0,
+      }   
+    });
+
+    gsap.from('.booking__image', {
+      scrollTrigger: {
+        trigger: '.booking',
+        start: '0 bottom',
+        end: '30% center',
+        scrub: true
+      },
+      css: {
+        width: 0,
+      }   
+    });
+  }
+ 
 
 });
 
 
-  
 
+ 
 
 
 

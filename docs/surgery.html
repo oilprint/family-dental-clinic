@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Стоматологічна клиніка Сімейна стоматологія</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="favicon/favicon.ico" sizes="any">
+  <link rel="icon" href="favicon/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon/afavicon/pple-touch-icon.png/">
+
+  <link rel="stylesheet" href="css/kids-dental.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <a class="logo header__logo" href="index.html">
+        <img class="logo__img" src="./images/logo.svg" width="220" height="70" alt="Логотип Сімейной стоматології">
+      </a>
+      <div class="burger">
+        <span class="burger__line"></span>
+      </div>
+      <nav class="nav">
+        <ul class="menu">
+          <li class="menu__item">
+            <a class="menu__link @@home" href="index.html">
+              Головна
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link @@about" href="about.html">
+              Про клініку
+            </a>
+          </li>
+          <li class="menu__item">
+            <button class="menu__link menu__btn current" type="button">
+              Послуги
+              <svg class="menu__btn-icon" width="24" height="24" viewBox="0 0 24 24">
+                <use href="./images/symbol-defs.svg#icon-chevron"></use>
+              </svg>
+            </button>
+            <div class="dropdown">
+              <ul class="dropdown__list">
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="kids-dental.html">
+                    Дитяча стоматологія
+                  </a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="therapy.html">
+                    Терапевтична стоматологія
+                  </a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="prosthetics.html">
+                    Протезування
+                  </a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="surgery.html">
+                    Хірургія
+                  </a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="orthodontics.html">
+                    Ортодонтія
+                  </a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="parantology.html">
+                    Паронтологія
+                  </a>
+                </li>
+
+
+              </ul>
+            </div>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link @@contacts" href="contacts.html">
+              Контакти
+            </a>
+          </li>
+        </ul>
+        <button class="button nav__button" type="button" data-modal-button="header-appointment">
+          Записатись
+        </button>
+        <div id="header-appointment" class="backdrop hidden" data-modal>
+          <div class="modal modal--small">
+            <div class="appointment">
+              <div class="appointment__subtitle subtitle">
+                Записатися на прийом:
+              </div>
+              <ul class="appointment__messengers messengers">
+                <li class="messengers__item">
+                  <a class="messengers__link" href="viber://chat?number=%2B380668471146" target="blank"
+                    title="telegram">
+                    <svg class="messengers__icon" width="32" height="32">
+                      <use href="./images/symbol-defs.svg#icon-tel"></use>
+                    </svg>
+                    +38 068 111 31 84
+                  </a>
+                </li>
+                <li class="messengers__item">
+                  <a class="messengers__link" href="https://t.me/i" target="blank" title="telegram">
+                    <svg class="messengers__icon" width="32" height="32">
+                      <use href="./images/symbol-defs.svg#icon-telegram"></use>
+                    </svg>
+                    +38 068 111 31 64
+                  </a>
+                </li>
+                <li class="messengers__item">
+                  <a class="messengers__link" href="viber://chat?number=%2B3806811131" target="blank" title="telegram">
+                    <svg class="messengers__icon" width="32" height="32">
+                      <use href="./images/symbol-defs.svg#icon-viber"></use>
+                    </svg>
+                    +38 068 111 31 64
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <button class="modal__close-btn modal-button" type="button" data-modal-close>
+              <svg class="modal__close-btn-icon" width="32" height="32">
+                <use href="./images/symbol-defs.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+
+    <main>
+      <section class="about-hero section section--bg about-hero--reverse">
+        <div class="container about-hero__container">
+          <div class="about-hero__content">
+            <h1 class="about-hero__title title">
+              Хірургічна стоматологія:
+            </h1>
+            <div class="about-hero__description">
+              Новітні методи та професійний підхід
+            </div>
+          </div>
+          <div class="about-hero__image" style="background-image: url('images/decor/susgery.webp')"></div>
+        </div>
+      </section>
+
+      <section class="description section">
+        <div class="container">
+          <div class="description__wrapper">
+
+            <div class="description__content">
+              <h2 class="description__title description__title--small title">
+                Професійні послуги для здоров'я вашого ротового відділу
+              </h2>
+              <ul class="description__list">
+                <li class="description__item">
+                  <p class="description__headline  ">
+                    Видалення зубів:
+                  </p>
+                  <p class="description__text">
+                    Надійне та безболісне видалення пошкоджених, врослих або
+                    мудрості зубів за
+                    допомогою
+                    сучасних методів та обладнання.
+                  </p>
+                </li>
+                <li class="description__item">
+                  <p class="description__headline description__headline--text">
+                    Імплантація зубів:
+                  </p>
+                  <p class="description__text">
+                    Відновлення втрачених зубів за допомогою високоякісних імплантатів, що
+                    забезпечують натуральний вигляд та функціональність
+                  </p>
+                </li>
+                <li class="description__item">
+                  <p class="description__headline description__headline--text">
+                    Підготовка до протезування:
+                  </p>
+                  <p class="description__text">
+                    Хірургічні втручання для підготовки щелеп до установки зубних протезів,
+                    забезпечуючи оптимальну базу для майбутнього протезування.
+                  </p>
+                </li>
+                <li class="description__item">
+                  <p class="description__headline description__headline--text">
+                    Лікування кісткових дефектів:
+                  </p>
+                  <p class="description__text">
+                    Професійне відновлення кісткової тканини після травм, хвороб або
+                    втрати зубів, що дозволяє
+                    створити стійку основу для імплантації.
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="description__image" style="background-image: url('images/gallery/03.webp')"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section price">
+        <div class="container price__container">
+          <div class="price__inner" style="background-image: url('images/gallery/02.webp');">
+            <h2 class="title price__title">
+              Послуги та ціни стоматології
+            </h2>
+            <p class="price__description">
+              Повна вартість послуг розраховується після огляду лікаря та складання плану лікування
+            </p>
+            <a class="button price__button" href="./files/23.pdf" target="_blank">
+              Переглянути прайс
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section team section--bg">
+        <div class="container">
+          <h2 class="title team__title">
+            Лікарі хірургічного відділення
+          </h2>
+          <ul class="team__list">
+            <li class="team__item all surgeon show">
+              <div class="team__button" data-modal-button="modal-3">
+                <article class="team-card">
+                  <div class="team-card__box">
+                    <img class="team-card__image" src="./images/team/team-03.webp"
+                      alt="Стеценко Андрій Вікторович Лікар стоматолог. Ортодонт" width="460" height="300"
+                      loading="lazy">
+                  </div>
+                  <div class="team-card__content">
+                    <p class="team-card__lastname">
+                      Стеценко
+                    </p>
+                    <p class="team-card__name">
+                      Андрій Вікторович
+                    </p>
+                    <h3 class="team-card__description">
+                      Лікар стоматолог. Ортодонт
+                    </h3>
+                    <div class="team-card__text">
+                      Більше про лікаря
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </li>
+            <li class="team__item all surgeon show">
+              <div class="team__button" data-modal-button="modal-7">
+                <article class="team-card">
+                  <div class="team-card__box">
+                    <img class="team-card__image" src="./images/team/team-07.webp" alt="Сушко Віталій Олександрович"
+                      width="460" height="420" loading="lazy">
+                  </div>
+                  <div class="team-card__content">
+                    <p class="team-card__lastname">
+                      Сушко
+                    </p>
+                    <p class="team-card__name">
+                      Віталій Олександрович
+                    </p>
+                    <h3 class="team-card__description">
+                      Лікар стоматолог. Загальна практика
+                    </h3>
+                    <div class="team-card__text">
+                      Більше про лікаря
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </li>
+          </ul>
+
+          <div class="modals">
+            <div id="modal-3" class="backdrop hidden" data-modal>
+              <div class="modal">
+                <div class="modal__head">
+                  <img class="modal__img" src="images/team/team-03.webp" width="240" height="290" alt="Стеценко Андрій Вікторович
+                     Лікар стоматолог. Ортодонт">
+                  <div class="modal__info">
+                    <div class="modal__last-name">
+                      Стеценко
+                    </div>
+                    <div class="modal__first-name">
+                      Андрій Вікторович
+                    </div>
+                    <div class="modal__subtitle">
+                      Лікар стоматолог
+                    </div>
+                    <div class="modal__text">
+                      Закінчил Одеський державний медичний університет
+                    </div>
+                  </div>
+                </div>
+                <ul class="modal__content">
+                  <li class="modal__item">
+                    Лікування порушень прикусу та зубного ряду
+                  </li>
+                  <li class="modal__item">
+                    Лікування з використанням брекет-системи
+                  </li>
+                  <li class="modal__item">
+                    Патологія зубних рядів та прикусу
+                  </li>
+                  <li class="modal__item">
+                    Комплексне лікування скелетних аномалій
+                  </li>
+                </ul>
+                <button class="modal__close-btn modal-button" type="button" data-modal-close>
+                  <svg class="modal__close-btn-icon" width="32" height="32">
+                    <use href="./images/symbol-defs.svg#icon-close"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div id="modal-7" class="backdrop hidden" data-modal>
+              <div class="modal">
+                <div class="modal__head">
+                  <img class="modal__img" src="images/team/team-07.webp" width="240" height="290"
+                    alt="Сушко Віталій Олександрович">
+                  <div class="modal__info">
+                    <div class="modal__last-name">
+                      Сушко
+                    </div>
+                    <div class="modal__first-name">
+                      Віталій Олександрович
+                    </div>
+                    <div class="modal__subtitle">
+                      Лікар стоматолог. Загальна практика
+                    </div>
+                    <div class="modal__text">
+                      Закінчил Одеський державний медичний університет
+                    </div>
+                  </div>
+                </div>
+                <ul class="modal__content">
+                  <li class="modal__item">
+                    Лікування порушень прикусу та зубного ряду
+                  </li>
+                  <li class="modal__item">
+                    Лікування з використанням брекет-системи
+                  </li>
+                  <li class="modal__item">
+                    Патологія зубних рядів та прикусу
+                  </li>
+                  <li class="modal__item">
+                    Комплексне лікування скелетних аномалій
+                  </li>
+                </ul>
+                <button class="modal__close-btn modal-button" type="button" data-modal-close>
+                  <svg class="modal__close-btn-icon" width="32" height="32">
+                    <use href="./images/symbol-defs.svg#icon-close"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section news">
+        <div class="container">
+          <h2 class="news__title title">
+            Хірургічна стоматологія: Ключ до здоров'я вашого посмішки
+          </h2>
+          <div class="news__context">
+            <div class="news__block">
+              <div class="news__info">
+                <p class="news__text">
+                  Хірургічна стоматологія - це сучасна галузь стоматології, яка спеціалізується на різноманітних
+                  хірургічних втручаннях у ротовій порожнині. Її мета - відновлення здоров'я, естетики та
+                  функціональності зубів та щелепно-лицьової ділянки. Однією з ключових послуг, яку ми надаємо, є
+                  видалення зубів. Це може бути необхідно у разі врослих зубів, серйозних карієсів або перед
+                  імплантацією.
+                </p>
+                <p class="news__text">
+                  Ще однією важливою послугою є імплантація зубів. Втрата зубів може суттєво вплинути на вашу здатність
+                  жувати та говорити. Імплантація зубів - це ефективний спосіб відновлення втрачених зубів, забезпечуючи
+                  максимальну стійкість та природній вигляд. Ми використовуємо тільки високоякісні імплантати та
+                  виконуємо процедуру з урахуванням унікальних потреб кожного пацієнта.
+                </p>
+              </div>
+              <img class="news__image news__image--1" src="./images/news/s-01.webp" alt="">
+            </div>
+            <div class="news__block">
+              <img class="news__image" src="./images/news/s-02.webp" alt="">
+              <div class="news__info">
+
+                <p class="news__text">
+                  Крім цього, наші хірурги здійснюють підготовку щелеп до протезування. Це важливий етап перед
+                  установкою зубних протезів, який забезпечує максимальну стійкість та комфорт. Наші фахівці мають
+                  багаторічний досвід у цій сфері та готові забезпечити вам найвищу якість медичної допомоги.
+                </p>
+                <p class="news__text">
+                  Лікування кісткових дефектів - це ще одна важлива складова хірургічної стоматології. Воно спрямоване
+                  на відновлення кісткової тканини, яка може бути пошкоджена внаслідок травм, захворювань або втрати
+                  зубів. Наші спеціалісти використовують передові технології та методики для забезпечення максимального
+                  ефекту та швидкого відновлення.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+  <div class="container footer__container">
+    <div class="footer__head">
+      <div class="footer__links">
+        <a class="logo footer__logo" href="index.html">
+          <img class="logo__img" src="images/logo-white.svg" width="242" height="70"
+            alt="Логотип Сімейной стоматології">
+        </a>
+        <ul class="social">
+          <li class="social__item">
+            <a class="social__link" href="" title="Перейти на Інстаграм сторінку">
+              <svg class="social__icon" width="24" height="24" viewBox="0 0 24 24">
+                <use href="./images/symbol-defs.svg#icon-insta"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" title="Перейти на Інстаграм сторінку">
+              <svg class="social__icon" width="24" height="24" viewBox="0 0 24 24">
+                <use href="./images/symbol-defs.svg#icon-fb"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="" title="Перейти на Інстаграм сторінку">
+              <svg class="social__icon" width="24" height="24" viewBox="0 0 24 24">
+                <use href="./images/symbol-defs.svg#icon-mail"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="footer__contacts">
+        <li class="footer__contact">
+          <a class="footer__contact-link footer__contact-link--address" href="#">
+            <svg class="footer__contact-icon" width="24" height="24" viewBox="0 0 24 24">
+              <use href="images/symbol-defs.svg#icon-geo"></use>
+            </svg>
+            Одеса, Володимира Висоцького, 6
+          </a>
+          <a class="footer__contact-link footer__contact-link--phone" href="tel:+380977213406">
+            +38 097 721 34 06
+          </a>
+          <time class="footer__contact-link" datetime="2024-03-14T09:00">
+            <svg class="footer__contact-icon" width="24" height="24" viewBox="0 0 24 24">
+              <use href="images/symbol-defs.svg#icon-time"></use>
+            </svg>
+            Пн-пт 9:00 - 20:00 / Сб до 14:30
+          </time>
+        </li>
+        <li class="footer__contact">
+          <a class="footer__contact-link footer__contact-link--address" href="#">
+            <svg class="footer__contact-icon" width="24" height="24" viewBox="0 0 24 24">
+              <use href="./images/symbol-defs.svg#icon-geo"></use>
+            </svg>
+            Одеса, Академіка Заболотного, 2
+          </a>
+          <a class="footer__contact-link footer__contact-link--phone" href="tel:+380687653164">
+            +38 068 765 31 64
+          </a>
+          <time class="footer__contact-link" datetime="2024-03-14T09:00">
+            <svg class="footer__contact-icon" width="24" height="24" viewBox="0 0 24 24">
+              <use href="./images/symbol-defs.svg#icon-time"></use>
+            </svg>
+            Пн-пт 9:00 - 20:00 / Сб до 14:30
+          </time>
+        </li>
+      </ul>
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a class="footer__link" href="./files/23.pdf" target="_blank">Ціни</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="policy.html">
+            Обробка персональних даних
+          </a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="cookies.html">
+            Політика файлів cookie
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__bottom-left">
+        <p class="footer__bottom-text">
+          © 2023. All rights reserved
+        </p>
+        <p class="footer__bottom-text">
+          Photo by <a class="footer__bottom-link" href="www.freepik.com">
+            Freepik
+          </a>
+        </p>
+      </div>
+
+
+      <a class="footer__link" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=kozlova.ux@gmail.com"
+        target="_blank">
+        created by kozlova.ux
+      </a>
+    </div>
+
+  </div>
+</footer>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
+
+  <script src="js/fslightbox.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/about.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
