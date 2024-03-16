@@ -1,6 +1,14 @@
 .team {
   &__title {
     margin-bottom: 10px;
+
+    @media (max-width: 768px) {
+      font-size: 32px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 28px;
+    }
   }
 
   &__subtitle {
@@ -25,7 +33,7 @@
     }
 
     @media (max-width: 768px) {
-      gap: 8px 4px;
+      gap: 10px;
     }
   }
 
@@ -41,7 +49,6 @@
 
     @media (max-width: 768px) {
       grid-template-columns: repeat(2, 1fr);
-      gap: 16px;
     }
 
     @media (max-width: 480px) {
@@ -78,6 +85,7 @@
   &__button {
     height: 100%;
     transition: outline 0.3s ease;
+    cursor: pointer;
 
     &:focus {
       outline: 1px solid $secondary;
@@ -123,11 +131,14 @@
   height: 100%;
   background-color: $light;
   border-radius: 20px;
+  -webkit-border-radius: 20px;
   padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  -webkit-box-shadow: 0px 4px 10px 0px rgba(210, 220, 235, 0.44);
   box-shadow: 0px 4px 10px 0px rgba(210, 220, 235, 0.44);
+  transition: box-shadow 0.3s easy;
 
   @media (max-width: 576px) {
     max-width: 320px;

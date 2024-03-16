@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Стоматологічна клиніка Сімейна стоматологія</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="favicon/favicon.ico" sizes="any">
+  <link rel="icon" href="favicon/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon/afavicon/pple-touch-icon.png/">
+
+  <link rel="stylesheet" href="css/kids-dental.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+
+    @@include('../components/header.html', {
+    "services": "current"
+    })
+
+    <main>
+      <section class="about-hero section section--bg about-hero--reverse">
+        <div class="container about-hero__container">
+          <div class="about-hero__content">
+            <h1 class="about-hero__title title">
+              Ортодонтія:
+            </h1>
+            <div class="about-hero__description">
+              Усмішка мрії стає реальністю
+            </div>
+          </div>
+          <div class="about-hero__image" style="background-image: url('images/decor/ortodont.webp')"></div>
+        </div>
+      </section>
+
+      <section class="description section">
+        <div class="container">
+          <div class="description__wrapper">
+            <div class="description__content">
+              <h2 class="description__title description__title--small title">
+                Сучасні методи для ідеального прикусу
+              </h2>
+              <ul class="description__list">
+                <li class="description__item">
+                  <p class="description__headline  ">
+                    Брекет-терапія:
+                  </p>
+                  <p class="description__text">
+                    Використання брекетів для корекції положення зубів та виправлення аномалій прикусу.
+                    Ми пропонуємо різноманітні типи брекетів, включаючи керамічні та невидимі системи, щоб ви змогли
+                    вибрати найбільш зручний варіант.
+                  </p>
+                </li>
+                <li class="description__item">
+                  <p class="description__headline description__headline--text">
+                    Ретенційна терапія:
+                  </p>
+                  <p class="description__text">
+                    Використання ретейнерів для фіксації результатів після закінчення
+                    брекет-терапії. Ретейнери допомагають утримувати зуби у правильному положенні та запобігають
+                    поверненню аномалій прикусу.
+                  </p>
+                </li>
+                <li class="description__item">
+                  <p class="description__headline description__headline--text">
+                    Інвізалайн:
+                  </p>
+                  <p class="description__text">
+                    Інноваційна система прозорих силіконових трейнерів для корекції положення зубів без
+                    використання брекетів. Інвізалайн забезпечує комфортну та невидиму корекцію прикусу.
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="description__image" style="background-image: url('images/gallery/03.webp')"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section price">
+        <div class="container price__container">
+          <div class="price__inner" style="background-image: url('images/gallery/02.webp');">
+            <h2 class="title price__title">
+              Послуги та ціни стоматології
+            </h2>
+            <p class="price__description">
+              Повна вартість послуг розраховується після огляду лікаря та складання плану лікування
+            </p>
+            <a class="button price__button" href="./files/23.pdf" target="_blank">
+              Переглянути прайс
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section team section--bg">
+        <div class="container">
+          <h2 class="title team__title">
+            Лікарі відділення ортодонтологія
+          </h2>
+          <ul class="team__list">
+            <li class="team__item all orthodontist show">
+              <div class="team__button" data-modal-button="modal-5">
+                <article class="team-card">
+                  <div class="team-card__box">
+                    <img class="team-card__image" src="./images/team/team-06.webp" alt="Кавака Іван Євгенович"
+                      width="460" height="420" loading="lazy">
+                  </div>
+                  <div class="team-card__content">
+                    <p class="team-card__lastname">
+                      Кавака
+                    </p>
+                    <p class="team-card__name">
+                      Іван Євгенович
+                    </p>
+                    <h3 class="team-card__description">
+                      Лікар стоматолог
+                    </h3>
+                    <div class="team-card__text">
+                      Більше про лікаря
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </li>
+            <li class="team__item all therapist orthodontist show">
+              <div class="team__button" data-modal-button="modal-9">
+                <article class="team-card">
+                  <div class="team-card__box">
+                    <img class="team-card__image" src="./images/team/team-09.webp" alt="Щербiна Тетяна Ігорівна"
+                      width="460" height="420" loading="lazy">
+                  </div>
+                  <div class="team-card__content">
+                    <p class="team-card__lastname">
+                      Щербiна
+                    </p>
+                    <p class="team-card__name">
+                      Тетяна Ігорівна
+                    </p>
+                    <h3 class="team-card__description">
+                      Лікар-стоматолог, ортодонт.
+                    </h3>
+                    <div class="team-card__text">
+                      Більше про лікаря
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </li>
+          </ul>
+
+          <div class="modals">
+            <div id="modal-5" class="backdrop hidden" data-modal>
+              <div class="modal">
+                <div class="modal__head">
+                  <img class="modal__img" src="images/team/team-06.webp" width="240" height="290"
+                    alt="Кавака Іван Євгенович">
+                  <div class="modal__info">
+                    <div class="modal__last-name">
+                      Кавака
+                    </div>
+                    <div class="modal__first-name">
+                      Іван Євгенович
+                    </div>
+                    <div class="modal__subtitle">
+                      Лікар стоматолог. Загальна практика
+                    </div>
+                    <div class="modal__text">
+                      Закінчил Одеський державний медичний університет
+                    </div>
+                  </div>
+                </div>
+                <ul class="modal__content">
+                  <li class="modal__item">
+                    Лікування порушень прикусу та зубного ряду
+                  </li>
+                  <li class="modal__item">
+                    Лікування з використанням брекет-системи
+                  </li>
+                  <li class="modal__item">
+                    Патологія зубних рядів та прикусу
+                  </li>
+                  <li class="modal__item">
+                    Комплексне лікування скелетних аномалій
+                  </li>
+                </ul>
+                <button class="modal__close-btn modal-button" type="button" data-modal-close>
+                  <svg class="modal__close-btn-icon" width="32" height="32">
+                    <use href="./images/symbol-defs.svg#icon-close"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <div id="modal-9" class="backdrop hidden" data-modal>
+              <div class="modal">
+                <div class="modal__head">
+                  <img class="modal__img" src="images/team/team-09.webp" width="240" height="290"
+                    alt="Щербiна Тетяна Ігорівна">
+                  <div class="modal__info">
+                    <div class="modal__last-name">
+                      Щербiна
+                    </div>
+                    <div class="modal__first-name">
+                      Тетяна Ігорівна
+                    </div>
+                    <div class="modal__subtitle">
+                      Лікар-стоматолог, ортодонт.
+                    </div>
+                    <div class="modal__text">
+                      Член асоціації ортодонтів України.
+                    </div>
+                    <div class="modal__text">
+                      Закінчила Одеський державний медичний університет
+                    </div>
+                  </div>
+                </div>
+                <ul class="modal__content">
+                  <li class="modal__item">
+                    Лікування порушень прикусу та зубного ряду
+                  </li>
+                  <li class="modal__item">
+                    Лікування з використанням брекет-системи
+                  </li>
+                  <li class="modal__item">
+                    Патологія зубних рядів та прикусу
+                  </li>
+                  <li class="modal__item">
+                    Комплексне лікування скелетних аномалій
+                  </li>
+                </ul>
+                <button class="modal__close-btn modal-button" type="button" data-modal-close>
+                  <svg class="modal__close-btn-icon" width="32" height="32">
+                    <use href="./images/symbol-defs.svg#icon-close"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section news">
+        <div class="container">
+          <h2 class="news__title title">
+            Ортодонтія: Ключ до привабливої та здорової посмішки
+          </h2>
+          <div class="news__context">
+            <div class="news__block">
+              <div class="news__info">
+                <p class="news__text">
+                  Ортодонтія - це галузь стоматології, яка спеціалізується на виправленні аномалій прикусу та положення
+                  зубів для досягнення ідеальної усмішки та функціональності. Ортодонтія стає все більш популярною серед
+                  людей різного віку, оскільки всі більше людей розуміють важливість правильного прикусу та його вплив
+                  на загальне здоров'я.
+                </p>
+                <p class="news__text">
+                  Однією з ключових послуг, яку ми надаємо, є брекет-терапія. Це ефективний метод корекції прикусу, що
+                  полягає в установці брекетів на зуби. Ми пропонуємо різні типи брекетів, включаючи керамічні та
+                  невидимі системи, щоб кожен пацієнт міг знайти оптимальний варіант для себе.
+                </p>
+              </div>
+              <img class="news__image news__image--1" src="./images/news/t-01.webp" alt="">
+            </div>
+            <div class="news__block">
+              <img class="news__image" src="./images/news/t-02.webp" alt="">
+              <div class="news__info">
+
+                <p class="news__text">
+                  Після закінчення брекет-терапії ми рекомендуємо провести ретенційну терапію. Це важливий етап, коли
+                  зуби фіксуються за допомогою ретейнерів, щоб утримати їх у правильному положенні та запобігти
+                  поверненню аномалій прикусу.
+                </p>
+                <p class="news__text">
+                  Інвізалайн - це ще один інноваційний метод корекції прикусу, який набуває популярності. Він полягає у
+                  використанні прозорих силіконових трейнерів, які незамітно коригують положення зубів. Інвізалайн є
+                  зручним та естетичним варіантом для тих, хто прагне до ідеальної усмішки без брекетів.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    @@include('../components/footer.html')
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
+
+  <script src="js/fslightbox.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/main.min.js"></script>
+  <script src="js/about.js"></script>
+</body>
+
+</html>

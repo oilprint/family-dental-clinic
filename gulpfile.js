@@ -40,7 +40,9 @@ function scripts() {
     // 'node_modules/slick-carousel/slick/slick.js',
     'node_modules/mixitup/dist/mixitup.js',
     'node_modules/swiper/swiper-bundle.js',
+    // 'node_modules/fslightbox/index.js',
     'app/js/modal.js',  
+    'app/js/filter-team.js',  
     'app/js/main.js'  
   ])
   .pipe(concat('main.min.js')) 
