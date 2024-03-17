@@ -37,11 +37,13 @@
               Головна
             </a>
           </li>
+
           <li class="menu__item">
             <a class="menu__link @@about" href="about.html">
               Про клініку
             </a>
           </li>
+
           <li class="menu__item">
             <button class="menu__link menu__btn @@services" type="button">
               Послуги
@@ -81,11 +83,10 @@
                     Паронтологія
                   </a>
                 </li>
-
-
               </ul>
             </div>
           </li>
+
           <li class="menu__item">
             <a class="menu__link @@contacts" href="contacts.html">
               Контакти
@@ -95,6 +96,7 @@
         <button class="button nav__button" type="button" data-modal-button="header-appointment">
           Записатись
         </button>
+
         <div id="header-appointment" class="backdrop hidden" data-modal>
           <div class="modal modal--small">
             <div class="appointment">
@@ -136,6 +138,7 @@
             </button>
           </div>
         </div>
+
       </nav>
     </div>
   </div>
@@ -338,7 +341,7 @@
           <div class="team__filters">
             <button class="filter-btn" type="button" data-filter="all">Усі лікарі</button>
             <button class="filter-btn" type="button" data-filter="kids">Дітячий Стоматолог</button>
-            <button class="filter-btn" type="button" data-filter="therapist is-active">Терапевт</button>
+            <button class="filter-btn is-active" type="button" data-filter="therapist">Терапевт</button>
             <button class="filter-btn" type="button" data-filter="surgeon">Хірург</button>
             <button class="filter-btn" type="button" data-filter="orthodontist">Ортодонт</button>
           </div>
@@ -952,7 +955,6 @@
       <section class="section booking">
         <div class="container booking__container">
           <div class="booking__content">
-
             <h2 class="title booking__title">
               Запишіться онлайн
             </h2>
@@ -1006,7 +1008,6 @@
                 </button>
               </div>
             </div>
-
           </div>
           <div class="booking__image" style="background-image: url('images/decor/booking-bg.webp')"></div>
         </div>
@@ -1037,9 +1038,9 @@
                     </div>
                     <div class="review-card__stars"></div>
                   </figcaption>
-
                 </figure>
               </li>
+
               <li class="reviews-slider__item swiper-slide">
                 <figure class="review-card">
                   <blockquote class="review-card__text">
@@ -1051,9 +1052,9 @@
                     </div>
                     <div class="review-card__stars"></div>
                   </figcaption>
-
                 </figure>
               </li>
+
               <li class="reviews-slider__item swiper-slide">
                 <figure class="review-card">
                   <blockquote class="review-card__text">
@@ -1065,9 +1066,9 @@
                       Ігор
                     </div>
                   </figcaption>
-
                 </figure>
               </li>
+
               <li class="reviews-slider__item swiper-slide">
                 <figure class="review-card">
                   <blockquote class="review-card__text">
@@ -1079,9 +1080,9 @@
                       Анна
                     </div>
                   </figcaption>
-
                 </figure>
               </li>
+
               <li class="reviews-slider__item swiper-slide">
                 <figure class="review-card">
                   <blockquote class="review-card__text">
@@ -1093,9 +1094,9 @@
                       Вікторія
                     </div>
                   </figcaption>
-
                 </figure>
               </li>
+
               <li class="reviews-slider__item swiper-slide">
                 <figure class="review-card">
                   <blockquote class="review-card__text">
@@ -1107,9 +1108,9 @@
                       Олена
                     </div>
                   </figcaption>
-
                 </figure>
               </li>
+
               <li class="reviews-slider__item swiper-slide">
                 <figure class="review-card">
                   <blockquote class="review-card__text">
@@ -1121,13 +1122,10 @@
                       Сергій Миколайович
                     </div>
                   </figcaption>
-
                 </figure>
               </li>
             </ul>
             <div class="reviews__nav">
-
-
 
               <!-- If we need navigation buttons -->
               <div class="swiper-button-prev swiper-button-prev-2 "></div>
@@ -1150,12 +1148,11 @@
             Наші клініки використовують передове обладнання, матеріали та інструменти від кращих виробників для
             застосування сучасних методик лікування стоматологічних захворювань
           </p>
-          <a class="button gallery__button" href="#">
+          <a class="button gallery__button" href="about.html">
             Дізнатись більше
           </a>
 
           <div class="gallery__grid">
-
             <div class="gallery__box gallery__box--1">
               <img class="gallery__img" src="images/gallery/01.webp" alt="Стоматологічна клініка Сімейна стоматологія"
                 width="574" height="574">
@@ -1187,7 +1184,6 @@
           </div>
         </div>
       </section>
-
 
     </main>
 
@@ -1225,38 +1221,48 @@
       </div>
       <ul class="footer__contacts">
         <li class="footer__contact">
-          <a class="footer__contact-link footer__contact-link--address" href="#">
-            <svg class="footer__contact-icon" width="24" height="24" viewBox="0 0 24 24">
-              <use href="images/symbol-defs.svg#icon-geo"></use>
-            </svg>
-            Одеса, Володимира Висоцького, 6
-          </a>
-          <a class="footer__contact-link footer__contact-link--phone" href="tel:+380977213406">
-            +38 097 721 34 06
-          </a>
-          <time class="footer__contact-link" datetime="2024-03-14T09:00">
-            <svg class="footer__contact-icon" width="24" height="24" viewBox="0 0 24 24">
-              <use href="images/symbol-defs.svg#icon-time"></use>
-            </svg>
-            Пн-пт 9:00 - 20:00 / Сб до 14:30
-          </time>
+          <address class="footer__address">
+            <a class="footer__contact-link footer__contact-link--address" href="#">
+              <svg class="footer__contact-icon" width="24" height="24" viewBox="0 0 24 24">
+                <use href="images/symbol-defs.svg#icon-geo"></use>
+              </svg>
+              Одеса, Висоцького, 6
+            </a>
+            <a class="footer__contact-link footer__contact-link--phone" href="tel:+380977213406">
+              +38 097 721 34 06
+            </a>
+            <div class="footer__contact-link time">
+              <svg class="footer__contact-icon" width="24" height="24" viewBox="0 0 24 24">
+                <use href="images/symbol-defs.svg#icon-time"></use>
+              </svg>
+              Пн-пт
+              <time datetime="09:00">9:00</time> - <time datetime="20:00">20:00</time>
+              / Сб
+              <time datetime="14:30">до 14:30</time>
+            </div>
+          </address>
         </li>
         <li class="footer__contact">
-          <a class="footer__contact-link footer__contact-link--address" href="#">
-            <svg class="footer__contact-icon" width="24" height="24" viewBox="0 0 24 24">
-              <use href="./images/symbol-defs.svg#icon-geo"></use>
-            </svg>
-            Одеса, Академіка Заболотного, 2
-          </a>
-          <a class="footer__contact-link footer__contact-link--phone" href="tel:+380687653164">
-            +38 068 765 31 64
-          </a>
-          <time class="footer__contact-link" datetime="2024-03-14T09:00">
-            <svg class="footer__contact-icon" width="24" height="24" viewBox="0 0 24 24">
-              <use href="./images/symbol-defs.svg#icon-time"></use>
-            </svg>
-            Пн-пт 9:00 - 20:00 / Сб до 14:30
-          </time>
+          <address class="footer__address">
+            <a class="footer__contact-link footer__contact-link--address" href="#">
+              <svg class="footer__contact-icon" width="24" height="24" viewBox="0 0 24 24">
+                <use href="./images/symbol-defs.svg#icon-geo"></use>
+              </svg>
+              Одеса, Ак. Заболотного, 2
+            </a>
+            <a class="footer__contact-link footer__contact-link--phone" href="tel:+380687653164">
+              +38 068 765 31 64
+            </a>
+            <div class="footer__contact-link time">
+              <svg class="footer__contact-icon" width="24" height="24" viewBox="0 0 24 24">
+                <use href="images/symbol-defs.svg#icon-time"></use>
+              </svg>
+              Пн-пт
+              <time datetime="09:00">9:00</time> - <time datetime="20:00">20:00</time>
+              / Сб
+              <time datetime="14:30">до 14:30</time>
+            </div>
+          </address>
         </li>
       </ul>
       <ul class="footer__list">
@@ -1287,7 +1293,6 @@
         </p>
       </div>
 
-
       <a class="footer__link" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=kozlova.ux@gmail.com"
         target="_blank">
         created by kozlova.ux
@@ -1301,7 +1306,6 @@
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
   <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
-
 
   <script src="js/index.js"></script>
   <script src="js/main.min.js"></script>

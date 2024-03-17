@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const swiper = new Swiper('.swiper-2', {
       slidesPerView: 1,
       spaceBetween: 10,
-      loop: true,
+      // loop: true,
       // slideToClickedSlide: true,
 
       navigation: {
@@ -54,7 +54,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   const slider3 = document.querySelector('.swiper-3');
-  console.log(slider3);
   let mySwiper;
 
   function mobileSlider() {

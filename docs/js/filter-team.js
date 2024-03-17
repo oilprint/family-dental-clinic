@@ -1,7 +1,6 @@
 // filters
   const filterBtns = document.querySelectorAll(".filter-btn");
   const teamList = document.querySelector(".team__list");
-
   filterBtns.forEach((btn) => {
     btn.addEventListener("click", () => {
       filterBtns.forEach((filterBtn) => {

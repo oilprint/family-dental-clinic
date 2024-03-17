@@ -33,7 +33,15 @@
     }
 
     @media (max-width: 768px) {
-      gap: 10px;
+      gap: 8px;
+    }
+
+    @media (max-width: 480px) {
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      overflow-y: scroll;
+      padding-bottom: 10px;
+      -webkit-padding-bottom: 10px;
     }
   }
 
@@ -60,7 +68,6 @@
   }
 
   &__item {
-
     &.hide {
       opacity: 0;
       pointer-events: none;
@@ -79,7 +86,6 @@
     @media (max-width: 480px) {
       padding-bottom: 10px;
     }
-
   }
 
   &__button {
@@ -149,11 +155,9 @@
     width: 270px;
   }
 
-
   &__box {
     overflow: hidden;
     border-radius: 12px;
-
   }
 
   &__image {

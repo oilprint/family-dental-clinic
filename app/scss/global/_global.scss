@@ -19,7 +19,6 @@ body {
   }
 }
 
-
 .wrapper {
   overflow-x: hidden;
 
@@ -197,4 +196,10 @@ main {
     width: 24px;
     height: 24px;
   }
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }

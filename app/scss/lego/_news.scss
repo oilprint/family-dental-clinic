@@ -1,28 +1,22 @@
 .news {
   text-align: left;
 
-
   &__title {
     margin-bottom: 30px;
-
 
     @media (max-width: 768px) {
       font-size: 32px;
     }
 
-
     @media (max-width: 480px) {
       font-size: 28px;
     }
-
-
   }
 
   &__block {
     display: flex;
     justify-content: space-between;
     gap: 30px;
-
 
     &:not(:last-child) {
       margin-bottom: 40px;
@@ -32,7 +26,6 @@
       flex-direction: column;
       align-items: center;
     }
-
   }
 
   &__text {
@@ -51,13 +44,7 @@
     &--1 {
       @media (max-width: 992px) {
         order: -1;
-
       }
     }
   }
-
-
-
-
-
 }
