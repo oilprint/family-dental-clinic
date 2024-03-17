@@ -1,6 +1,21 @@
 .logo {
   display: block;
   flex-shrink: 0;
+  transition: outline 0.3 ease, opacity 0.3 ease;
+
+  &:focus {
+    outline: solid 1px $secondary;
+    outline-offset: 4px;
+  }
+
+  &:hover {
+    outline: solid 1px $secondary;
+    outline-offset: 4px;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .button {
@@ -17,7 +32,7 @@
   transition: box-shadow 0.3s,
     outline 0.4s,
     color 0.2s,
-    background-color 0.2s ;
+    background-color 0.2s;
 
   &:hover {
     box-shadow: 3px 3px 8px rgba($dark, 0.4);
@@ -46,14 +61,14 @@
       color: $light;
       background-color: $accent;
       box-shadow: none;
-      border-color:$accent;
-
+      border-color: $accent;
     }
   }
 }
 
 .filter-btn {
   display: block;
+  flex-shrink: 0;
   font-size: 14px;
   font-weight: 500;
   text-transform: uppercase;
@@ -84,18 +99,6 @@
     color: $light;
     border-color: $accent;
   }
-
-
-}
-
-
-.focus {
-
-  &:focus {
-    outline: solid 1px $accent;
-    outline-offset: 4px;
-    border-radius: 4px;
-  }
 }
 
 .modal-button {
@@ -107,7 +110,6 @@
   border-radius: 50%;
   background-color: $light;
   transition: color 0.4s, outline 0.4s, box-shadow 0.4s;
-
 
   &:focus {
     outline: solid 1px $accent;

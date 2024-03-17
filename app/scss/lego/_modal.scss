@@ -43,14 +43,12 @@
 
   @media (max-width: 768px) {
     width: 95vw;
-    // overflow-y: hidden;
   }
 
   @media (max-width: 576px) {
     margin: 20px auto;
     overflow-y: scroll;
   }
-
 
   &__close-btn {
     position: absolute;
@@ -147,7 +145,6 @@
     @media (max-width: 576px) {
       margin-bottom: 4px;
     }
-
   }
 
   &__subtitle {

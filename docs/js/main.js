@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // dropdown
-
   const menuBtn = document.querySelector('.menu__btn');
 
   menuBtn.addEventListener('click', (e) => {
@@ -27,7 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
-
 
   //Lenis Smooth scroll
 	const lenis = new Lenis({
@@ -47,9 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		lenis.raf(time * 1000)
 	})
 
-
   ///gsap
-
   gsap.registerPlugin(ScrollTrigger)
 
    gsap.from('.hero__content', {
@@ -57,8 +53,13 @@ document.addEventListener('DOMContentLoaded', () => {
     opacity: 0,   
   });
 
-  const sections = gsap.utils.toArray('.section');
-  sections.forEach((section, i) => {
+  //laptop animation 
+  const laptopScreen = window.matchMedia('(min-width: 992px)');
+
+  if (laptopScreen.matches) {
+    
+    const sections = gsap.utils.toArray('.section');
+    sections.forEach((section, i) => {
     
     gsap.from(section.querySelector('.title'), {
       scrollTrigger: {
@@ -84,11 +85,6 @@ document.addEventListener('DOMContentLoaded', () => {
     ease: 'Power2.easeOut',
     stagger: 0.4
   });
-
-  //laptop animation 
-  const laptopScreen = window.matchMedia('(min-width: 992px)')
-
-  if (laptopScreen.matches) {
     
     gsap.from('.about__images', {
     scrollTrigger: {
@@ -114,8 +110,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }   
     });
   }
- 
-
 });
 
 

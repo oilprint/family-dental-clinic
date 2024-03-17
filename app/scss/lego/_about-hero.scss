@@ -9,6 +9,7 @@
 
     @media (max-width: 768px) {
       flex-direction: column;
+      gap: 8px;
     }
   }
 
@@ -24,6 +25,11 @@
 
   &__title {
     margin-bottom: 12px;
+    line-height: 1;
+
+    @media (max-width: 768px) {
+      margin-right: 8px;
+    }
   }
 
   &__image {

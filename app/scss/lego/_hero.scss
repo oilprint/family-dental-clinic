@@ -37,14 +37,14 @@
 
   &__title {
     font-size: 36px;
-    font-weight: 700;
-    line-height: 1.2;
+    font-weight: 600;
+    line-height: 1;
     letter-spacing: 0.06em;
     color: $secondary;
     margin-bottom: 30px;
 
     @media (max-width: 576px) {
-      font-size: 32px;
+      font-size: 28px;
       margin-bottom: 16px;
     }
   }

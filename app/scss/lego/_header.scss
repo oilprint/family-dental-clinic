@@ -1,6 +1,5 @@
 .header {
   background-color: $light;
-  // border-bottom: 1px solid $grey-light;
   position: fixed;
   left: 0;
   right: 0;
@@ -9,6 +8,10 @@
   &__logo {
     z-index: 100;
     margin-right: 60px;
+
+    @media (max-width: 480px) {
+      width: 180px;
+    }
   }
 
   &__inner {
@@ -170,17 +173,13 @@
   transition: transform 0.3s ease-in-out,
     visibility 0.3s ease-in-out;
 
-
   &--active {
     transform: rotateX(0deg);
     visibility: visible;
     opacity: 1;
   }
 
-  &__list {}
-
   &__item {
-
     margin: 2px 0;
     background-color: $light;
   }
@@ -198,8 +197,6 @@
     @media (max-width: 1024px) {
       padding: 20px;
     }
-
-
   }
 
   @media (max-width: 1024px) {

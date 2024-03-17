@@ -10,14 +10,11 @@
     margin-bottom: 40px;
 
     @media (max-width: 768px) {
-      gap: 20px;
-    }
-
-    @media (max-width: 768px) {
       overflow-y: scroll;
       padding-bottom: 10px;
       -webkit-padding-bottom: 10px;
       margin-bottom: 10px;
+      gap: 20px;
     }
   }
 
@@ -29,10 +26,6 @@
     color: $grey;
     border-bottom: 1px solid $grey;
     transition: color 0.3s ease-in, border-color 0.3s ease-in;
-
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
 
     &.active {
       color: $secondary;
@@ -94,7 +87,6 @@
 
   &__link {
     display: block;
-
   }
 
   &__image {
