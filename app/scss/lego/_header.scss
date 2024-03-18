@@ -189,6 +189,7 @@
     display: block;
     padding: 16px 20px;
     color: $primary;
+    transition: color 0.3s ease, outline 0.3s ease;
 
     &:not(:last-child) {
       border-bottom: 1px solid $grey;
@@ -196,6 +197,19 @@
 
     @media (max-width: 1024px) {
       padding: 20px;
+    }
+
+    &:hover {
+      color: $accent;
+    }
+
+    &:focus {
+      outline: solid 1px $accent;
+      border-radius: 4px;
+    }
+
+    &:active {
+      color: $accent;
     }
   }
 
